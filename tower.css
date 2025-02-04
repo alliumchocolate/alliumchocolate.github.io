@@ -1,0 +1,149 @@
+/* TOWER
+ * some details:
+ * the content collumn width: 440px
+ */
+
+body {
+  background-color: black;
+  font-family: arial, helvetica, serif;
+  font-size: 13px;
+  color: #c2b2a3;
+  margin: 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+#strike {
+  text-decoration: line-through;
+  font-style: normal;
+}
+
+/* aligns everything to the tower */
+.in-tower {
+  position: relative;
+  left: 40vw;
+  transform: translate(-50%);
+  
+  width: 440px;
+}
+
+#structureA {
+  position: fixed;
+  top: 0;
+  left: 40vw;
+  transform: translate(-50%);
+
+  width: 440px;
+  height: 100vh;
+  
+  padding-left: 10px;
+  padding-right: 5px;
+  
+  background-color: black;
+  border-left: 3px #dd169d double;
+  border-right: 3px #dd169d double;
+}
+
+#structureB {
+  position: fixed;
+  top: 0;
+  left: 55vw;
+  
+  width: 200px;
+  height: 100vh;
+  
+  padding-left: 5px;
+  padding-right: 5px;
+
+  background-color: #12050d;
+  border-right: 3px #dd169d double;
+}
+
+/* The floating box with the bio */
+#widget-box {
+  width: 350px;
+  height: 125px;
+  
+  border: 3px #1f00ec double;
+
+  background-color: black;
+  padding: 10px;
+  
+  position: fixed;
+  bottom: 80px;
+  left: 60px;
+  
+  z-index: 100;
+}
+#widget-name {
+  color: #ebad0b;
+  
+  font-size: 1.2em;
+  text-align: center;
+  
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+#widget-pronouns {
+  text-align: center;
+  font-size: 0.95em;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+.widget-bio {  
+  text-align: center;
+  margin-top: 10px;
+}
+
+blockquote:before {
+    content: open-quote;
+}
+
+blockquote:after {
+    content: close-quote;
+}
+
+/* creates the grid */
+#window {
+  display: grid;
+  grid-template-columns: 110px 110px 110px 110px;
+  grid-template-rows: 110px;
+}
+/* manages the hidden full image */
+.image { 
+  margin: 0;
+  padding: 5px;
+  
+  width: 100px;
+  height: 100px;
+  
+  object-fit: cover;
+  transition: all .2s ease;
+}
+/* show preview */
+img:hover {
+  transform: scale(1.2);
+  object-fit: contain;
+  
+  z-index: 10;
+  overflow: hidden;
+}
+/* display full on click*/
+img:active {
+  visibility: visible; 
+
+  transform: scale(6);
+  
+  object-fit: contain;
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+
