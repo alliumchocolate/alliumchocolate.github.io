@@ -72,6 +72,13 @@ p {
   border-bottom: 1px #ffe328 solid; 
 }
 
+/* For the Lumina guide section */ 
+#lumina {
+  border-top: 1px #8a0ce5 solid; 
+  border-bottom: 1px #8a0ce5 solid; 
+}
+
+
 /* The floating box with the bio */
 #widget-box {
   width: 350px;
@@ -101,7 +108,7 @@ p {
   text-align: center;
   font-size: 0.95em;
   margin-top: 2px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .widget-bio {  
   text-align: center;
