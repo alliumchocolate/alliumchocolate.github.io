@@ -34,6 +34,16 @@ p {
   width: 440px;
 }
 
+#clouds {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 1080px;
+  
+  background: #4f71e0 url("./content/clouds.jpg") no-repeat top;
+  background-size: contain;
+}
+  
 #structureA {
   position: fixed;
   top: 0;
@@ -47,14 +57,14 @@ p {
   padding-right: 5px;
   
   background-color: black;
-  border-left: 3px #dd169d double;
-  border-right: 3px #dd169d double;
+  border-left: 5px #f7a908 double;
+  border-right: 5px #f7a908 double;
 }
 
 #structureB {
   position: fixed;
   top: 0;
-  left: 55vw;
+  left: 847px;
   
   width: 200px;
   height: 100vh;
@@ -62,8 +72,8 @@ p {
   padding-left: 5px;
   padding-right: 5px;
 
-  background-color: #12050d;
-  border-right: 3px #dd169d double;
+  background-color: #130e03;
+  border-right: 5px #f7a908 double;
 }
 
 /* For Chroma Corp sections, to separate them */ 
@@ -84,7 +94,7 @@ p {
   width: 350px;
   height: 125px;
   
-  border: 3px #1f00ec double;
+  border: 5px #ec8900 double;
 
   background-color: black;
   padding: 10px;
@@ -129,6 +139,12 @@ blockquote:after {
   grid-template-columns: 110px 110px 110px 110px;
   grid-template-rows: 110px;
 }
+
+div:active {
+  position: relative;
+  z-index: 1000;
+}
+
 /* manages the hidden full image */
 .image { 
   margin: 0;
@@ -145,13 +161,13 @@ img:hover {
   transform: scale(1.2);
   object-fit: contain;
   
-  z-index: 10;
+  z-index: 2;
   overflow: hidden;
 }
 /* display full on click*/
 img:active {
   transform: scale(6);
-  
+  position: relative;
   object-fit: contain;
   z-index: 1000;
 }
