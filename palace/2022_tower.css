@@ -7,13 +7,38 @@ body {
   background-color: black;
   font-family: arial, helvetica, serif;
   font-size: 13px;
-  color: #c2b2a3;
+  color: #adadad;
   margin: 0;
+}
+
+a:link {
+  color: #4b69c5;
+}
+
+a:visited {
+  color: #29b240;
+}
+
+blockquote {
+  color: #c5c5c5;
+}
+
+figcaption {
+  color: #5e5e5e;
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1cdd93;
 }
 
 p {
   padding-left: 2px;
   padding-right: 2px;
+}
+
+#footer-nav {
+  display: flex;
 }
 
 .centered {
@@ -43,35 +68,22 @@ p {
   background-size: contain;
 }
   
-#structureA {
+#structure {
   position: fixed;
   top: 0;
   left: 400px;
 
-  width: 440px;
+  width: 640px;
   height: 100vh;
   
   padding-left: 10px;
   padding-right: 10px;
   
-  background-color: black;
-  border-left: 5px #00e8a3 double;
-  border-right: 5px #00e8a3 double;
-}
-
-#structureB {
-  position: fixed;
-  top: 0;
-  left: 870px;
+  background: black url("/content/2022_tower.jpg") no-repeat right;
+  border-left: 5px #21bb4e double;
+  border-right: 5px #21bb4e double;
   
-  width: 200px;
-  height: 100vh;
-  
-  padding-left: 5px;
-  padding-right: 5px;
-
-  background-color: #020d0e;
-  border-right: 5px #00e8a3 double;
+  box-shadow: 0 0 5px 1px black;
 }
 
 /* For Chroma Corp sections, to separate them */ 
@@ -92,7 +104,7 @@ p {
   width: 350px;
   height: 125px;
   
-  border: 5px #ec8900 double;
+  border: 5px #ecad00 double;
 
   background-color: black;
   padding: 10px;
@@ -155,7 +167,7 @@ div:active {
   transition: all .2s ease;
 }
 /* show preview */
-img:hover {
+.image:hover {
   transform: scale(1.2);
   object-fit: contain;
   
@@ -163,16 +175,16 @@ img:hover {
   overflow: hidden;
 }
 /* display full on click*/
-img:active {
+.image:active {
   transform: scale(6);
   position: relative;
   object-fit: contain;
   z-index: 1000;
 }
 
-
-
-
+.reset-style, .reset-style * {
+  all: none;
+}
 
 
 
