@@ -16,7 +16,7 @@ a:link {
 }
 
 a:visited {
-  color: #1807a5;
+  color: #111cc1;
 }
 
 blockquote {
@@ -29,7 +29,7 @@ figcaption {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #2844dc;
+  color: #427ef7;
 }
 
 p {
@@ -64,7 +64,7 @@ p {
   width: 100%;
   height: 1080px;
   
-  background: black url("/content/2024_bg.jpg") no-repeat top;
+  background: black url("/content/2025_bg.jpg") no-repeat top;
   background-size: contain;
 }
   
@@ -80,8 +80,8 @@ p {
   padding-right: 10px;
   
   background: black url("/content/2025_tower.jpg") no-repeat right;
-  border-left: 5px #0053e0 double;
-  border-right: 5px #0053e0 double;
+  border-left: 5px #1676f9 double;
+  border-right: 5px #1676f9 double;
   
   box-shadow: 0 0 5px 1px black;
 }
@@ -104,7 +104,7 @@ p {
   width: 350px;
   height: 125px;
   
-  border: 5px #3b46ff double;
+  border: 5px #c3f53e double;
 
   background-color: black;
   padding: 10px;
