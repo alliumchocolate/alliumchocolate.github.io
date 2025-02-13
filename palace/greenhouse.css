@@ -9,44 +9,70 @@ body {
 }
 
 header {    
-    height: 10vh;
+    height: auto;
     
-    border: 5px #0133cf double;
+    border: 5px #0a33d6 double;
     
-    padding: 10px;
+    padding: 5px;
+    margin-top: 20px;
+    
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #ff429b;
+}
+
+header p {
+    margin: 2px;
+    font-style: italic;
+}
+
+header a {
+    padding-left: 20px;
+}
+
+header nav {
+    margin: 5px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+a:link {
+    color: #435ce1;
+}
+a:visited {
+    color: #9c3db9;
+}
+
+.post {
+    height: auto;
+    
+    border: 5px #d7138e double;
+    
+    padding: 20px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
-article {
-    display: inline-block;
-    
-    width: 34vw;
-    height: 50vh;
-    
-    border: 5px #d7138e double;
-    
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 20px;
+.post h1, h2, h3, h4, h5, h6 {
+    color: #ff429b;
 }
 
-aside {
-    display: inline-block;
-    
-    width: 6vw;
-    height: 50vh;
-    
-    border: 5px #d7138e double;
-    
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+.post p {
+    color: #e0e0e0;
+}
+
+.post aside {
+    color: #813f77;
+    position: absolute;
+    top: 20px;
+    right: 15px;
 }
 
 footer {
-    height: 10vh;
+    height: auto;
     
     border: 5px #0133cf double;
     
@@ -55,13 +81,25 @@ footer {
     margin-top: 10px;
 }
 
+footer p {
+    text-align: center;
+    color: #656565;
+}
+
+footer em {
+    color: #b32f6d;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
 .centered {
     position: relative;
     left: 50%;
     transform: translate(-50%);
 }
 
-#page-box {
+.page-box {
     position: relative;
     width: 40vw;
 }
