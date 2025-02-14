@@ -14,7 +14,6 @@ header {
     border: 5px #0a33d6 double;
     
     padding: 5px;
-    margin-bottom: 20px;
     margin-top: 20px;
     
     text-align: center;
@@ -58,7 +57,7 @@ article {
     transform: translate(-50%);
 }
 
-#page-box {
+.page-box {
     position: relative;
     width: 40vw;
 }
@@ -119,5 +118,19 @@ article {
 .main-box:hover {
     transform: scale(1.2);
 }
+
+.story {
+    height: auto;
+    
+    border: 5px #0a33d6 double;
+    
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    text-align: center; 
+}
+
+
 
 
