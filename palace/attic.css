@@ -47,7 +47,7 @@ a:visited {
 }
 
 .post {
-    height: auto;
+    height: 150px;
     
     border: 5px #863c29 double;
     
@@ -60,29 +60,37 @@ a:visited {
     color: #bd630e;
     padding: 0;
     margin: 0;
+    
+    position: relative;
 }
 
 .post p {
     color: #e0e0e0;
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    width: 70%;
 }
 
 .post aside {
     color: #8a4c11;
-    position: relative;
-    top: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .post audio {
     background-color: black;
-    position: relative;
-    top: 100px;
-    transform: translate(0, -100%);
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    margin-top: 10px;
 }
 
 .icon {
-    margin-left: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    
     height: 120px;
     
     border: 2px #976f19 solid;
@@ -140,12 +148,6 @@ footer em {
     
     text-align: center; 
 }
-
-.split {
-    display: flex;
-    height: auto;
-}
-
 
 #clouds {
   position: fixed;
