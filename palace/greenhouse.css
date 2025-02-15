@@ -11,7 +11,7 @@ body {
 header {    
     height: auto;
     
-    border: 5px #0a33d6 double;
+    border: 5px #b5d73f double;
     
     padding: 5px;
     margin-top: 20px;
@@ -21,7 +21,7 @@ header {
 
 header h1 {
     margin: 0;
-    color: #ff429b;
+    color: #b5d73f;
 }
 
 header p {
@@ -40,16 +40,16 @@ header nav {
 }
 
 a:link {
-    color: #435ce1;
+    color: #42b6a6;
 }
 a:visited {
-    color: #9c3db9;
+    color: #1f6e48;
 }
 
 .post {
     height: auto;
     
-    border: 5px #d7138e double;
+    border: 5px #b5d73f double;
     
     padding: 20px;
     margin-bottom: 10px;
@@ -57,7 +57,7 @@ a:visited {
 }
 
 .post h1, h2, h3, h4, h5, h6 {
-    color: #ff429b;
+    color: #b5d73f;
 }
 
 .post p {
@@ -65,7 +65,7 @@ a:visited {
 }
 
 .post aside {
-    color: #813f77;
+    color: #95a433;
     position: absolute;
     top: 20px;
     right: 15px;
@@ -74,7 +74,7 @@ a:visited {
 footer {
     height: auto;
     
-    border: 5px #0133cf double;
+    border: 5px #13925e double;
     
     padding: 5px;
     margin-bottom: 10px;
@@ -87,7 +87,7 @@ footer p {
 }
 
 footer em {
-    color: #b32f6d;
+    color: #13925e;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -102,6 +102,8 @@ footer em {
 .page-box {
     position: relative;
     width: 40vw;
+    
+    background-color: black;
 }
 
 .main-box {
@@ -113,7 +115,7 @@ footer em {
 .story {
     height: auto;
     
-    border: 5px #0a33d6 double;
+    border: 5px #13925e double;
     
     padding: 5px;
     margin-bottom: 10px;
@@ -121,3 +123,14 @@ footer em {
     
     text-align: center; 
 }
+
+#clouds {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 1080px;
+  
+  background: black url("/content/greenhouse_bg.jpg") no-repeat top;
+  background-size: contain;
+}
+
