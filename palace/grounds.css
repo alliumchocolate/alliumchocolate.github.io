@@ -40,7 +40,7 @@ body {
 header {    
     height: auto;
     
-    border: 5px #0a33d6 double;
+    border: 5px #71a8b6 double;
     
     padding: 20px;
     margin-top: 20px;
@@ -50,7 +50,7 @@ header {
 
 header h1 {
     margin: 0;
-    color: #ff429b;
+    color: #339593;
 }
 
 header p {
@@ -69,16 +69,65 @@ header nav {
 }
 
 a:link {
-    color: #435ce1;
+    color: #4e6eaa;
 }
 a:visited {
-    color: #9c3db9;
+    color: #323aa5;
 }
 
-article {
-    display: inline-flex;
-    margin-top: 20px;
+.post {
+    height: 160px;
+    
+    border: 5px #736e61 double;
+    
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
+
+.post img {
+    width: 160px;
+    height: 160px;
+}
+
+.text-box {
+    position: absolute;
+    
+    left: 200px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.text-box h2 {
+    margin-bottom: 8px;
+}
+
+.text-box p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer {
+    height: auto;
+    
+    border: 5px #71a8b6 double;
+    
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+footer p {
+    text-align: center;
+    color: #656565;
+}
+
+footer em {
+    color: #71a8b6;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 .centered {
     position: relative;
@@ -93,67 +142,16 @@ article {
     background-color: #0f1213;
 }
 
-
-/* Box containing a whole year */
 .main-box {
+    display: flex;
     position: relative;
-    display: inline-table;
-    margin: 20px;
-    transition: all .2s ease;
-    
-    z-index: 0;
-}
-
-/* Box containing year + description */
-.hidden-box {
-    display: none;
-    
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%);
-    
-    width: 200px;
-}
-
-/* Header in the above box */
-.year-h {
-    position: relative;
-    margin-bottom: 2px;
-    font-size: 1.5em;
-    text-align: center;
-}
-
-/* Paragraph in the above box */
-.year-p {
-    text-align: center;
-    margin: 0;
-}
-
-.year-link {
-  position:absolute;
-    
-  width:100%;
-  height:100%;
-    
-  top: 0;
-  left: 0;
-    
-  z-index: 1;
-}
-
-.main-box:hover .hidden-box {
-    display: inline;
-}
-
-.main-box:hover {
-    transform: scale(1.2);
+    width: 40vw;
 }
 
 .story {
     height: auto;
     
-    border: 5px #0a33d6 double;
+    border: 5px #71a8b6 double;
     
     padding: 20px;
     margin-bottom: 10px;
@@ -162,6 +160,13 @@ article {
     text-align: center; 
 }
 
-
-
+#clouds {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 1080px;
+  
+  background: black url("/content/grounds_bg.jpg") no-repeat top;
+  background-size: contain;
+}
 
