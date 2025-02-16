@@ -1,0 +1,258 @@
+/* GROUNDS
+ * some details:
+ * currently idk lol
+ */
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {    
+    height: auto;
+    
+    border: 5px #976f19 double;
+    
+    padding: 5px;
+    margin-top: 20px;
+    
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #dfa321;
+}
+
+header p {
+    margin: 2px;
+    font-style: italic;
+}
+
+header a {
+    padding-left: 20px;
+}
+
+header nav {
+    margin: 5px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+a:link {
+    color: #966b33;
+}
+a:visited {
+    color: #a83123;
+}
+
+.instructions {
+    height: auto;
+    
+    border: 5px #976f19 double;
+    
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.instructions h3 {
+    color: #bd630e;
+    padding: 0;
+    padding-top: 15px;
+    margin: 0;
+    
+    position: relative;
+}
+
+.instructions p {
+    color: #e0e0e0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+sup { 
+    vertical-align: top; 
+    position: relative; 
+    top: -0.1em; 
+}
+
+.post {
+    height: 260px;
+    
+    border: 5px #863c29 double;
+    position: relative;
+    
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.post h1, h2, h3, h4, h5, h6 {
+    color: #bd630e;
+    padding: 0;
+    margin: 0;
+    
+    position: relative;
+}
+
+.post p {
+    color: #e0e0e0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.post aside {
+    color: #ad6119;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.post audio {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    margin-top: 10px;
+}
+
+.vertical {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    
+    height: 200px;
+    width: 140px;
+    object-fit: cover;
+    
+    border: 2px #976f19 solid;
+    transition: all .2s ease;
+}
+
+.square {
+    position: absolute;
+    right: 170px;
+    bottom: 50px;
+    
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    
+    border: 2px #976f19 solid;
+    transition: all .2s ease;
+}
+
+.pdf {
+    position: relative;
+    display: inline-block;
+    
+    margin-right: 5px;
+    
+    height: 125px;
+    width: 90px;
+    object-fit: cover;
+    
+    border: 2px #976f19 solid;
+    transition: all .2s ease;
+}
+
+/* show preview */
+.cover:hover {
+    transform: scale(1.2);
+    object-fit: cover;
+
+    border: none;
+    overflow: hidden;
+}
+/* display full on click*/
+.cover:active {
+    transform: scale(3);
+    z-index: 10000;
+    object-fit: contain;
+    
+    border: none;
+}
+
+
+.template {
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+}
+
+.papercraft-download {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+footer {
+    height: auto;
+    
+    border: 5px #976f19 double;
+    
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    position: relative;
+    z-index: 0;
+}
+
+footer p {
+    text-align: center;
+    color: #656565;
+}
+
+footer em {
+    color: #976f19;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.centered {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.page-box {
+    position: relative;
+    width: 610px;
+    z-index: 100;
+    
+    background-color: black;
+}
+
+.main-box {
+    display: flex;
+    position: relative;
+    width: 40vw;
+}
+
+.story {
+    height: auto;
+    
+    border: 5px #976f19 double;
+    
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    text-align: center; 
+}
+
+#clouds {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 1080px;
+  
+  background: black url("/content/attic_bg.jpg") no-repeat top;
+  background-size: contain;
+}
+
