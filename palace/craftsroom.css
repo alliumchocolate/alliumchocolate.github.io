@@ -3,17 +3,41 @@
  * currently idk lol
  */
 
+@font-face {
+    font-family: "Hyperlegible";
+    src: url("/content/Fonts/Hyperlegible.ttf");
+}
+
+@font-face {
+    font-family: "MS DOS";
+    src: url("/content/Fonts/MorePerfectDOSVGA.ttf");
+}
+
 body {
     background-color: black;
     color: white;
+    
 }
+
+/* top level rules */
+p {
+    font-family: "Hyperlegible", arial, sans-serif;
+    font-size: 15px;
+    color: #c2c2c2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "MS DOS", arial, sans-serif;
+}
+
+/* top level rules end */
 
 header {    
     height: auto;
     
-    border: 5px #976f19 double;
+    border: 5px #3a6d5f double;
     
-    padding: 5px;
+    padding: 20px;
     margin-top: 20px;
     
     text-align: center;
@@ -21,7 +45,7 @@ header {
 
 header h1 {
     margin: 0;
-    color: #dfa321;
+    color: #df5f21;
 }
 
 header p {
@@ -40,16 +64,16 @@ header nav {
 }
 
 a:link {
-    color: #966b33;
+    color: #338b96;
 }
 a:visited {
-    color: #a83123;
+    color: #954614;
 }
 
 .instructions {
     height: auto;
     
-    border: 5px #976f19 double;
+    border: 5px #3a6d5f double;
     
     padding: 20px;
     padding-left: 40px;
@@ -59,7 +83,7 @@ a:visited {
 }
 
 .instructions h3 {
-    color: #bd630e;
+    color: #df5f21;
     padding: 0;
     padding-top: 15px;
     margin: 0;
@@ -68,7 +92,6 @@ a:visited {
 }
 
 .instructions p {
-    color: #e0e0e0;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -80,9 +103,9 @@ sup {
 }
 
 .post {
-    height: 260px;
+    height: 270px;
     
-    border: 5px #863c29 double;
+    border: 5px #a64d0d double;
     position: relative;
     
     padding: 20px;
@@ -91,7 +114,7 @@ sup {
 }
 
 .post h1, h2, h3, h4, h5, h6 {
-    color: #bd630e;
+    color: #1fb3a7;
     padding: 0;
     margin: 0;
     
@@ -99,14 +122,13 @@ sup {
 }
 
 .post p {
-    color: #e0e0e0;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 70%;
 }
 
 .post aside {
-    color: #ad6119;
+    color: #127570;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -128,7 +150,7 @@ sup {
     width: 140px;
     object-fit: cover;
     
-    border: 2px #976f19 solid;
+    border: 2px #3a6d5f solid;
     transition: all .2s ease;
 }
 
@@ -141,7 +163,7 @@ sup {
     width: 100px;
     object-fit: cover;
     
-    border: 2px #976f19 solid;
+    border: 2px #3a6d5f solid;
     transition: all .2s ease;
 }
 
@@ -155,7 +177,7 @@ sup {
     width: 90px;
     object-fit: cover;
     
-    border: 2px #976f19 solid;
+    border: 2px #3a6d5f solid;
     transition: all .2s ease;
 }
 
@@ -192,7 +214,7 @@ sup {
 footer {
     height: auto;
     
-    border: 5px #976f19 double;
+    border: 5px #3a6d5f double;
     
     padding: 5px;
     margin-bottom: 10px;
@@ -208,7 +230,7 @@ footer p {
 }
 
 footer em {
-    color: #976f19;
+    color: #3a6d5f;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -225,7 +247,7 @@ footer em {
     width: 610px;
     z-index: 100;
     
-    background-color: black;
+    background-color: #0f1213;
 }
 
 .main-box {
@@ -237,9 +259,9 @@ footer em {
 .story {
     height: auto;
     
-    border: 5px #976f19 double;
+    border: 5px #3a6d5f double;
     
-    padding: 5px;
+    padding: 20px;
     margin-bottom: 10px;
     margin-top: 10px;
     
@@ -252,7 +274,7 @@ footer em {
   width: 100%;
   height: 1080px;
   
-  background: black url("/content/attic_bg.jpg") no-repeat top;
+  background: black url("/content/craftsroom_bg.jpg") no-repeat top;
   background-size: contain;
 }
 

@@ -3,6 +3,35 @@
  * currently idk lol
  */
 
+@font-face {
+    font-family: "Hyperlegible";
+    src: url("/content/Fonts/Hyperlegible.ttf");
+}
+
+@font-face {
+    font-family: "MS DOS";
+    src: url("/content/Fonts/MorePerfectDOSVGA.ttf");
+}
+
+body {
+    background-color: black;
+    color: white;
+    
+}
+
+/* top level rules */
+p {
+    font-family: "Hyperlegible", arial, sans-serif;
+    font-size: 15px;
+    color: #c2c2c2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "MS DOS", arial, sans-serif;
+}
+
+/* top level rules end */
+
 body {
     background-color: black;
     color: white;
@@ -13,7 +42,7 @@ header {
     
     border: 5px #b5d73f double;
     
-    padding: 5px;
+    padding: 20px;
     margin-top: 20px;
     
     text-align: center;
@@ -103,7 +132,7 @@ footer em {
     position: relative;
     width: 610px;
     
-    background-color: black;
+    background-color: #0f1213;
 }
 
 .main-box {
@@ -117,7 +146,7 @@ footer em {
     
     border: 5px #13925e double;
     
-    padding: 5px;
+    padding: 20px;
     margin-bottom: 10px;
     margin-top: 10px;
     
