@@ -72,14 +72,13 @@ a:visited {
 }
 
 .post aside {
-    color: #8a4c11;
+    color: #ad6119;
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
 .post audio {
-    background-color: black;
     position: absolute;
     bottom: 30px;
     left: 20px;
@@ -92,6 +91,8 @@ a:visited {
     right: 20px;
     
     height: 120px;
+    width: 120px;
+    object-fit: cover;
     
     border: 2px #976f19 solid;
 }
