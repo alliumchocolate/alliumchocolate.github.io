@@ -188,11 +188,12 @@ sup {
 
     border: none;
     overflow: hidden;
+    z-index: 5;
 }
 /* display full on click*/
 .cover:active {
     transform: scale(3);
-    z-index: 10000;
+    z-index: 5;
     object-fit: contain;
     
     border: none;
