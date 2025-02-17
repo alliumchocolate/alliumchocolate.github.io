@@ -1,0 +1,78 @@
+/* GROUNDS
+ * some details:
+ * currently idk lol
+ */
+
+@font-face {
+    font-family: "Hyperlegible";
+    src: url("/content/Fonts/Hyperlegible.ttf");
+}
+
+@font-face {
+    font-family: "MS DOS";
+    src: url("/content/Fonts/MorePerfectDOSVGA.ttf");
+}
+
+body {
+    background-color: black;
+    color: white;
+    
+}
+
+/* top level rules */
+p {
+    font-family: "Hyperlegible", arial, sans-serif;
+    font-size: 15px;
+    color: #dcdcdc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "MS DOS", arial, sans-serif;
+}
+
+/* top level rules end */
+
+header {
+    color: #ffffff;
+    position: absolute;
+    
+    top: 100px;
+    left: 50vw;
+    transform: translate(-50%);
+    
+    text-align: center;
+}
+
+header h1 {
+    color: #a6fffc;
+}
+
+header p {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+header a {
+    margin: 10px;
+    
+}
+
+a:link {
+    color: #4488c6;
+}
+
+a:visited {
+    color: #926edf;
+}
+
+#clouds {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 1080px;
+
+    background: black url("/content/gate_bg.jpg") no-repeat top;
+    background-size: contain;
+    
+    z-index: -1;
+}
