@@ -41,6 +41,11 @@ em {
     font-family: "Hyperlegible_italics", arial, sans-serif;
 }
 
+strong {
+    font-family: "Hyperlegible", arial, sans-serif;
+        color: #b5d73f;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "MS DOS", arial, sans-serif;
 }
