@@ -65,14 +65,13 @@ a:visited {
     color: #926edf;
 }
 
-#clouds {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 1080px;
-
-    background: black url("/content/gate_bg.jpg") no-repeat top;
-    background-size: contain;
-    
+#enter {
+    position: relative;
+    width: 600px;
     z-index: -1;
+    
+    left: 50vw;
+    transform: translate(-52%);
+    
+    top: 220px;
 }
