@@ -116,25 +116,42 @@ a:visited {
     color: #2b88df;
 }
 
-.social {
-    height: 30px;
-    margin-bottom: 10px;
+#social-box {
+    width: fit-content;    
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 
-.social p {
+.social {
     display: inline-block;
-    position: relative;
-    transform: translate(0, -50%);
-    padding-left: 6px;
+    width: 40px;
+    height: 40px;
+    
+    padding: 10px;
+    
+    transition: all .2s ease;
+}
+.social:hover {
+    transform: scale(1.1);
 }
 
 .social img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
-.social em {
-    color: #7a7878;
+#social-box p {
+    text-align: center;
+    width: auto;
+    margin-top: 5px;
+}
+.social-email {
+    text-align: center;
+}
+.social-email strong {
+    color: #25ecea;
 }
 
 footer {
