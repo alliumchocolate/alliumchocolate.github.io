@@ -31,6 +31,11 @@ p {
     color: #c2c2c2;
 }
 
+a {
+    font-family: "Hyperlegible", arial, sans-serif;
+    font-size: 15px;
+}
+
 em {
     font-family: "Hyperlegible_italics", arial, sans-serif;
 }
@@ -68,7 +73,8 @@ header p {
 }
 
 header a {
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 header nav {
@@ -133,8 +139,6 @@ footer p {
 
 footer em {
     color: #71a8b6;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 

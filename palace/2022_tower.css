@@ -31,6 +31,11 @@ p {
     color: #c2c2c2;
 }
 
+a {
+    font-family: "Hyperlegible", arial, sans-serif;
+    font-size: 15px;
+}
+
 em {
     font-family: "Hyperlegible_italics", arial, sans-serif;
 }
@@ -77,6 +82,15 @@ p {
 
 #footer-nav {
   display: flex;
+}
+
+footer p {
+  border: 2px #21bb4e solid;
+  padding: 20px;
+}
+
+footer em {
+    color: #21bb4e;
 }
 
 .centered {
