@@ -23,7 +23,7 @@ body {
 p {
     font-family: "Hyperlegible", arial, sans-serif;
     font-size: 15px;
-    color: #dcdcdc;
+    color: #bdbdbd;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,17 +34,18 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     color: #ffffff;
-    position: absolute;
+    position: relative;
+    width: fit-content;
     
     top: 100px;
-    left: 50vw;
+    left: 50%;
     transform: translate(-50%);
     
     text-align: center;
 }
 
 header h1 {
-    color: #a6fffc;
+    color: #ffffff;
 }
 
 header p {
@@ -52,26 +53,77 @@ header p {
     margin-bottom: 4px;
 }
 
-header a {
-    margin: 10px;
+#button-box {
+    width: fit-content;
     
-}
-
-a:link {
-    color: #4488c6;
-}
-
-a:visited {
-    color: #926edf;
-}
-
-#enter {
     position: relative;
-    width: 600px;
-    z-index: -1;
+    left: 50%;
+    transform: translate(-50%);
     
-    left: 50vw;
-    transform: translate(-52%);
-    
-    top: 220px;
+    top: 150px;
 }
+
+.button {
+    display: inline-block;
+    
+    margin: 30px;
+    padding: 15px;
+    
+    background-color: #ffffff;
+    color: #444444;
+    
+    font-family: "Hyperlegible", arial, sans-serif;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+#social-box {
+    width: fit-content;
+    
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    
+    top: 300px;
+}
+
+.social {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    
+    padding: 10px;
+    
+    transition: all .2s ease;
+}
+.social:hover {
+    transform: scale(1.1);
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+}
+
+#social-box p {
+    text-align: center;
+    width: auto;
+    margin-top: 5px;
+}
+
+#clouds {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: black url("/content/gate_bg.png") no-repeat top;
+    background-size: cover;
+}
+
+
