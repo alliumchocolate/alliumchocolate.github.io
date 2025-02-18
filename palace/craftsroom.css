@@ -283,12 +283,13 @@ footer em {
 }
 
 #clouds {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 1080px;
-  
-  background: black url("/content/craftsroom_bg.jpg") no-repeat top;
-  background-size: contain;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1080px;
+
+    background: black url("/content/craftsroom_bg.jpg") no-repeat top;
+    background-size: contain;
 }
 
