@@ -193,9 +193,9 @@ footer em {
     top: 0;
     left: 0;
     width: 100%;
-    height: 1080px;
+    height: 100%;
 
     background: black url("/content/aquarium_bg.jpg") no-repeat top;
-    background-size: contain;
+    background-size: cover;
 }
 
