@@ -51,6 +51,10 @@ strong {
         color: #b5d73f;
 }
 
+aside {
+    font-family: "Hyperlegible", arial, sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "MS DOS", arial, sans-serif;
 }
