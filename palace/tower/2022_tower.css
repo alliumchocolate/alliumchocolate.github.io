@@ -1,0 +1,42 @@
+/* TOWER
+ * some details:
+ * the content collumn width: 440px
+ */
+
+a:link {
+  color: #4b69c5;
+}
+
+a:visited {
+  color: #29b240;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #9ddd1c;
+}
+
+footer p {
+  border: 2px #21bb4e solid;
+  padding: 20px;
+}
+
+footer em {
+    color: #21bb4e;
+}
+
+#clouds {
+  background: black url("/content/2022_bg.jpg") no-repeat top;
+  background-size: cover;
+}
+  
+#structure {
+  background: black url("/content/2022_tower.jpg") no-repeat right;
+  border-left: 5px #21bb4e double;
+  border-right: 5px #21bb4e double;
+}
+
+/* The floating box with the bio */
+#widget-box {
+  border: 5px #21bb4e double;
+}
+

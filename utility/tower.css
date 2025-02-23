@@ -1,22 +1,5 @@
-/* TOWER
- * some details:
- * the content collumn width: 440px
- */
-
-@font-face {
-    font-family: "Hyperlegible";
-    src: url("/content/Fonts/Hyperlegible.ttf");
-}
-
-@font-face {
-    font-family: "Hyperlegible_italics";
-    src: url("/content/Fonts/Hyperlegible_italic.ttf");
-}
-
-@font-face {
-    font-family: "MS DOS";
-    src: url("/content/Fonts/MorePerfectDOSVGA.ttf");
-}
+/* This utility houses style sheets for a tower. 
+ * The year specific ones manage color & images */
 
 body {
     background-color: black;
@@ -26,26 +9,12 @@ body {
 
 /* top level rules */
 p {
-    font-family: "Hyperlegible", arial, sans-serif;
     font-size: 15px;
     color: #c2c2c2;
 }
 
 a {
-    font-family: "Hyperlegible", arial, sans-serif;
     font-size: 15px;
-}
-
-em {
-    font-family: "Hyperlegible_italics", arial, sans-serif;
-}
-
-aside {
-    font-family: "Hyperlegible", arial, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: "MS DOS", arial, sans-serif;
 }
 
 /* top level rules end */
@@ -58,14 +27,6 @@ body {
   margin: 0;
 }
 
-a:link {
-  color: #4b69c5;
-}
-
-a:visited {
-  color: #29b240;
-}
-
 blockquote {
   color: #c5c5c5;
 }
@@ -75,10 +36,6 @@ figcaption {
   font-style: italic;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #9ddd1c;
-}
-
 p {
   padding-left: 2px;
   padding-right: 2px;
@@ -86,15 +43,6 @@ p {
 
 #footer-nav {
   display: flex;
-}
-
-footer p {
-  border: 2px #21bb4e solid;
-  padding: 20px;
-}
-
-footer em {
-    color: #21bb4e;
 }
 
 .centered {
@@ -125,27 +73,20 @@ footer em {
   left: 0;
   width: 100%;
   height: 100%;
-  
-  background: black url("/content/2022_bg.jpg") no-repeat top;
-  background-size: cover;
 }
   
 #structure {
   position: fixed;
   top: 0;
-
+  
   left: 50%;
   transform: translate(-50%);
-
+  
   width: 640px;
   height: 100vh;
   
   padding-left: 10px;
   padding-right: 10px;
-  
-  background: black url("/content/2022_tower.jpg") no-repeat right;
-  border-left: 5px #21bb4e double;
-  border-right: 5px #21bb4e double;
   
   box-shadow: 0 0 5px 1px black;
 }
@@ -162,14 +103,11 @@ footer em {
   border-bottom: 1px #8a0ce5 solid; 
 }
 
-
 /* The floating box with the bio */
 #widget-box {
   width: auto;
   height: auto;
   
-  border: 5px #21bb4e double;
-
   background-color: black;
   padding: 10px;
   

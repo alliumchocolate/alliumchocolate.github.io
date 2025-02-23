@@ -1,0 +1,45 @@
+/* This component manages the fonts on the website. */
+
+@font-face {
+    font-family: "Hyperlegible";
+    src: url("/content/Fonts/Hyperlegible.ttf");
+}
+
+@font-face {
+    font-family: "Hyperlegible_italics";
+    src: url("/content/Fonts/Hyperlegible_italic.ttf");
+}
+
+@font-face {
+    font-family: "MS DOS";
+    src: url("/content/Fonts/MorePerfectDOSVGA.ttf");
+}
+
+/* top level rules */
+p {
+    font-family: "Hyperlegible", arial, sans-serif;
+}
+
+a {
+    font-family: "Hyperlegible", arial, sans-serif;
+}
+
+li {
+    font-family: "Hyperlegible", arial, sans-serif;
+}
+
+em {
+    font-family: "Hyperlegible_italics", arial, sans-serif;
+}
+
+strong {
+    font-family: "Hyperlegible", arial, sans-serif;
+}
+
+aside {
+    font-family: "Hyperlegible", arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "MS DOS", arial, sans-serif;
+}

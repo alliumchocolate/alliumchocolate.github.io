@@ -2,22 +2,6 @@
  * some details:
  * currently idk lol
  */
-
-@font-face {
-    font-family: "Hyperlegible";
-    src: url("/content/Fonts/Hyperlegible.ttf");
-}
-
-@font-face {
-    font-family: "Hyperlegible_italics";
-    src: url("/content/Fonts/Hyperlegible_italic.ttf");
-}
-
-@font-face {
-    font-family: "MS DOS";
-    src: url("/content/Fonts/MorePerfectDOSVGA.ttf");
-}
-
 body {
     background-color: black;
     color: white;
@@ -26,26 +10,11 @@ body {
 
 /* top level rules */
 p {
-    font-family: "Hyperlegible", arial, sans-serif;
     font-size: 15px;
     color: #c2c2c2;
 }
 
-a {
-    font-family: "Hyperlegible", arial, sans-serif;
-    font-size: 15px;
-}
-
-em {
-    font-family: "Hyperlegible_italics", arial, sans-serif;
-}
-
-aside {
-    font-family: "Hyperlegible", arial, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: "MS DOS", arial, sans-serif;
+a {    font-size: 15px;
 }
 
 /* top level rules end */
