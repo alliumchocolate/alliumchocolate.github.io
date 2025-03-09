@@ -20,11 +20,19 @@
   <body>
 
     <div id="clouds"></div>
+    
+    <!-- JS section -->
     <script>
       function copyLink(section) {
       navigator.clipboard.writeText("ttps://alliumchocolate.com/palace/greenhouse.html#" + section);
-      alert("Copied post link");}
+      document.getElementById('copy-dialog').style.display = 'block';
+        
+      setTimeout(function(){
+        document.getElementById('copy-dialog').style.display = 'none';
+      }, 1000);
+      }
     </script>
+    <!-- JS section-->
     
     <div class="page-box centered">
       <header>
@@ -39,6 +47,11 @@
           <a href="aquarium.html">Aquarium</a> <!-- Contact -->
         </nav>
       </header>
+    </div>
+    
+    <!-- copy dialog -->
+    <div id="copy-dialog" class="centered">
+      <p>Link copied!</p>
     </div>
     
     <!-- the story part -->
