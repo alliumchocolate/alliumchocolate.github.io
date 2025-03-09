@@ -115,11 +115,11 @@ footer {
     width: 25px;
     height: 25px;
     
-    background: #0f1213 url("/content/icons/link.png") no-repeat center;
+    background: #0f1213 url("/content/Icons/link.png") no-repeat center;
     background-size: 40%;   
 }
 .share:hover {
-    background: #0f1213 url("/content/icons/link_click.png") no-repeat center;
+    background: #0f1213 url("/content/Icons/link_click.png") no-repeat center;
     background-size: 40%;
 }
 
