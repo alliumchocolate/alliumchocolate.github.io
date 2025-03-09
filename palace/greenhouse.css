@@ -103,6 +103,26 @@ footer {
     margin-top: 10px;
 }
 
+.share {
+    border: 5px #95a433 double;
+    background-color: #0f1213;
+    padding: 5px;
+    
+    position: absolute;
+    top: 0;
+    right: -50px;
+    
+    width: 25px;
+    height: 25px;
+    
+    background: #0f1213 url("/content/icons/link.png") no-repeat center;
+    background-size: 40%;   
+}
+.share:hover {
+    background: #0f1213 url("/content/icons/link_click.png") no-repeat center;
+    background-size: 40%;
+}
+
 footer p {
     text-align: center;
     color: #656565;

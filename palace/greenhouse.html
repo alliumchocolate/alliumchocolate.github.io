@@ -20,6 +20,11 @@
   <body>
 
     <div id="clouds"></div>
+    <script>
+      function copyLink(section) {
+      navigator.clipboard.writeText("ttps://alliumchocolate.com/palace/greenhouse.html#" + section);
+      alert("Copied post link");}
+    </script>
     
     <div class="page-box centered">
       <header>
@@ -78,6 +83,7 @@
         <p>Cheers!</p>
         
         <aside>17th February 2025</aside>
+        <div class="share" onclick="copyLink('the-website-launch')"></div>
       </article>
     </div>
     
@@ -88,6 +94,7 @@
         <p>I think I'll mostly just update this page with random stuff I'm working on! Like this website for example lol</p>
         <p>I'll make a bigger post with full behind the scenes of this project when I'm closer to completion, but this has taken a lot of hours so far!!</p>
         <aside>13th February 2025</aside>
+        <div class="share" onclick="copyLink('the-first-post')"></div>
       </article>
     </div>
 
