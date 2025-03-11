@@ -22,6 +22,19 @@
     
     <div id="clouds"></div>
 
+    <!-- JS section -->
+    <script>
+      function copyLink(section) {
+      navigator.clipboard.writeText("ttps://alliumchocolate.com/palace/craftsroom.html#" + section);
+      document.getElementById('copy-dialog').style.display = 'block';
+        
+      setTimeout(function(){
+        document.getElementById('copy-dialog').style.display = 'none';
+      }, 1000);
+      }
+    </script>
+    <!-- JS section-->
+    
     <div class="page-box centered">
       <header>
         <h1>Craftsroom</h1>
@@ -35,6 +48,11 @@
           <a href="aquarium.html">Aquarium</a> <!-- Contact -->
         </nav>
       </header>
+    </div>
+    
+    <!-- copy dialog -->
+    <div id="copy-dialog" class="centered">
+      <p>Link copied!</p>
     </div>
     
     <!-- the story part -->
@@ -72,7 +90,7 @@
     <!-- Post -->
     <div class="page-box centered" style="z-index: 4">
       <article class="post">
-        <h2>Cocoa</h2>
+        <h2 id="cocoa">Cocoa</h2>
         <p>A papercraft of <a href="https://www.instagram.com/waifuarts">@waifuarts</a>'s character, Cocoa! I've made it during Kimodameshi 7, as a prize for winning a lottery in my stall.</p>
         <aside>11th March 2025</aside>
         <!-- cover photos  -->
@@ -86,12 +104,14 @@
         <!-- download links -->
         <p class="papercraft-download">Download tepmlate as: <a href="/content/Craftsroom/Cocoa/Cocoa%20Papercraft.pdf" download>PDF (recommended)</a> or <a href="/content//Craftsroom/Cocoa/Cocoa%20Papercraft.png" download>PNG</a></p>
       </article>
+      <!-- share button -->
+        <div class="share" onclick="copyLink('cocoa')"></div>
     </div>
     
     <!-- Post -->
     <div class="page-box centered" style="z-index: 4">
       <article class="post">
-        <h2>Silly Jar snowglobe</h2>
+        <h2 id="silly-jar-snowglobe">Silly Jar snowglobe</h2>
         <p>Made for the Jarful of Sillies winter zine, around new years 2024/25. Below is the standalone version!</p>
         <aside>31st December 2024</aside>
         <!-- cover photos  -->
@@ -105,12 +125,14 @@
         <!-- download links -->
         <p class="papercraft-download">Download tepmlate as: <a href="/content/Craftsroom/Snowglobe/Snowglobe.pdf" download>PDF (recommended)</a> or <a href="/content//Craftsroom/Snowglobe/Snowglobe%20page%201.png" download>PNG</a></p>
       </article>
+      <!-- share button -->
+        <div class="share" onclick="copyLink('silly-jar-snowglobe')"></div>
     </div>
     
     <!-- Post -->
     <div class="page-box centered" style="z-index: 3">
       <article class="post">
-        <h2>Patches</h2>
+        <h2 id="patches">Patches</h2>
         <p>During Chroma Corps 2024, I've made a papercraft of my friend Tofu's cadet, named Patches! It took about 14h over a single day.</p>
         <aside>19th August 2024</aside>
         <!-- cover photos  -->
@@ -124,12 +146,14 @@
         <!-- download links -->
         <p class="papercraft-download">Download tepmlate as: <a href="/content/Craftsroom/Patches/Patches%20papercraft.pdf" download>PDF (recommended)</a> or <a href="/content//Craftsroom/Patches/Patches.zip" download>PNGs</a></p>
       </article>
+      <!-- share button -->
+        <div class="share" onclick="copyLink('patches')"></div>
     </div>
     
     <!-- Post -->
     <div class="page-box centered" style="z-index: 2">
       <article class="post">
-        <h2>Paper Chicory</h2>
+        <h2 id="paper-chicory">Paper Chicory</h2>
         <p>This is a papecraft of the titular <a href="https://store.steampowered.com/app/1123450/Chicory_A_Colorful_Tale/">Chicory</a> - made for the 3rd anniversary of the game.</p>
         <aside>10th June 2024</aside>
         <!-- cover photos  -->
@@ -144,12 +168,14 @@
         <!-- download links -->
         <p class="papercraft-download">Download tepmlate as: <a href="/content/Craftsroom/Chicory/Paper%20Chicory.pdf" download>PDF (recommended)</a> or <a href="/content//Craftsroom/Chicory/Paper%20Chicory.zip" download>PNGs</a></p>
       </article>
+      <!-- share button -->
+        <div class="share" onclick="copyLink('paper-chicory')"></div>
     </div>
     
     <!-- Post -->
     <div class="page-box centered" style="z-index: 1">
       <article class="post">
-        <h2>Paper Pizza</h2>
+        <h2 id="paper-pizza">Paper Pizza</h2>
         <p>My first papercraft was Pizza from <a href="https://store.steampowered.com/app/1123450/Chicory_A_Colorful_Tale/">Chicory</a>. I've made it for an art event, with about 30h of work over 3 days.</p>
         <aside>12th May 2024</aside>
         <!-- cover photos  -->
@@ -164,6 +190,8 @@
         <!-- download links -->
         <p class="papercraft-download">Download tepmlate as: <a href="/content/Craftsroom/Pizza/Paper%20Pizza%20papercraft.pdf" download>PDF (recommended)</a> or <a href="/content//Craftsroom/Pizza/Paper%20Pizza%20Papecraft.zip" download>PNGs</a></p>
       </article>
+      <!-- share button -->
+        <div class="share" onclick="copyLink('paper-pizza')"></div>
     </div>
     
     <div class="page-box centered" style="z-index: 0">
