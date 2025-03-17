@@ -62,7 +62,226 @@
       </section>
     </div>
     
-
+    <!-- post -->
+        <div class="page-box centered">
+      <article class="post">
+        <h2 id="the-papercraft-process">The Papercraft Process</h2>
+        <p>Foreword: During Kimodameshi 7, I've made <a href="https://alliumchocolate.com/palace/craftsroom.html#cocoa">this papercraft</a>. While preparing, some folks asked how I make these. Seeing as it's a common question, I documented the process!</p>
+        <p>I'll start by shouting out Alex from <a href="https://folduptoys.com">Fold Up Toys</a>, who is my own inspiration. Paper engineering is a super fun hobby, and it's less intimidating than it might seem. I'm no expert myself, either - just sharing what I've learned!</p>
+        <p>For this lengthy showcase, we will be working on a papercraft of Cocoa, <a href="https://www.instagram.com/p/DGBbfB5xt-H/?hl=en">a character by @waifuarts</a>!</p>
+        
+        <strong>Table of contents</strong>
+        <ol>
+          <li><a href="#the-papercraft-process-1">Concept</a></li>
+          <li><a href="#the-papercraft-process-2">Model</a></li>
+          <li><a href="#the-papercraft-process-3">Layout</a>
+            <ol>
+              <li><a href="#the-papercraft-process-3-1">Exporting 3D to 2D</a></li>
+              <li><a href="#the-papercraft-process-3-2">Arranging the net</a></li>
+              <li><a href="#the-papercraft-process-3-3">Tabs</a></li>
+            </ol>
+          </li>
+          <li><a href="#the-papercraft-process-4">Texture</a></li>
+          <li><a href="#the-papercraft-process-5">Key</a></li>
+          <li><a href="#the-papercraft-process-6">Export</a>
+            <ol>
+              <li><a href="#the-papercraft-process-6-1">Photos</a></li>
+            </ol>
+          </li>
+          <li><a href="#the=papercraft-process-7">Conclusion</a></li>
+        </ol>
+        
+        <!-- Step 1 -->
+        <h3 id="the-papercraft-process-1">Step 1: Concept</h3>
+        <p>First, we need to decide what we'll be making! This means poses, expressions, but also folds, and structure.</p>
+        <p>Here's some key points I've learned to keep in mind while designing:</p>
+        <ul>
+          <li><strong>Minimize piece count</strong>,</li>
+          <li><strong>Minimize paper</strong>,</li>
+          <li><strong>Minimize glueing</strong>,</li>
+          <li><strong>Preserve the toy's balance</strong>.</li>
+        </ul>
+        <p>For example, minimizing piece count makes the build more intuitive. Fail to make the toy balanced, and it'll topple over from the slightest draft! Additionally, figuring out the techniques and folds you want to use, will save you some time later.</p>
+        <p>For Cocoa, I've quickly decided on this kneeling pose:</p>
+        <img class="centered" src="/content/Greenhouse/the-papercraft-process/concept.jpg" width="100%" alt="Sketches of a character with made with geometric shapes">
+        <p class="attribution"><em>Remember to use your fundamentals! Composition or anatomy is just as important in papercrafts as it is in painting.</em></p>
+        
+        <!-- Step 2 -->
+        <h3 id="the-papercraft-process-2">Step 2: Model</h3>
+        <p>Some paper engineers jump straight into paper, but for me - the next step is 3D modelling! I use <a href="https://www.blockbench.net">Blockbench</a>, mostly out of familiarity.</p>
+        <p>I use the <strong>generic model</strong> mode, designed for low-poly (rather than Minecraft's voxel focused modes), and I assemble the form I've designed from planes, making liberal use of the vertex snap tool.</p>
+        <p>We're in a unique position, where we can extend certain faces beyond their vertices to add detail. I've done this on my <a href="ttps://alliumchocolate.com/palace/craftsroom.html#paper-pizza">Paper Pizza</a> model, with the ear flaps, as well as the nose:</p>
+        <img class="centered" src="/content/Craftsroom/Pizza/Full.jpg" width="100%" alt="Photo of a papercraft Pizza from Chicory">
+        <p class="attribution"><em>You should play <a href="https://store.steampowered.com/app/1123450/Chicory_A_Colorful_Tale/">Chicory: A Colorful tale</a>. It's the best!</em></p>
+        <p>You can also use the material properties of paper, like it's bendiness for curves, or it's springiness for play features - we have a lot of room for creativity.</p>
+        <p> For Cocoa, I've chosen to make use of the extended planes especially around the face, to add dimension to the hair.</p>
+        <table>
+          <tr>
+            <td><img src="/content/Greenhouse/the-papercraft-process/model_1.jpg" width="100%" alt="Screenshot of an in-progress 3D model"></td>
+            <td><img src="/content/Greenhouse/the-papercraft-process/model_2.jpg" width="100%" alt="Screenshot of an in-progress 3D model"></td>
+          </tr>
+        </table>
+        <p class="attribution"><em>Piecing together the 3D model</em></p>
+        
+        <!-- Step 3 -->
+        <h3 id="the-papercraft-process-3">Step 3: Layout</h3>
+        <p>Layout, in this context, refers to the <em>net</em> of the papercraft - our end goal is to create a flat, 2D image that the builder can then print, cut out and fold into a 3D model.</p>
+        <p>You might remember learning about nets of polyhedra from geometry. This is essentially what we're making!</p>
+        <img class="centered" src="/content/Greenhouse/the-papercraft-process/unfolding-net.gif" alt="Animation of a folding net">
+        <p class="attribution"><em>Folding net of a dodecahedron, by <a href="//commons.wikimedia.org/wiki/User:A2569875" title="User:A2569875">A2569875</a> on wikipedia - <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=24803472">Source</a></em></p>
+        
+        <!-- 3.1 -->
+        <h4 id="the-papercraft-process-3-1">3.1: Exporting 3D to 2D</h4>
+        <p>First, we need to somehow get the faces of the 3D model into 2D, while preserving all of the relative lengths and angles.</p>
+        <p>With some research, I've settled on this process to do so:</p>
+        <ol>
+          <li>Export the blockbench model as a <strong>.obj</strong> file,</li>
+          <li>Open <a href="https://www.blender.org">Blender</a>, with the <a href="https://blender-addons.org/export-paper-model-addon/">Paper Model addon</a>,</li>
+          <li>Import the <strong>.obj</strong> file into the Blender scene,</li>
+          <li>Go into <strong>Object mode</strong>, select all faces, and merge them with <strong>Ctrl+J</strong>,</li>
+          <li>Go into <strong>Edit mode</strong>, select and triangulate all faces with <strong>Ctrl+T</strong>,</li>
+          <li>Export as <strong>Papercraft model</strong>. I disable tabs, numbers, and set scale to 1:8 so everything fits on one page.</li>
+        </ol>
+        <p>This will leave you with a <strong>.pdf</strong> file with all of the faces laid out flat!</p>
+        <p>I think it's supposed to make a foldable net, but this has never worked as intended for me. We will be optimising the net anyway - all i want from this lovely extension is the list of faces in 2D. </p>
+        <img class="centered" src="/content/Greenhouse/the-papercraft-process/flat-export.jpg" width="100%" alt="Screenshot of a disorganised array of polygons">
+        <p class="attribution"><em>Screenshot of the exported file</em></p>
+        
+        <!-- 3.2 -->
+        <h4 id="the-papercraft-process-3-2">3.2: Arranging the net</h4>
+        <p>With the list of faces ready, we can start assembling our net - this can get confusing, but with some effort, and the 3D model still open for reference, you can piece it together.</p>
+        <p>There's no one way to layout a given 3D shape - it's always an optimisation game. Here, for example, you can see some possible nets of a simple cube:</p>
+        <img class="centered" src="/content/Greenhouse/the-papercraft-process/cube-nets.png" width="100%" alt="Nets of a cube">
+        <p class="attribution"><em>Nets of a cube, by <a href="//commons.wikimedia.org/wiki/User:Nonenmac" title="User:Nonenmac">R. A. Nonenmacher</a> - <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=4774402">Source</a></em></p>
+        <p>While working on the net, I recommend working in vector design software, for example <a href="https://inkscape.org">Inkscape</a> - this means that rather than pixels, we're working with math under the hood. This lets us zoom infinitely far without losing any quality, which is perfect for print!</p>
+        <p>Here's some tips for assembling the net:</p>
+        <ul>
+          <li><strong>Connect the pieces</strong>
+            <p>The fewer separated pieces your layout has, the less cutting the builder will have to do! Additionally, it'll be easier to keep track of said pieces.</p></li>
+          <li><strong>Make it space efficient</strong>
+            <p>Grouping the pieces efficiently lets you make the layout bigger on the page. This is more material efficient, since we have less unused paper, but also makes the final craft larger!</p></li>
+          <li><strong>One-sided or two-sided?</strong>
+            <p>This is suprisingly non-trivial. Paper has two sides - a PDF has only one. Thus, making a double-sided papercraft requires a lot of additional, careful work. In return, though, you gain a lot of new design avenues.</p>
+            <p>If you settle on one-sided print, remember that you only have that one side - you might realise you've flipped a face around in 3D, putting the print on the inside of the craft!</p></li>
+        </ul>
+        <p>This might be quite overwhelming to take in, but no worries - we have a very strong tool to help us. <strong>Iteration!</strong></p>
+        <p>After some work, I've ended up with this:</p>
+        <img class="centered" src="/content/Greenhouse/the-papercraft-process/layout-1.jpg" width="100%" alt="Screenshot from inkscape of a set up layout">
+        <p class="attribution"><em>Screenshot of a prototype layout from Inkscape</em></p>
+        <p>So, instead of worrying how the craft will turn out, let's print it out, and build it!</p>
+        <table>
+          <tr>
+            <td><img src="/content/Greenhouse/the-papercraft-process/layout-2.jpg" width="100%" alt="Photo of the printed layout"></td>
+            <td><img src="/content/Greenhouse/the-papercraft-process/layout-3.jpg" width="100%" alt="Photo of the assembled prototype layout"></td>
+          </tr>
+        </table>
+        <p class="attribution"><em>Photos from the building of the prototype model</em></p>
+        <p>Now that we have a physical model, held together with tape, we can see if it's easy to build and what needs to be corrected. For some complex models, I might do a bunch of iterations; For others, just 1 or 2 prototypes are sufficient.</p>
+        
+        <!-- 3.3 -->
+        <h4 id="the-papercraft-process-3-3">3.3: Tabs</h4>
+        <p>Tabs are, at least in my mind, what separate a sculpture from a papercraft toy. It's what makes the template shareable, it's how others can enjoy your creation!</p>
+        <p>Here's some things I try to keep in mind while adding tabs:</p>
+        
+        <strong>Edges</strong>
+        <p>If the edge of a tab follows from the edge of a face, you can cut it in one stroke:</p>
+        <img class="centered" src="/content/Greenhouse/the-papercraft-process/tabs-1.jpg" width="100%" alt="image showing a comparison between a tab with a shared edge and a tab with an angled edge">
+        <p>Otherwise, making the angle change visually obvious is a good idea.</p>
+          
+        <strong>Dimensions</strong>
+        <ul>
+          <li><strong>Height</strong> (width)
+          <p>If you make the tab very narrow, it will be more space efficient, but it will also be hard to fold. On the other hand, if you make it really wide, it will become hard to press down on when glueing.</p></li>
+          <li><strong>Length</strong>
+          <p>Tabs will usually extend over the entire length of the face. If the face is really long, it might be useful to cut the tab short - this makes it easier to glue, and cuts down on waste.</p></li>
+        </ul>
+        <img class="centered" src="/content/Greenhouse/the-papercraft-process/tabs-2.jpg" width="100%" alt="image showing which part of the tab is the height (width, counted from the face forwards), and which is the length (the length from one edge of the tab to the other)">
+        <br>
+        <br>
+        <strong>Where to place</strong>
+        <p>You don't have to place tabs everywhere! Sometimes, it's totally sufficient (and may even be easier) to leave out a tab.</p>
+        <img class="centered" src="/content/Greenhouse/the-papercraft-process/tabs-3.jpg" width="100%" alt="Photo of a papercraft with a crafts knife showing a gap where a tab usually could be placed">
+        <br>
+        <br>
+        
+        <!-- Step 4 -->
+        <h3 id="the-papercraft-process-4">Step 4: Texturing</h3>
+        <p>This is my favourite step - now that we have a finalized layout, I open my trusty apps (you can do this in any art program, though I've used <a href="https://www.clipstudio.net/en/">Clip Studio Paint</a> this time) and get to painting.</p>
+        <p>I use the physical model i folded up earlier for reference as to where stuff should go.</p>
+        <p>Fun note here: Most faces of your template will not be the same silhouette as the thing you're trying to portray, so we have a fun creative challenge of squeezing features into these quadrilateral boxes! Kind of like low-poly 3D.</p>
+        <p><em>(Unless you're designing a character from scratch. Then you can just make them be square of course)</em></p>
+        <img class="centered" src="/content/Greenhouse/the-papercraft-process/texture-1.jpg" width="100%" alt="Screenshot of a sketched out texture over the template">
+        <p class="attribution"><em>Screenshot of the sketch</em></p>
+        
+        <strong>Medium</strong>
+        <p>Since we're doing this for print, you can either do raster art (ie. with pixels) or vector art (ie. with math). If you do raster art, i recommend using at least <strong>300 DPI</strong>, or ideally, <strong>600 DPI</strong> for your canvas. This will ensure the print comes out clean!</p>
+        <p>If you have a very uniform style, you can consider vector art - it's much more intensive, but on the upside, you'll be able to scale it up as much as you want without any quality loss!</p>
+        <p>Format wise, I usually go with the A4 standard, since it's so common.</p>
+        
+        <strong>Bleed</strong>
+        <p>Most of how you approach this will depend on your art style. But, I get this question every so often, so I'll add that you can add a bleed to your texture, by extending it a couple milimeters beyond the template. This will let the builder make some mistakes while cutting!</p>
+        
+        <table>
+          <tr>
+            <td><img src="/content/Greenhouse/the-papercraft-process/texture-2.jpg" width="100%" alt="Screenshot of a single-color bleed layer"></td>
+            <td><img src="/content/Greenhouse/the-papercraft-process/texture-3.jpg" width="100%" alt="Screenshot of the flat colors ready"></td>
+          </tr>
+        </table>
+        <p class="attribution"><em>Screenshots of the silhouette bleed layer and the flat colors</em></p>
+        <p>And, eventually, with some work...</p>
+        
+        <img class="centered" src="/content/Greenhouse/the-papercraft-process/texture-4.jpg" width="100%" alt="Screenshot of the rendered texture">
+        <p class="attribution"><em>Screenshot of the finished texture</em></p>
+        
+        <!-- Step 5 -->
+        <h3 id="the-papercraft-process-5">Step 5: Key</h3>
+        <p>This stage, like tabs, is really important for the template to be buildable.</p>
+        <p>Currently, we have a net of the craft made of solid, uniform lines. As the artist, you know how to cut and fold it so that it works out - but the builder doesn't! We need to mark out where to cut, as well as where and which way to fold.</p>
+        <p>I do this part in vector design software, like <a href="https://inkscape.org">Inkscape</a>.</p>
+        <p>It's important to be consistent here - if you ask the builder to cut along every thick black line, don't put similar black lines on the template. It could lead to a <em>cut</em>astrophe! (&gt;ᴗ•)</p>
+        
+        <p>Over time, you'll find a key that makes sense to you. I've settled on this:</p>
+        <img class="centered" src="/content/Greenhouse/the-papercraft-process/key-1.jpg" width="100%" alt="Papercraft key, noting what kind of line to cut, fold, and glue">
+        <p class="attribution"><em>Sometimes I make the 'glue under print' grid square, depending on what stands out more.</em></p>
+        
+        <p>Something you can also do at this stage is numbering the tabs - When building the prototypes, I note down the easiest order to glue the model in I find, and then order the tabs accordingly.</p>
+        
+        <!-- Step 6 -->
+        <h3 id="the-papercraft-process-6">Step 6: Export</h3>
+        <p>Now that you have your perfected template, I recommend printing it out one last time and folding it - just to check everything's in order.</p>
+        <p>I like to add some flourishes at this stage, like logos or a title, as well as credits.</p>
+        <p>Then, we export! I recommend exporting into <strong>.pdf</strong>, for print, and <strong>.png</strong>, for sharing on social media, which rarely support PDF embeds.</p>
+        
+        <h4 id="the-papercraft-process-6.1">Photos</h4>
+        <p>After all of this work we've done, I temporarily turn my desk into a photo studio.</p>
+        <p>Photos of a papercraft are super easy to share, and they give people an idea of what this niche thing even is! A hidden bonus is that they also help builders know what goes where.</p>
+        <img class="centered" src="/content/Greenhouse/the-papercraft-process/photo-1.jpg" width="100%" alt="Photo of my desk with papercrafts laid out amidst a set of random objects">
+        <p class="attribution"><em>The state of my photo studio</em></p>
+        <p>For my photos, I want to have two different colored light sources, so I temporarily tape a piece of paper to my desk lamp for the diffused white light. I also have this bunny shaped night lamp, which has a setting of a really warm, orange light.</p>
+        <p>Then, I arrange a fun background scene, using random objects like my art toolcase and sketchbooks.</p>
+        <img class="centered" src="/content/Greenhouse/the-papercraft-process/photo-2.jpg" width="100%" alt="Photo of the papercraft prototypes">
+        <p class="attribution"><em>Prototypes of the Cocoa papercraft</em></p>
+        <p>And I snap some photos with my phone! With some adjusting, we're ready to post.</p>
+        
+        <!-- the end -->
+        <h3 id="the-papercraft-process-7">Conclusion</h3>
+        <p>Thank you for reading along!! This was a super fun project, and I've enjoyed the added challenge of (mostly) coherent documentation.</p>
+        <p>Here's what we've ended up with:</p>
+        <img class="centered" src="/content/Craftsroom/Cocoa/Main_cover.jpg" width="100%" alt="Photo of the papercraft from the front">
+        <img class="centered" src="/content/Craftsroom/Cocoa/Secondary_cover.jpg" width="100%" alt="Photo of the papercraft from the side">
+        <p class="attribution"><em>Photos of the finished papercraft</em></p>
+        
+        <img class="centered" src="/content/Craftsroom/Cocoa/Cocoa%20Papercraft.png" width="100%" alt="The Cocoa Papercraft template">
+        <p class="attribution"><em>The finished template</em></p>
+        
+        <p>You can download the template here, as: <a href="/content/Craftsroom/Cocoa/Cocoa%20Papercraft.pdf" download>PDF (recommended)</a> or <a href="/content//Craftsroom/Cocoa/Cocoa%20Papercraft.png" download>PNG</a>.</p>
+        
+        <p>Cheers!</p>
+        <aside>17th March 2025</aside>
+        <div class="share" onclick="copyLink('the-first-post')"></div>
+      </article>
+    </div>
+    
     <!-- post -->
     <div class="page-box centered">
       <article class="post">
