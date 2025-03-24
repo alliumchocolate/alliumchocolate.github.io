@@ -163,7 +163,11 @@ footer em {
 
 .page-box {
     position: relative;
-    width: 610px; /* 610px */
+    /* 610px */
+    
+    width: flex;
+    max-width: 610px;
+    /* TODO here ig */
     
     background-color: #0f1213;
 }
