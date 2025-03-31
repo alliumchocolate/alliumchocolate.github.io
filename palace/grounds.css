@@ -117,13 +117,6 @@ footer em {
     transform: translate(-50%);
 }
 
-.page-box {
-    position: relative;
-    width: 610px;
-    
-    background-color: #0f1213;
-}
-
 .main-box {
     display: flex;
     position: relative;

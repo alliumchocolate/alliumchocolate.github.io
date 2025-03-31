@@ -1,0 +1,24 @@
+.page-box {
+    position: relative;
+    background-color: #0f1213;
+}
+
+@media (max-width: 800px) {
+    .page-box {
+        flex-basis: 100%;
+    }
+}
+
+@media (800px < width < 1100px) {
+    .page-box {
+        flex-basis: auto;
+        max-width: 70%;
+    }
+}
+
+@media (1100px < width) {
+    .page-box {
+        flex-basis: 80%;
+        max-width: 610px;
+    }
+}
