@@ -4,17 +4,21 @@
     padding: 5px;
     
     position: absolute;
-    top: 55px;
     right: 15px;
     
     width: 25px;
     height: 25px;
     
-    background: #0f1213 url("/content/Icons/link.png") no-repeat center;
-    background-size: 1.5em;   
+    background: #0f1213 url("/content/Icons/link.png") no-repeat center;  
 }
-.share:hover {
-    background-size: 1.5em;
+
+@media (width < 1200px) {
+    .share { background-size: 1.5em; top: 65px; }
+    .share:hover { background-size: 1.5em; }
+}
+@media (width > 1200px) {
+    .share { background-size: 1em; top: 45px; }
+    .share:hover { background-size: 1em; }
 }
 
 #copy-dialog {

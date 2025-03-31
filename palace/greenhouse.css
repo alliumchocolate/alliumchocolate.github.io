@@ -160,13 +160,13 @@ footer em {
     background-size: cover;
 }
 
-ol {
+.table-of-contents ol {
     counter-reset: item;
 }
-li {
+.table-of-contents li {
     display: block;
 }
-li::before {
+.table-of-contents li::before {
     content: counters(item, ".")". ";
     counter-increment: item;
 }

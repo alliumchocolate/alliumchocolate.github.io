@@ -14,6 +14,9 @@ p {
     color: #c2c2c2;
 }
 
+img { display: block; }
+
+
 /* top level rules end */
 
 header {    
@@ -88,7 +91,7 @@ sup {
 }
 
 .post {
-    height: 270px;
+    height: auto;
     
     border: 5px #a64d0d double;
     position: relative;
@@ -100,8 +103,7 @@ sup {
 
 .post h1, h2, h3, h4, h5, h6 {
     color: #1fb3a7;
-    padding: 0;
-    margin: 0;
+    margin-bottom: 0;
     
     position: relative;
 }
@@ -115,8 +117,10 @@ sup {
 .post aside {
     color: #127570;
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 20px;
+    
+    font-size: 2.1vh;
 }
 
 .post audio {
@@ -128,8 +132,8 @@ sup {
 
 .vertical {
     position: absolute;
-    right: 20px;
-    bottom: 50px;
+    right: 0;
+    bottom: 0;
     
     height: 200px;
     width: 140px;
@@ -141,8 +145,8 @@ sup {
 
 .square {
     position: absolute;
-    right: 170px;
-    bottom: 50px;
+    right: 155px;
+    bottom: 0;
     
     height: 100px;
     width: 100px;
@@ -153,16 +157,17 @@ sup {
 }
 
 .pdf {
-    position: relative;
     display: inline-block;
+    vertical-align: bottom;
     
-    margin-right: 5px;
+    bottom: 0;
     
     height: 125px;
     width: 90px;
     object-fit: cover;
     
     border: 2px #3a6d5f solid;
+
     transition: all .2s ease;
 }
 
@@ -184,17 +189,24 @@ sup {
     border: none;
 }
 
+.photos {
+    position: relative;
+    
+    width: 100%;
+    height: 200px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
 
 .template {
     position: absolute;
-    left: 20px;
-    bottom: 50px;
+    left: 0;
+    bottom: 0;
 }
 
+
 .papercraft-download {
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
+    position: relative;
 }
 
 footer {

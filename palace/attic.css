@@ -61,7 +61,7 @@ a:visited {
 }
 
 .post {
-    height: 150px;
+    height: auto;
     
     border: 5px #863c29 double;
     
@@ -71,16 +71,13 @@ a:visited {
 }
 
 .post h1, h2, h3, h4, h5, h6 {
-    color: #bd630e;
-    padding: 0;
-    margin: 0;
-    
+    color: #bd630e;    
     position: relative;
 }
 
 .post p {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 90px;
     width: 70%;
 }
 
@@ -89,25 +86,35 @@ a:visited {
     position: absolute;
     top: 20px;
     right: 20px;
+    
+    font-size: 2.1vh;
 }
 
 .post audio {
     position: absolute;
     bottom: 30px;
     left: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .icon {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    
-    height: 120px;
-    width: 120px;
+
     object-fit: cover;
     
     border: 2px #976f19 solid;
+}
+
+@media (width < 980px)
+{
+    .icon { height: 200px; width: 200px; }   
+}
+
+@media (width > 980px)
+{
+    .icon { height: 150px; width: 150px; }   
 }
 
 footer {
