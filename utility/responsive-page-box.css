@@ -12,7 +12,7 @@
 @media (980px < width < 1100px) {
     .page-box {
         flex-basis: auto;
-        max-width: 70%;
+        max-width: 75%;
     }
 }
 

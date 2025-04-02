@@ -1,0 +1,120 @@
+.sketchbook-box {
+    position: relative;
+    
+    left: 50%;
+    transform: translate(-50%);
+    
+    /* colors */
+    border: 5px var(--accent-dark) double;
+    background-color: #0f1213;
+    
+    /* layout */
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 980px) {
+    .sketchbook-box {
+        flex-basis: 100%;
+    }
+    
+    #widget-box { left: 80px; }
+}
+
+@media (980px < width < 1100px) {
+    .sketchbook-box {
+        flex-basis: auto;
+        max-width: 75%;
+    }
+    
+     #widget-box { left: 80px; }
+}
+
+@media (1100px < width) {
+    .sketchbook-box {
+        flex-basis: 80%;
+        max-width: 610px;
+    }
+    
+     #widget-box { left: 20%; }
+}
+
+#clouds {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-box {    
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.image { 
+    background-color: #1a1e1f;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    object-fit: cover;
+    transform-origin: center;
+}
+
+.image:hover, image:active {
+    object-fit: contain;
+    
+    outline: 2px var(--accent-dark) solid; 
+    
+    z-index: 10;
+    overflow: hidden;
+}
+
+footer img { width: 200px; }
+#footer-nav { display: flex; }
+
+blockquote { color: var(--accent-light); }
+figcaption { color: #858585; font-style: italic; }
+
+p { color: #c2c2c2; }
+img { vertical-align: bottom; }
+
+#widget-box {  
+    background-color: #0f1213;
+    padding: 10px;
+
+    position: fixed;
+    bottom: 80px;
+    /* horizontal distance managed in media */
+
+    z-index: 100;
+    text-align: center;
+}
+
+blockquote:before { content: open-quote; }
+blockquote:after { content: close-quote; }
+
+h1, h2, h3, h4, h5, h6 { color: var(--accent-light); }
+
+footer p { border: 2px var(--accent-dark) solid; padding: 20px; }
+footer em { color: var(--accent-dark); }
+#widget-box { border: 5px var(--accent-dark) double; }
+
+.centered { position: relative; left: 50%; transform: translate(-50%); text-align: center; }
+
+
+
+
+
+

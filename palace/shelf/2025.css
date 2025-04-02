@@ -1,0 +1,24 @@
+/* TOWER
+ * some details:
+ * the content collumn width: 440px
+ */
+
+:root {
+  --accent-light: #427ef7;
+  --accent-dark: #1676f9;
+}
+
+a:link { color: #4b69c5; }
+a:visited { color: #323aaf; }
+
+#clouds {
+  background: black url("/content/2025_bg.jpg") no-repeat top;
+  background-size: cover;
+}
+
+/* For Chroma Corp sections, to separate them */ 
+.cc {
+  border-top: 1px #ffe328 solid; 
+  border-bottom: 1px #ffe328 solid; 
+}
+
