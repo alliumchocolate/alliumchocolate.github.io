@@ -9,23 +9,12 @@ body {
 }
 
 /* top level rules */
-p {
-    color: #c2c2c2;
-}
+p { color: #c2c2c2; }
+li { color: #c2c2c2; }
+strong { color: #b5d73f; }
 
-li {
-    color: #c2c2c2;
-}
-
-strong {
-    color: #b5d73f;
-}
+img { vertical-align: bottom; }
 /* top level rules end */
-
-body {
-    background-color: black;
-    color: white;
-}
 
 header {    
     height: auto;
@@ -175,3 +164,42 @@ footer em {
     content: counters(item, ".")". ";
     counter-increment: item;
 }
+
+.spoiler-box {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.spoiler-tag {
+    position: absolute;
+    top: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    background-color: #282c33;
+    outline: 2px #95a433 solid;
+    transition: all .2s ease;
+}
+
+.spoiler-tag p {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    margin: 0;
+    width: fit-content;
+    
+    background-color: #95a433;
+    color: #0f1213;
+    
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.spoiler-tag:hover, .spoiler-tag:active {
+    opacity: 0.1%;
+}
+

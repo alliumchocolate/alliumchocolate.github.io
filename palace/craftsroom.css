@@ -181,22 +181,17 @@ sup {
     transition: all .2s ease;
 }
 
-/* show preview */
-.cover:hover {
-    transform: scale(1.2);
-    object-fit: contain;
-
-    border: none;
-    overflow: hidden;
-    z-index: 5;
+.pdf:hover, .pdf:active {
+    border: 2px #df5f21 solid; 
 }
-/* display full on click*/
-.cover:active {
-    transform: scale(3);
-    z-index: 5;
+
+/* show preview */
+.cover:hover, .cover:active {
     object-fit: contain;
     
-    border: none;
+    border: 2px #df5f21 solid; 
+    overflow: hidden;
+    z-index: 5;
 }
 
 .papercraft-download {
