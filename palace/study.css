@@ -94,6 +94,7 @@ a:visited { color: #c86429; }
 
 .post h2 { color: #dc8f17; text-align: center; }
 .post p { text-align: center; margin: 0; }
+.post em { color: #8d6c55; }
 
 .post:hover, .post:active {
     background-color: #29231e;
