@@ -88,6 +88,7 @@ blockquote { color: var(--accent-light); }
 figcaption { color: #858585; font-style: italic; }
 
 p { color: #c2c2c2; }
+li { color: var(--accent-dark); }
 img { vertical-align: bottom; }
 
 #widget-box {  
