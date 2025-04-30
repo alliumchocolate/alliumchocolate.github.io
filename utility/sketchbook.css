@@ -55,6 +55,10 @@
     gap: 10px;
 }
 
+.no-gap {
+    gap: 0;
+}
+
 .image { 
     background-color: #1a1e1f;
     margin: 0;
