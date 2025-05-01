@@ -6,6 +6,7 @@
      <link rel="stylesheet" href="2021.css">
      <link rel="stylesheet" href="/utility/fonts.css">  
      <link rel="stylesheet" href="/utility/font_sizes.css">  
+     <link rel="stylesheet" href="/utility/modal.css">  
 
      <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
@@ -22,6 +23,16 @@
     <![endif]-->
   </head>
   <body>  
+     
+     <div id="modal"> <!-- Modal for image zoom. Requires modal.js at the bottom of the page and modal.css link, as well as onclick=modal(this) tags --> 
+      <div id="modal-screen-cover"></div>
+      <div id="modal-box">
+        <div id="modal-wrapper">
+          <img onclick="modal(this)" id="modal-image" src="/content/Icons/404.jpg">
+          <button id="close-modal">x</button>
+        </div>
+      </div>
+    </div> <!-- <script src="/utility/modal.js"></script> <link rel="stylesheet" href="/utility/modal.css"> -->  
        
      <!-- BG -->
      <div id="clouds"></div>
@@ -49,25 +60,25 @@
                <p>A younger Allium is preparing to move out and start university, while working a summer job. And one day, for no real reason, they start drawing - at first, simply with a pen on paper.</p> 
                <p>A month goes by and I buy a cheap non-screen tablet. My first piece of digital art is created on the evening of August 18th, 2021. The climb begins.</p>
                <div class="gallery-box">
-                    <img class="image" src="/content/2021/Gender%20witch.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2021/Gender%20witch.jpg" 
                          alt="Wizard character on a teal background">
-                    <img class="image" src="/content/2021/Lily%20the%20second.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2021/Lily%20the%20second.jpg" 
                          alt="Re-draw of a piece. A feminine character with mint hair">
-                    <img class="image" src="/content/2021/Beret.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2021/Beret.jpg" 
                          alt="Feminine character with overalls and a beret">
-                    <img class="image" src="/content/2021/Bee.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2021/Bee.jpg" 
                          alt="Feminine character with a bee flying near">
-                    <img class="image" src="/content/2021/stars%20above.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2021/stars%20above.jpg" 
                          alt="Portrait of a person with pink hair and sparkly eyes">
-                    <img class="image" src="/content/2021/Moon.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2021/Moon.jpg" 
                          alt="Lanscape drawing of a night sky in a cartoon style">
-                    <img class="image" src="/content/2021/Imperfect.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2021/Imperfect.jpg" 
                          alt="Person with a drawing tablet and an astronaut helmet on a paint spill backgroun">
-                    <img class="image" src="/content/2021/Blood.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2021/Blood.jpg" 
                          alt="Witch character kneeling before a summoning circle">
-                    <img class="image" src="/content/2021/Lily.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2021/Lily.jpg" 
                          alt="Feminine character with pink glasses holding a stack of books">
-                    <img class="image" src="/content/2021/Madeline.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2021/Madeline.jpg" 
                          alt="Drawing of a mountain with a sign with Celeste written on it">
                </div>
           </section>
@@ -75,7 +86,7 @@
 
           <!-- The tower base -->
           <footer class="sketchbook-box">
-               <img class="centered" src="/content/2021_footer.png" >
+               <img onclick="modal(this)" class="centered" src="/content/2021_footer.png" >
                <h2 class="centered">Sketchbook 1</h2>
                <div id="footer-nav">
                     <a href="shelf.html">Shelf</a>   
@@ -84,6 +95,8 @@
                <p class="centered">Made by Alice - <em>@alliumchocolate</em> - <a href="/palace/aquarium.html">Contact</a></p>
           </footer>  
      </div>
+       
+     <script src="/utility/modal.js"></script>  
        
   </body>
 </html>

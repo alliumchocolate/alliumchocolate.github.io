@@ -103,7 +103,7 @@ img { vertical-align: bottom; }
     bottom: 80px;
     /* horizontal distance managed in media */
 
-    z-index: 100;
+    z-index: 10;
     text-align: center;
 }
 

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/utility/fonts.css">
     <link rel="stylesheet" href="/utility/font_sizes.css">
     <link rel="stylesheet" href="/utility/responsive-page-box.css">
+    <link rel="stylesheet" href="/utility/modal.css">
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
@@ -23,6 +24,16 @@
     <![endif]-->
   </head>
   <body>
+    
+    <div id="modal"> <!-- Modal for image zoom. Requires modal.js at the bottom of the page and modal.css link, as well as onclick=modal(this) tags --> 
+      <div id="modal-screen-cover"></div>
+      <div id="modal-box">
+        <div id="modal-wrapper">
+          <img onclick="modal(this)" id="modal-image" src="/content/Icons/404.jpg">
+          <button id="close-modal">x</button>
+        </div>
+      </div>
+    </div> <!-- <script src="/utility/modal.js"></script> <link rel="stylesheet" href="/utility/modal.css"> -->
     
     <div id="clouds"></div>
     
@@ -55,7 +66,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>Bug Kingdom</h3>
@@ -81,7 +92,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>Falling snow</h3>
@@ -107,7 +118,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/Music/Roaring%20Hearts_cover.jpg" alt="Crop of a bigger piece, featuring some beasties from Beastieball">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/Music/Roaring%20Hearts_cover.jpg" alt="Crop of a bigger piece, featuring some beasties from Beastieball">
           </div>
           <div class="desc-box">
             <h3>The Roaring Hearts</h3>
@@ -133,7 +144,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/Music/Roaring%20Hearts%20Scrapped_cover.jpg" alt="Crop of a painting, zoomed in on Kaleidarn from Beastieball">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/Music/Roaring%20Hearts%20Scrapped_cover.jpg" alt="Crop of a painting, zoomed in on Kaleidarn from Beastieball">
           </div>
           <div class="desc-box">
             <h3>The Roaring Hearts - alt</h3>
@@ -159,7 +170,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/Music/POMA3%20theme_cover.gif" alt="Painting of the word 'POMA' on a CRT display, with a glitching effect">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/Music/POMA3%20theme_cover.gif" alt="Painting of the word 'POMA' on a CRT display, with a glitching effect">
           </div>
           <div class="desc-box">
             <h3>POMA3 theme</h3>
@@ -185,7 +196,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/Music/CC%20-%20gallery%20walk_cover.jpg" alt="Abstract painting with a heart and the Chroma Corps logo">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/Music/CC%20-%20gallery%20walk_cover.jpg" alt="Abstract painting with a heart and the Chroma Corps logo">
           </div>
           <div class="desc-box">
             <h3>Gallery walk</h3>
@@ -211,7 +222,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/Music/Apricot%20theme_cover.jpg" alt="Loose painting of Apricotsoup's cadet">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/Music/Apricot%20theme_cover.jpg" alt="Loose painting of Apricotsoup's cadet">
           </div>
           <div class="desc-box">
             <h3>Apricot theme</h3>
@@ -237,7 +248,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/Music/Andre%20theme_cover.jpg" alt="Loose painting of Andre's cadet">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/Music/Andre%20theme_cover.jpg" alt="Loose painting of Andre's cadet">
           </div>
           <div class="desc-box">
             <h3>Andre theme</h3>
@@ -263,7 +274,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/Music/Dragonsflight_cover.jpg" alt="A simple depiction of a dragon">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/Music/Dragonsflight_cover.jpg" alt="A simple depiction of a dragon">
           </div>
           <div class="desc-box">
             <h3>Dragon's Flight</h3>
@@ -289,7 +300,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/Music/POMA2%20theme_cover.gif" alt="Glowing lines snaking across a black background to create the word 'poma'">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/Music/POMA2%20theme_cover.gif" alt="Glowing lines snaking across a black background to create the word 'poma'">
           </div>
           <div class="desc-box">
             <h3>POMA2 theme</h3>
@@ -315,7 +326,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/Music/Fishy_cover.gif" alt="A looping animation of spinning fish">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/Music/Fishy_cover.gif" alt="A looping animation of spinning fish">
           </div>
           <div class="desc-box">
             <h3>Fishy</h3>
@@ -341,7 +352,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/Music/Turtle_cover.gif" alt="Animation of a walking turtle.">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/Music/Turtle_cover.gif" alt="Animation of a walking turtle.">
           </div>
           <div class="desc-box">
             <h3>Turtle</h3>
@@ -367,7 +378,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/Music/Sea%202_cover.jpg" alt="Icon showing a strange plane flying over clouds">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/Music/Sea%202_cover.jpg" alt="Icon showing a strange plane flying over clouds">
           </div>
           <div class="desc-box">
             <h3>Sea 2</h3>
@@ -393,7 +404,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>One</h3>
@@ -421,7 +432,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>Untitled 7</h3>
@@ -447,7 +458,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>Untitled 6</h3>
@@ -473,7 +484,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>Untitled 5</h3>
@@ -499,7 +510,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>nth</h3>
@@ -525,7 +536,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>Steps</h3>
@@ -551,7 +562,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>Gradient</h3>
@@ -577,7 +588,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>Reflection</h3>
@@ -603,7 +614,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>Untitled 4</h3>
@@ -629,7 +640,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>Untitled 3</h3>
@@ -655,7 +666,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>Untitled 2</h3>
@@ -681,7 +692,7 @@
         <!-- desc -->
         <div class="song-data">
           <div class="icon-box">
-            <img class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
+            <img onclick="modal(this)" class="icon" src="/content/Attic/no_image.jpg" alt="Default icon showing an old record player">
           </div>
           <div class="desc-box">
             <h3>Untitled 1</h3>
@@ -707,6 +718,8 @@
         <p>Made by Alice - <em>@alliumchocolate</em> - <a href="aquarium.html">Contact</a></p>
       </footer>
     </div>
+    
+    <script src="/utility/modal.js"></script>
     
   </body>
 </html>

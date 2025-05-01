@@ -6,6 +6,7 @@
      <link rel="stylesheet" href="2025.css">
      <link rel="stylesheet" href="/utility/fonts.css">  
      <link rel="stylesheet" href="/utility/font_sizes.css">
+     <link rel="stylesheet" href="/utility/modal.css">
 
      <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
@@ -22,6 +23,16 @@
     <![endif]-->
   </head>
   <body>  
+       
+     <div id="modal"> <!-- Modal for image zoom. Requires modal.js at the bottom of the page and modal.css link, as well as onclick=modal(this) tags --> 
+      <div id="modal-screen-cover"></div>
+      <div id="modal-box">
+        <div id="modal-wrapper">
+          <img onclick="modal(this)" id="modal-image" src="/content/Icons/404.jpg">
+          <button id="close-modal">x</button>
+        </div>
+      </div>
+    </div> <!-- <script src="/utility/modal.js"></script> <link rel="stylesheet" href="/utility/modal.css"> -->  
        
      <!-- BG -->
      <div id="clouds"></div>
@@ -48,57 +59,57 @@
                <h2>The year is 2025</h2>
                <p>This year is still in progress. But so far, I've been having fun!</p>
                <div class="gallery-box">
-                    <img class="image" src="/content/2025/jack.jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/jack.jpg"
                     alt="Traditional ink drawing of Jack from Beastieball">
-                    <img class="image" src="/content/2025/kaleid.jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/kaleid.jpg"
                     alt="Traditional ink drawing of Kaleidarn from Beastieball">
-                    <img class="image" src="/content/2025/edited_small.jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/edited_small.jpg"
                     alt="Photo of a chicory themed diorama">
-                    <img class="image" src="/content/2025/TheFeam_KaffeeTheMaker_small.jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/TheFeam_KaffeeTheMaker_small.jpg"
                     alt="An old mechanic in a workshop, building a robot">
-                    <img class="image" src="/content/2025/Chicory%20bday.jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/Chicory%20bday.jpg"
                          alt="Traditional ink drawing of Chicory">
-                    <img class="image" src="/content/2025/IMG_2109.jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/IMG_2109.jpg"
                          alt="Digital oil portrait of Maritte from Ikenfell">
-                    <img class="image" src="/content/2025/Siennapixel.jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/Siennapixel.jpg"
                          alt="Pixel art portrait of Sienna from Kimodameshi 7">
-                    <img class="image" src="/content/2025/IMG_20250302_2240432.jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/IMG_20250302_2240432.jpg"
                          alt="Traditional marker drawing of a Diabloceras from Beastieball">
-                    <img class="image" src="/content/2025/Tera.jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/Tera.jpg"
                          alt="Portrait of Kimodameshi 7's Tera">
-                    <img class="image" src="/content/2025/22.02%20(winter).jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/22.02%20(winter).jpg"
                          alt="Simple winter landscape">
-                    <img class="image" src="/content/2025/22.02%20(abstract).jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/22.02%20(abstract).jpg"
                          alt="Abstract painting in mid-tones">
-                    <img class="image" src="/content/2025/17.02%20(aquarium).jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/17.02%20(aquarium).jpg"
                          alt="Painting of fish swimming in water">
-                    <img class="image" src="/content/2025/16.02%20(craftsroom).jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/16.02%20(craftsroom).jpg"
                          alt="Painting of a workshop">
-                    <img class="image" src="/content/2025/14.02%20(greenhouse).jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/14.02%20(greenhouse).jpg"
                          alt="Painterly depiction of a greenhouse">
-                    <img class="image" src="/content/2025/13.02%20(lunaptra).jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2025/13.02%20(lunaptra).jpg" 
                          alt="Painting of Lunaptra from Beastieball">
-                    <img class="image" src=/content/2025/08.02%20(anamalocaris).jpg
+                    <img onclick="modal(this)" class="image" src=/content/2025/08.02%20(anamalocaris).jpg
                          alt="Anomalocaris - painting of a cambrian shrimp">
-                    <img class="image" src="/content/2025/clouds.jpg"
+                    <img onclick="modal(this)" class="image" src="/content/2025/clouds.jpg"
                          alt="Cloud painting">
-                    <img class="image" src="/content/2025/03.02.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2025/03.02.jpg" 
                          alt="Cloud practice">
-                    <img class="image" src="/content/2025/29.01.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2025/29.01.jpg" 
                          alt="Serene farming landscape">
-                    <img class="image" src="/content/2025/IMG_20250128_012346_HDR.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2025/IMG_20250128_012346_HDR.jpg" 
                          alt="Traditional marker drawing of PLumask from Beasiteball">
-                    <img class="image" src="/content/2025/IMG_20250127_181929_HDR.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2025/IMG_20250127_181929_HDR.jpg" 
                          alt="Traditional drawing of a raremorph Sefren from Beastieball">
-                    <img class="image" src="/content/2025/IMG_2090.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2025/IMG_2090.jpg" 
                          alt="Painting of Scauldra from Beastieball">
-                    <img class="image" src="/content/2025/14.01%20(pfp%202)_cropped.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2025/14.01%20(pfp%202)_cropped.jpg" 
                          alt="Drawn portrait of a girl with deer antlers">
-                    <img class="image" src="/content/2025/10.01.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2025/10.01.jpg" 
                          alt="Portrait of Pizza from Chicory">
-                    <img class="image" src="/content/2025/bindiva%20test.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2025/bindiva%20test.jpg" 
                          alt="Expressive drawing of Bindiva 2">
-                    <img class="image" src="/content/2025/IMG_2086.jpg" 
+                    <img onclick="modal(this)" class="image" src="/content/2025/IMG_2086.jpg" 
                          alt="Expressive drawing of Bindiva 1">
                </div>
           </section>
@@ -106,7 +117,7 @@
 
           <!-- The tower base -->
           <footer class="sketchbook-box">
-               <img class="centered" src="/content/2025_footer.png" >
+               <img onclick="modal(this)" class="centered" src="/content/2025_footer.png" >
                <h2 class="centered">Sketchbook 5</h2>
                <div id="footer-nav">
                     <a href="2024.html">2024</a>   
@@ -115,6 +126,8 @@
                <p class="centered">Made by Alice - <em>@alliumchocolate</em> - <a href="/palace/aquarium.html">Contact</a></p>
           </footer>   
      </div>
+       
+     <script src="/utility/modal.js"></script>  
        
   </body>
 </html>

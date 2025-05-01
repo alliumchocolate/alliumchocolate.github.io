@@ -229,7 +229,7 @@ footer em {
 
 .page-box {
     position: relative;
-    z-index: 100;
+    z-index: 10;
     
     background-color: #0f1213;
 }
