@@ -76,7 +76,7 @@
     transform-origin: center;
 }
 
-.image:hover, image:active {
+.image:hover {
     object-fit: contain;
     
     outline: 2px var(--accent-dark) solid; 

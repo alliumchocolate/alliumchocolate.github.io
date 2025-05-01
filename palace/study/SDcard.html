@@ -6,8 +6,8 @@
      <link rel="stylesheet" href="SDcard.css">
      <link rel="stylesheet" href="/utility/fonts.css">  
      <link rel="stylesheet" href="/utility/font_sizes.css">  
-       
-     <link rel="stylesheet" href="/utility/image-modal.css">
+              
+     <link rel="stylesheet" href="/utility/modal.css">
        
      <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
@@ -24,6 +24,16 @@
     <![endif]-->
   </head>
   <body>  
+       
+     <div id="modal"> <!-- Modal for image zoom. Requires modal.js at the bottom of the page and modal.css link --> 
+              <div id="modal-screen-cover"></div>
+              <div id="modal-box">
+                <div id="modal-wrapper">
+                  <img id="modal-image" src="/content/Icons/404.jpg">
+                  <button id="close-modal">x</button>
+                </div>
+              </div>
+     </div>       
        
      <!-- BG -->
      <div id="clouds"></div>
@@ -57,7 +67,7 @@
                <li><p>The photo has to be taken using manual control. No auto exposure, no AI enchance!</p></li>
                <li><p>The photo can be <em>anything</em>. This includes photoshop jobs, mixed media, etc!</p></li>
           </ul>
-          <br>                   
+          <br>                             
                
           <!-- 30.04 -->
           <h3>30.04</h3>
@@ -468,6 +478,8 @@
                <p class="centered">Made by Alice - <em>@alliumchocolate</em> - <a href="/palace/aquarium.html">Contact</a></p>
           </footer>  
      </div>
+       
+     <script src="/utility/modal.js"></script>  
        
   </body>
 </html>

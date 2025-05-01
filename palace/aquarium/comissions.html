@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <title>Alliumchocolate - Palace's Greenhouse</title>
-    <link rel="stylesheet" href="greenhouse.css">
+    <link rel="stylesheet" href="comissions.css">
     <link rel="stylesheet" href="/utility/fonts.css">
     <link rel="stylesheet" href="/utility/font_sizes.css">
+    <link rel="stylesheet" href="/utility/modal.css">
     <link rel="stylesheet" href="/utility/responsive-page-box.css">
     <link rel="stylesheet" href="/utility/share-button.css">
     
@@ -24,11 +25,29 @@
     </head>
     <body>
                
+          <div id="modal"> <!-- Modal for image zoom. Requires modal.js at the bottom of the page and modal.css link --> 
+              <div id="modal-screen-cover"></div>
+              <div id="modal-box">
+                <div id="modal-wrapper">
+                  <img id="modal-image" src="/content/Icons/404.jpg">
+                  <button id="close-modal">x</button>
+                </div>
+              </div>
+          </div>     
+               
+          <img class="image" onclick="modal(this)" src="/content/2025/08.02%20(anamalocaris).jpg" alt="aaaa">
+          <img class="image" onclick="modal(this)" src="/content/2022/cc/CC10%20-%20Freefall.jpg">
+          <img class="image" onclick="modal(this)" src="/content/2025/22.02%20(winter).jpg">    
+      
+          <!-- JAVASCRIPT -->   
+      
     <div class="page-box centered">
       <footer>
         <p>Made by Alice - <em>@alliumchocolate</em> - <a href="/aquarium.html">Contact</a></p>
       </footer>
     </div>    
-        
+    
+    <script src="/utility/modal.js"></script>  
+      
     </body>
 </html>

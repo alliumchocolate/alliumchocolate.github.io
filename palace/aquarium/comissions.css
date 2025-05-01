@@ -6,3 +6,18 @@ left: 50%; /* this puts the image 50% of the page width across, starting from th
 transform: translate(-50%); /*this puts the image 50% of its own width to the left, so that its centered and not just its anchored. */
     
 }
+
+.image { 
+    background-color: #1a1e1f;
+    margin: 0;
+    padding: 0;
+
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    
+    position: relative;
+
+    object-fit: cover;
+    transform-origin: center;
+}
+
