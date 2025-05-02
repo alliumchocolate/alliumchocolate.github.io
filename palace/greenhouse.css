@@ -199,7 +199,7 @@ footer em {
     border-radius: 50px;
 }
 
-.spoiler-tag:hover, .spoiler-tag:active {
+.spoiler-tag:hover {
     opacity: 0.1%;
 }
 
