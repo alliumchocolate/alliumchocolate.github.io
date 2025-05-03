@@ -1,23 +1,306 @@
-.MyClass {
-
-position: relative; /* this makes the image able to move */
-left: 50%; /* this puts the image 50% of the page width across, starting from the left */
-    
-transform: translate(-50%); /*this puts the image 50% of its own width to the left, so that its centered and not just its anchored. */
-    
+:root {
+    --accent-light: #f6ff79;
+    --accent-dark: #82a354;
+    --accent-special: #aeb241;
 }
 
-.image { 
-    background-color: #1a1e1f;
-    margin: 0;
-    padding: 0;
+a:link { color: #d6e885; }
+a:visited { color: #689ead; }
 
-    width: 200px;
-    aspect-ratio: 1 / 1;
+#clouds {
+    background: black url("/content/comissions_bg.jpg") no-repeat top;
+}
+#back-panel {
+    height: 100%; width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);/* #151616 */
+    backdrop-filter: blur(10px);
+    
+    position: fixed;
+    top: 0;
+    left: 50%; transform: translateX(-50%);
+}
+@media (max-width: 980px) { 
+    #back-panel { flex-basis: 100%; }
+    #widget-full { display: none; }
+    #widget-small { display: block; }
+    #widget-box { left: 20px; bottom: 40px; } 
+}
+@media (980px < width < 1100px) { 
+    #back-panel { flex-basis: auto; max-width: 90%; }
+    #widget-full { display: none; }
+    #widget-small { display: block; }
+    #widget-box { left: 20px; bottom: 40px; }
+}
+@media (1100px < width) { 
+    #back-panel { flex-basis: 80%; max-width: 1000px; } 
+    #widget-full { display: none; }
+    #widget-small { display: bloxk; }
+    #widget-box { left: 10%; bottom: 40px; }
+}
+@media (1500px < width) {
+    #widget-full { display: block; }
+    #widget-small { display: none; }
+}
+
+#widget-box {
+    background-color: rgba(0, 0, 0, 0.8); /* #151616 */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #222222;
+    padding: 20px;
+
+    position: fixed;
+    z-index: 10;
+}
+#widget-box a { text-decoration: none; color: var(--accent-special); }
+#widget-box:hover a { color: var(--accent-light); }
+#widget-small { font-size: 3vh; padding: 0 5px 0 5px; }
+
+/* OPEN/CLOSED commissions */
+.active-button {
+    width: fit-content;
+    height: fit-content;
+    padding: 12px 19px 10px 25px;
     
     position: relative;
+    left: 50%; transform: translateX(-50%);    
+}
+.active-button p {
+    padding: 0; margin: 0;
+    text-align: center;
+    
+    font-family: "MS DOS", arial, sans-serif; /* font */
+    text-shadow: 2px 2px 0 black;
+    word-break: break-all;
+    
+    color: #ffffff;
+    font-size: 4vh;
+}
+#open { display: none; /* toggle if closed */ background-color: #49941f; }
+#closed { display: block; /* toggle if closed */ background-color: #c30e0e; }
 
+.override-style { /* removes borders & backgrounds from elements that shouldnt have them */
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.story {padding-top: 0 !important; }
+
+.commission-box { 
+    padding: 0 !important; 
+    border: none !important;
+    margin: 20px 0 20px 0 !important;
+} /* changes the post so that the image fills the space */
+.commission-box:hover { border: 5px var(--accent-light) double; }
+.commission-box:hover .banner .downtick { visibility: visible; }
+
+/* Commission section banner */
+.banner {
+    position: relative;
+    
+    width: 100%; height: auto;
+    min-height: 200px;
+    overflow: clip;
+}
+.banner-image {
+    position: absolute; top: 0;
+        
+    width: 100%; height: 200px;    
     object-fit: cover;
-    transform-origin: center;
+}
+.banner-gradient {
+    position: absolute; top: 0;
+    
+    width: 100%; height: 200px; /* set to same size as img */
+    background: linear-gradient(0deg,rgba(15, 18, 19, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.banner-gradient:hover { background-color: rgb(255, 255, 255, 0.15); }
+
+.banner-text {
+    display: flex;
+    width: 100%;
+    
+    position: absolute; top: 200px;
+    transform: translateY(-100%);
+
+    word-break: break-word; overflow: hidden;
+    text-shadow: 2px 3px 0 black;
+}
+.banner-text h2 {
+    position: relative; margin: 0; padding: 0; margin-top: auto;
+    flex-shrink: 2;
+    
+    padding-left: 15px; padding-bottom: 10px;
+}
+.banner-text h1 {
+    position: relative; margin: 0; padding: 0;
+    margin-left: auto; margin-top: auto; 
+    
+    font-size: 6vh;
+    
+    flex-shrink: 0;
+    padding-right: 15px; padding-bottom: 10px;
+}
+.banner-text span {
+    font-size: 3vh;
+}
+.downtick { /* replicates the close button but on open */
+    visibility: hidden;
+    position: absolute;
+    
+    top: 0; /* align downtick to the close tick */
+    margin-top: -15px;
+    padding-right: 17px;
+    
+    font-family: "MS DOS", arial, sans-serif; /* font */
+    font-size: 4em;
+    text-shadow: -2px -3px 0 black;
+    
+    transform: rotate(180deg); /* rotates it */
+    color: #ffffff; /* X color */
 }
 
+/* Everything that's hidden */
+.hidden {
+    display: none; /* don't render content initially, toggles with js */
+    
+     /* after the element is toggled, this keeps it hidden */
+    visibility: hidden;
+    transition-property: display margin-top;
+    transition-duration: 1s;
+    
+    position: relative;
+    padding-top: 220px;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.uptick { /* uptick */    
+    position: absolute;
+    top: 30px;
+    margin: 0;
+    left: 25px;
+    
+    font-family: "MS DOS", arial, sans-serif; /* font */
+    font-size: 4em;
+    text-shadow: 2px 3px 0 black;
+    
+    color: #ffffff; /* X color */
+}
+.close { /* close button */   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
+    
+    background-color: rgba(0, 0, 0, 0); /* make the bg transparent */
+    border: 0;
+    z-index: 10;
+}
+
+.hidden h2 { text-shadow: 2px 3px 0 black; }
+
+/* CONTENT */
+.examples {
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 10px;
+    
+    margin-bottom: calc(2.5vh+20px);
+}
+.examples figure { width: 100%; margin: 0; padding: 0; }
+.examples figure img { width: 100%; height: 100%; object-fit: cover; border: 1px rgba(0, 0, 0, 0) solid; }
+.examples figure figcaption {
+    display: block;
+    color: var(--accent-special);
+    text-align: center;
+    padding: 10px;
+    
+    font-size: 2.3vh;
+}
+.examples figure img:hover { border: 1px white solid; }
+.examples figure figcaption h3 { margin: 0; margin-top: 10px; }
+
+/* table with additional pricing */
+.pricing-table { 
+    display: flex; 
+    margin-top: 30px; margin-bottom: 30px; 
+    
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+    width: fit-content; 
+    
+    word-break: break-word;
+}
+.pricing-table p { padding: 0; margin: 5px 20px 5px 0; }
+.pricing-table h4 { margin: 0; text-align: right; }
+
+/* Dos/donts table */
+.range-table {
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+    text-align: center;
+    
+    width: 80%; 
+    word-break: break-word;
+
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+.range-table h3 { margin: 0; padding: 12px 0 10px 0; }
+.range-table-green { color: #65c75b; }
+.range-table-red { color: #e53d3d; }
+.good { background-color: rgba(22, 48, 8, 0.3); }
+.bad { background-color: rgba(57, 15, 15, 0.3); }
+.range-table p { margin: 8px; }
+
+/* 'check the nsfw form!' */
+.nsfw-note { text-align: center; width: 70%; }
+.questions-note {
+    text-align: center;
+    width: 70%;
+}
+.questions-note h4 { margin: 0; }
+.questions-note p { margin: 5px; }
+.questions-note-email { color: var(--accent-special); }
+
+
+.button-container { display: flex; margin-top: 15px; }
+/* go to terms button */
+.terms-button { text-decoration: none; margin-right: 10px;}
+.terms-button p {
+    padding: 0; margin: 0;
+    text-align: left; word-break: break-word;
+    
+    position: relative; top: 100%; transform: translateY(-100%);
+    
+    text-decoration: none; color: var(--accent-special);
+}
+.terms-button p:hover { color: var(--accent-light); }
+
+/* go to form button */
+.form-button { text-decoration: none; margin-left: auto; /* for flex */}
+.form-button div {
+    width: fit-content; height: fit-content;
+    padding: 12px 19px 10px 25px;
+    
+    position: relative;
+    background-color: var(--accent-special);
+}
+.form-button div:hover { background-color: var(--accent-light); }
+.form-button p {
+    padding: 0; margin: 0;
+    text-align: center;
+    
+    font-family: "MS DOS", arial, sans-serif; /* font */
+    word-break: break-word;
+    
+    color: #323232;
+    font-size: 2.6vh;
+    text-decoration: none;
+}

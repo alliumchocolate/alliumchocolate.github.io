@@ -1,0 +1,111 @@
+/* Module responsible for creating a blog structure */
+
+/* COLORS */
+/* 
+ * var(--accent-light)
+ * var(--accent-dark)
+ * var(--accent-special)
+ * 
+ * */
+
+p { color: #c2c2c2; }
+li { color: #c2c2c2; }
+strong { color: var(--accent-light); }
+
+img { vertical-align: bottom; } /* image gap fix */
+
+/* HEADER */
+header {    
+    height: auto;
+    border: 5px var(--accent-light) double;
+    
+    padding: 20px;
+    margin-top: 20px;  
+    text-align: center;
+    
+    word-break: break-word;
+}
+header h1 {
+    margin: 0;
+    color: var(--accent-light);
+}
+header p {
+    margin: 2px;
+    font-style: italic;
+}
+header a { padding-left: 10px; padding-right: 10px; }
+header nav {
+    margin: 5px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+/* POST */
+.post {
+    height: auto;
+    
+    border: 5px var(--accent-dark) double;
+    
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.post h1, h2, h3, h4, h5, h6 { color: var(--accent-light); }
+.post aside {
+    color: var(--accent-special);
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    
+    font-size: 2.1vh;
+}
+
+/* FOOTER */
+footer {
+    height: auto;
+    border: 5px var(--accent-special) double;
+    
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+footer p { text-align: center; color: #656565; }
+footer em { color: var(--accent-special); }
+
+/* ATTRIBUTION */
+.attribution {
+    text-align: center;
+    font-size: 2vh;
+    color: #828282; /* always this */
+}
+.attribution a { font-size: 2vh; }
+    
+.share { position: absolute; right: 15px; }
+/* .share:hover { background: #0f1213 url("/content/Icons/link_click_greenhouse.png") no-repeat center; } PER PAGE */
+#copy-dialog { border: 5px var(--accent-light) double; }
+
+.centered { /* center class */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.story { /* module for a story/lore-box */
+    height: auto;
+    
+    border: 5px var(--accent-special) double;
+    
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    text-align: center; 
+}
+
+#clouds {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    /*background: black url("/content/greenhouse_bg.jpg") no-repeat top; per-page */
+    background-size: cover;
+}
