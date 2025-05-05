@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alliumchocolate - Commissions</title>
+    <link rel="stylesheet" href="commissions.css">
+    <link rel="stylesheet" href="/utility/fonts.css">
+    <link rel="stylesheet" href="/utility/font_sizes.css">
+    <link rel="stylesheet" href="/utility/responsive-page-box.css">
+    <link rel="stylesheet" href="/utility/blog-page.css">
+    
+    <!-- Utilities -->
+    <link rel="stylesheet" href="/utility/share-button.css">
+    <link rel="stylesheet" href="/utility/modal.css">
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <meta content="Alliumchocolate - Commissions" property="og:title" />
+    <meta content="Pricing, Terms, FAQ" property="og:description" />
+    <meta content="https://alliumchocolate.com/aquarium/commissions.html" property="og:url" />
+    <meta content="https://alliumchocolate.com/content/greenhouse_bg.jpg" property="og:image" />
+    <meta content="#5b8e15" data-react-helmet="true" name="theme-color" /> 
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+	 <script src="bower_components/html5shiv.js"</script>
+    <![endif]-->
+    </head>
+    <body>
+               
+      <div id="modal"> <!-- Modal for image zoom. Requires modal.js at the bottom of the page and modal.css link, as well as onclick=modal(this) tags --> 
+          <div id="modal-screen-cover"></div>
+          <div id="modal-box">
+            <div id="modal-wrapper">
+              <img id="modal-image" src="/content/Icons/404.jpg">
+              <button id="close-modal">x</button>
+            </div>
+          </div>
+      </div> <!-- <script src="/utility/modal.js"></script> <link rel="stylesheet" href="/utility/modal.css"> -->
+      
+      <div id="clouds"></div>
+      <div id="back-panel"></div>
+      
+      <!-- Floating panel -->
+      <nav id="widget-box">
+        <a id="widget-full" href="/index.html">🠈 Return to website</a>
+        <a id="widget-small" href="/index.html">🠈</a>
+      </nav>
+      
+      <div class="page-box centered override-style">
+      <header class="override-style">
+        <h1>Art commissions</h1>
+      </header>
+    </div>
+      
+      <div class="page-box centered override-style">
+        <article class="story override-style">
+          <p>Hi! thanks for thinking about commissioning me. My commissions are currently:</p>
+          <div class="active-button" id="open"><p>OPEN</p></div>
+          <div class="active-button" id="closed"><p>CLOSED</p></div>
+          <!-- <p>Click on any of the sections below for details.</p> -->
+          <p>Look out on my <a href="/palace/aquarium.html">socials</a> for announcements!</p>
+        </article>
+      </div>
+      
+      <!-- Comission section -->
+      <div class="page-box centered">
+        <article class="post commission-box">
+          <div class="banner" onclick=openBanner(this)>            
+            <img class="banner-image" src="/content/Commissions/Sketch/Cover.jpg" alt="sketch">
+            <div class="banner-gradient"></div>
+            <p class="downtick">^</p>
+            <div class="banner-text">
+              <h2>Clean sketch</h2>
+              <h1><span>USD </span>30+</h1>
+            </div>
+            
+            <div class="hidden">
+              <button class="close"></button><p class="uptick">^</p>
+              <h2>Clean sketch</h2>
+              <p>You will receive a digital <strong>.png</strong> file.</p>
+              
+              <div class="examples"> <!-- Sketch examples have a HSL(0, 84, 0) background -->
+                <div><figure>
+                    <img onclick=modal(this) src="/content/Commissions/Sketch/Portrait.jpg" alt="Sketch portrait of a feminine character - Valerie from Beastieball">
+                    <figcaption>Portrait<h3>30 USD</h3></figcaption>
+                  </figure></div>
+                <div><figure>
+                    <img onclick=modal(this) src="/content/Commissions/Sketch/Half-body.jpg" alt="Sketch half-body drawing of a scientist - Celia from Beastieball">
+                    <figcaption>Half body<h3>35 USD</h3></figcaption>
+                  </figure></div>
+                <div><figure>
+                    <img onclick=modal(this) src="/content/Icons/404.jpg" alt="portrait">
+                    <figcaption>Full body<h3>40 USD</h3></figcaption>
+                  </figure></div>
+              </div>
+              <table class="pricing-table">
+                <tr>
+                  <td><p>Add another subject</p></td>
+                  <td><h4>+15 USD</h4></td>
+                </tr>
+                <tr>
+                  <td><p>Add a detailed background</p></td>
+                  <td><h4>+15 USD</h4></td>
+                </tr>
+              </table>
+              <!-- -->
+              <table class="range-table">
+                <tr>
+                  <td><h3 class="range-table-green good">I will draw</h3></td>
+                  <td><h3 class="range-table-red bad">I will NOT draw</h3></td>
+                </tr>
+                <tr>
+                  <td class="good">
+                    <p>People</p>
+                    <p>Animals</p>
+                    <p>Furry</p>
+                    <p>Mecha</p>
+                  </td>
+                  <td class="bad">
+                    <p>Anything offensive or hateful</p>
+                  </td>
+                </tr>
+              </table>
+              <p class="nsfw-note centered">If you want to commission me for NSFW art, please check <a href="">this</a> form! 🔞</p>
+              <div class="process centered">
+                    <ol>
+                        <li><div><strong class="step">1</strong><span class="icon">📝</span></div>
+                          <p>Submit form</p></li>
+                        <li><span class="dash">-</span></li>
+                        <li><div><strong class="step">2</strong><span class="icon">📧</span></div>
+                          <p>Confirmation</p></li>
+                        <li><span class="dash">-</span></li>
+                        <li><div><strong class="step">3</strong><span class="icon">💸</span></div>
+                          <p>Half-payment</p></li>
+                        <li><span class="dash">-</span></li>
+                        <li><div><strong class="step">4</strong><span class="icon">🎨</span></div>
+                          <p>Production <span class="revisions">(revisions here)</span></p></li>
+                        <li><span class="dash">-</span></li>
+                        <li><div><strong class="step">5</strong><span class="icon">💸</span></div>
+                          <p>Rest of the payment</p></li>
+                        <li><span class="dash">-</span></li>
+                        <li><div><strong class="step">6</strong><span class="icon">🎉</span></div>
+                          <p>You receive the work!</p></li>
+                    </ol>
+                </div>
+              
+                <section class="questions-note centered">
+                  <h4>Still have questions?</h4>
+                  <p>If you don't find an answer in the <a href="terms.html">terms of service</a>, feel free to contact me via <a href="/palace/aquarium.html">socials</a> or via e-mail:</p>
+                  <p class="questions-note-email">alliumchocolate@pm.me</p>
+                </section>
+              <br>
+              <div class="button-container">
+                <a class="terms-button" href="terms.html"><p>Terms (read this first!)</p></a>
+                <a class="form-button" href=""><div><p>Clean sketch commission &gt;</p></div></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Comission section -->
+      <div class="page-box centered">
+        <article class="post commission-box">
+          <div class="banner" onclick=openBanner(this)>            
+            <img class="banner-image" src="/content/Commissions/Colored/Cover.jpg" alt="Colored drawing of Albrax from Beastieball">
+            <div class="banner-gradient"></div>
+            <p class="downtick">^</p>
+            <div class="banner-text">
+              <h2>Colored</h2>
+              <h1><span>USD </span>45+</h1>
+            </div>
+            
+            <div class="hidden">
+              <button class="close"></button><p class="uptick">^</p>
+              <h2>Colored</h2>
+              <p>You will receive a digital <strong>.png</strong> file.</p>
+              
+              <div class="examples">
+                <div><figure>
+                    <img onclick=modal(this) src="/content/Commissions/Colored/Portrait.jpg" alt="Colored portrait of a bunny anthro with a skating helmet">
+                    <figcaption>Portrait<h3>45 USD</h3></figcaption>
+                  </figure></div>
+                <div><figure>
+                    <img onclick=modal(this) src="/content/Commissions/Colored/Half-body.jpg" alt="Sketch half-body drawing of a scientist - Celia from Beastieball">
+                    <figcaption>Half body<h3>50 USD</h3></figcaption>
+                  </figure></div>
+                <div><figure>
+                    <img onclick=modal(this) src="/content/Commissions/Colored/Full-body.jpg" alt="Colored full-body drawing of Squimage from beastieball">
+                    <figcaption>Full body<h3>55 USD</h3></figcaption>
+                  </figure></div>
+              </div>
+              <table class="pricing-table">
+                <tr>
+                  <td><p>Add another subject</p></td>
+                  <td><h4>+15 USD</h4></td>
+                </tr>
+                <tr>
+                  <td><p>Add a detailed background</p></td>
+                  <td><h4>+15 USD</h4></td>
+                </tr>
+              </table>
+              <!-- -->
+              <table class="range-table">
+                <tr>
+                  <td><h3 class="range-table-green good">I will draw</h3></td>
+                  <td><h3 class="range-table-red bad">I will NOT draw</h3></td>
+                </tr>
+                <tr>
+                  <td class="good">
+                    <p>People</p>
+                    <p>Animals</p>
+                    <p>Furry</p>
+                    <p>Mecha</p>
+                  </td>
+                  <td class="bad">
+                    <p>Anything offensive or hateful</p>
+                  </td>
+                </tr>
+              </table>
+              <p class="nsfw-note centered">If you want to commission me for NSFW art, please check <a href="">this</a> form! 🔞</p>
+              <br>
+                <section class="questions-note centered">
+                  <h4>Still have questions?</h4>
+                  <p>If you don't find an answer in the <a href="terms.html">terms of service</a>, feel free to contact me via <a href="/palace/aquarium.html">socials</a> or via e-mail:</p>
+                  <p class="questions-note-email">alliumchocolate@pm.me</p>
+                </section>
+              <br>
+              <div class="button-container">
+                <a class="terms-button" href="terms.html"><p>Terms (read this first!)</p></a>
+                <a class="form-button" href=""><div><p>Colored commission &gt;</p></div></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Comission section -->
+      <div class="page-box centered">
+        <article class="post commission-box">
+          <div class="banner" onclick=openBanner(this)>            
+            <img class="banner-image" src="/content/Commissions/Painterly/Cover.jpg" alt="painting">
+            <div class="banner-gradient"></div>
+            <p class="downtick">^</p>
+            <div class="banner-text">
+              <h2>Painterly render</h2>
+              <h1><span>USD </span>60+</h1>
+            </div>
+            
+            <div class="hidden">
+              <button class="close"></button><p class="uptick">^</p>
+              <h2>Painterly render</h2>
+              <p>You will receive a digital <strong>.png</strong> file.</p>
+              
+              <div class="examples">
+                <div><figure>
+                    <img onclick=modal(this) src="/content/Commissions/Painterly/Portrait.jpg" alt="Painterly portrait of a feminine character - Valerie from Beastieball">
+                    <figcaption>Portrait<h3>60 USD</h3></figcaption>
+                  </figure></div>
+                <div><figure>
+                    <img onclick=modal(this) src="/content/Commissions/Painterly/Half-body.jpg" alt="Half-body painting of a Kobold">
+                    <figcaption>Half body<h3>70 USD</h3></figcaption>
+                  </figure></div>
+                <div><figure>
+                    <img onclick=modal(this) src="/content/Commissions/Painterly/Full-body.jpg" alt="Painting of a bat-like character - Luna from Cavern of Dreams">
+                    <figcaption>Full body<h3>80 USD</h3></figcaption>
+                  </figure></div>
+              </div>
+              <table class="pricing-table">
+                <tr>
+                  <td><p>Add another subject</p></td>
+                  <td><h4>+20 USD</h4></td>
+                </tr>
+                <tr>
+                  <td><p>Add a detailed background</p></td>
+                  <td><h4>+20 USD</h4></td>
+                </tr>
+              </table>
+              <!-- -->
+              <table class="range-table">
+                <tr>
+                  <td><h3 class="range-table-green good">I will draw</h3></td>
+                  <td><h3 class="range-table-red bad">I will NOT draw</h3></td>
+                </tr>
+                <tr>
+                  <td class="good">
+                    <p>People</p>
+                    <p>Animals</p>
+                    <p>Furry</p>
+                    <p>Mecha</p>
+                  </td>
+                  <td class="bad">
+                    <p>Anything offensive or hateful</p>
+                  </td>
+                </tr>
+              </table>
+              <p class="nsfw-note centered">If you want to commission me for NSFW art, please check <a href="">this</a> form! 🔞</p>
+              <br>
+                <section class="questions-note centered">
+                  <h4>Still have questions?</h4>
+                  <p>If you don't find an answer in the <a href="">terms of service</a>, feel free to contact me via <a href="/palace/aquarium.html">socials</a> or via e-mail:</p>
+                  <p class="questions-note-email">alliumchocolate@pm.me</p>
+                </section>
+              <br>
+              <div class="button-container">
+                <a class="terms-button" href="terms.html"><p>Terms (read this first!)</p></a>
+                <a class="form-button" href=""><div><p>Painterly commission &gt;</p></div></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Comission section -->
+      <div class="page-box centered">
+        <article class="post commission-box">
+          <div class="banner" onclick=openBanner(this)>            
+            <img class="banner-image" src="/content/Craftsroom/Cocoa/Main_cover.jpg" alt="papercraft">
+            <div class="banner-gradient"></div>
+            <p class="downtick">^</p>
+            <div class="banner-text">
+              <h2>Papercraft</h2>
+              <h1><span>USD </span>120</h1>
+            </div>
+            
+            <div class="hidden">
+              <button class="close"></button><p class="uptick">^</p>
+              <h2>Papercraft</h2>
+              <p>COMING SOON!</p>
+            </div>
+          </div>
+        </article>
+      </div>
+            
+      <div class="page-box centered override-style">
+        <footer class="override-style">
+          <p>Made by Alice - <em>@alliumchocolate</em> - <a href="/aquarium.html">Contact</a></p>
+        </footer>
+      </div>    
+
+      <script src="commissions.js"></script>  
+      <script src="/utility/modal.js"></script>  
+      
+    </body>
+</html>
