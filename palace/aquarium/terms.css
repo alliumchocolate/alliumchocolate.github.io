@@ -106,26 +106,17 @@ a:visited { color: #bd68de; }
 .range-table p { margin: 8px; }
 
 /* process step-by-step */
-.process {
-    width: 90%; margin-top: 30px;
-}
-.process ol { 
-    display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: auto;
-    padding: 0; width: 100%;
-    list-style: none;
-}
-.process li { text-align: center; }
-.process li p { margin-bottom: 0; }
-.process li strong {
-    position: absolute; top: 4vh; 
-    font-size: 4vh; font-family: "MS DOS", arial, sans-serif; color: var(--accent-light);
-    -webkit-text-stroke: 5px black;
+.process { margin: 40px 0 40px 0; }
+.process tr { height: fit-content; margin: 10px; }
+.process td { width: fit-content; }
+.process-step {
+    -webkit-text-stroke: 5px black !important;
     paint-order: stroke fill;
-    z-index: 10;
+    margin: 0; padding-right: 10px; text-align: center;
 }
-.icon { font-size: 6vh; }
-.revisions { font-size: 1.8vh; color: var(--accent-special); }
-
+.process-icon { font-size: 5vh; margin: 0; padding-right: 10px; text-align: center; }
+.process p { margin: 0; width: fit-content; }
+.process-revisions { color: var(--accent-special); }
 
 
 

@@ -47,7 +47,7 @@
 }
 #widget-box a { text-decoration: none; color: var(--accent-light); }
 #widget-box:hover a { color: var(--accent-light); }
-#widget-small { font-size: 3vh; padding: 0 5px 0 5px; }
+#widget-small { font-size: 3.5vh; padding: 0 10px 0 10px; }
 
 #clouds {
     position: fixed;

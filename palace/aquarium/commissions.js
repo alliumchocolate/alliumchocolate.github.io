@@ -32,7 +32,7 @@ function openBanner(div) {
     gradient.style.height = "100%";
     gradient.style.background = "linear-gradient(0deg,rgba(15, 18, 19, 1) 0%, rgba(15, 18, 19, 0.9) 50%, rgba(0, 0, 0, 0) 100%)"; //adjusts gradient
     
-    text.style.top = "calc(30px + 6vh)"; //move price up
+    text.style.top = "calc(40px + 6vh)"; //move price up
 
     // Close hidden-box
     closeButton.onclick = function() { //close button

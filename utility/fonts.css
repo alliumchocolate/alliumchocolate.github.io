@@ -15,6 +15,11 @@
     src: url("/content/Fonts/MorePerfectDOSVGA.ttf");
 }
 
+@font-face {
+    font-family: "Poppins";
+    src: url("/content/Fonts/Poppins.ttf");
+}
+
 /* top level rules */
 p {
     font-family: "Hyperlegible", arial, sans-serif;
@@ -50,6 +55,6 @@ figcaption {
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "MS DOS", arial, sans-serif;
+    font-family: "Poppins", arial, sans-serif;
 }
 
