@@ -6,6 +6,9 @@
 :root {
   --accent-light: #e984a2;
   --accent-dark: #bd3465;
+
+  --color-icon-static: invert(27%) sepia(99%) saturate(1034%) hue-rotate(305deg) brightness(88%) contrast(93%);
+  --color-icon-hover: invert(83%) sepia(30%) saturate(1663%) hue-rotate(291deg) brightness(90%) contrast(103%);
 }
 
 a:link { color: #4b69c5; }

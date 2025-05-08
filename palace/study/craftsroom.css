@@ -1,278 +1,49 @@
-/* GROUNDS
- * some details:
- * currently idk lol
- */
-
-body {
-    background-color: black;
-    color: white;
-    
+:root {
+    --accent-light: #df5f21;
+    --accent-dark: #3a6d5f;
+    --accent-special: #a64d0d;
+     /* changes color on hover to accent-light */
+    --color-icon-hover: invert(46%) sepia(20%) saturate(3612%) hue-rotate(347deg) brightness(91%) contrast(92%);
 }
 
-/* top level rules */
-p {
-    color: #c2c2c2;
-}
-
-img { 
-    vertical-align: bottom;
-}
-
-
-/* top level rules end */
-
-header {    
-    height: auto;
-    
-    border: 5px #3a6d5f double;
-    
-    padding: 20px;
-    margin-top: 20px;
-    
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    color: #df5f21;
-}
-
-header p {
-    margin: 2px;
-    font-style: italic;
-}
-
-header a {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-header nav {
-    margin: 5px;
-    margin-top: 10px;
-    padding: 0;
-}
-
-a:link {
-    color: #338b96;
-}
-a:visited {
-    color: #954614;
-}
+a:link { color: #338b96; }
+a:visited { color: #954614; }
 
 .instructions {
-    height: auto;
-    
-    border: 5px #3a6d5f double;
-    
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    height: auto; padding: 20px 40px 40px 40px; margin: 10px 0 10px 0;
+    border: 5px var(--accent-dark) double;
 }
-
-.instructions h3 {
-    color: #df5f21;
-    padding: 0;
-    padding-top: 15px;
-    margin: 0;
-    
-    position: relative;
-}
-
-.instructions p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-sup { 
-    vertical-align: top; 
-    position: relative; 
-    top: -0.1em; 
-}
-
-.post {
-    height: auto;
-    
-    border: 5px #a64d0d double;
-    position: relative;
-    
-    padding: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.post h1, h2, h3, h4, h5, h6 {
-    color: #1fb3a7;
-    margin-bottom: 0;
-    
-    position: relative;
-}
-
-.post p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.post aside {
-    color: #127570;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    
-    font-size: 2.1vh;
-}
-
-.post audio {
-    position: absolute;
-    bottom: 30px;
-    left: 20px;
-    margin-top: 10px;
-}
+.instructions h3 { color: var(--accent-light); padding: 0; padding-top: 15px; margin: 0; }
+.instructions p { margin: 10px 0 10px 0; }
+sup { vertical-align: top; position: relative; top: -0.1em; }
 
 .photos {
-    position: relative;
-    
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-    margin-bottom: 30px;
+    position: relative; width: 100%; height: auto;
+    margin-top: 0; margin-bottom: 30px;
 }
-
-.folded {
-    position: relative;
-    display: flex;
-}
-
-.template {
-    position: relative;
-    display: flex;  
-    top: 10px;
-}
+.folded { position: relative; display: flex; }
+.template { position: relative; display: flex; top: 10px; }
 
 .advert {
-    flex: 1 1 auto;
-    margin-right: 5px;
-    margin-left: 5px;
-    
-    height: 200px;
-    width: 48%;
-    min-width: 0%;
-    
-    object-fit: cover;
-    
-    border: 2px #3a6d5f solid;
-    transition: all .2s ease;
+    flex: 1 1 auto; margin-right: 5px; margin-left: 5px;
+    height: 200px; width: 48%; min-width: 0%; object-fit: cover;
+    border: 2px var(--accent-dark) solid;
 }
 
 .pdf {
-    flex: 1 1 auto;
-    margin-right: 5px;
-    margin-left: 5px;
-    
-    height: auto;
-    width: 48%;
-    min-width: 0%;
-    
-    object-fit: cover;
-    
-    border: 2px #3a6d5f solid;
-    transition: all .2s ease;
+    flex: 1 1 auto; margin-right: 5px; margin-left: 5px;    
+    height: auto; width: 48%; min-width: 0%; object-fit: cover;
+    border: 2px var(--accent-dark) solid;
 }
-
-.pdf:hover, .pdf:active {
-    border: 2px #df5f21 solid; 
-}
+.pdf:hover, .pdf:active { border: 2px var(--accent-light) solid; }
 
 /* show preview */
 .cover:hover, .cover:active {
-    object-fit: contain;
-    
-    border: 2px #df5f21 solid; 
+    object-fit: contain; border: 2px var(--accent-light) solid; 
     overflow: hidden;
     z-index: 5;
 }
+.papercraft-download { position: relative; }
 
-.papercraft-download {
-    position: relative;
-}
-
-footer {
-    height: auto;
-    
-    border: 5px #3a6d5f double;
-    
-    padding: 5px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    
-    position: relative;
-    z-index: 0;
-}
-
-footer p {
-    text-align: center;
-    color: #656565;
-}
-
-footer em {
-    color: #3a6d5f;
-}
-
-
-.centered {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.page-box {
-    position: relative;
-    z-index: 10;
-    
-    background-color: #0f1213;
-}
-
-.main-box {
-    display: flex;
-    position: relative;
-    width: 40vw;
-}
-
-.share {
-    position: absolute;
-    right: 15px;
-}
-
-.share:hover {
-    background: #0f1213 url("/content/Icons/link_click_craftsroom.png") no-repeat center;
-}
-
-#copy-dialog {
-    border: 5px #3a6d5f double; 
-}
-
-.story {
-    height: auto;
-    
-    border: 5px #3a6d5f double;
-    
-    padding: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    
-    text-align: center; 
-}
-
-#clouds {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background: black url("/content/craftsroom_bg.jpg") no-repeat top;
-    background-size: cover;
-}
+#clouds { background: black url("/content/craftsroom_bg.jpg") no-repeat top; }
 

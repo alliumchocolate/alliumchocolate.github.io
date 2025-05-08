@@ -2,6 +2,9 @@
     --accent-light: #f6ff79;
     --accent-dark: #82a354;
     --accent-special: #aeb241;
+    
+    --color-icon-static: invert(62%) sepia(78%) saturate(334%) hue-rotate(23deg) brightness(96%) contrast(85%);
+    --color-icon-hover: invert(96%) sepia(12%) saturate(1715%) hue-rotate(14deg) brightness(109%) contrast(103%);
 }
 
 a:link { color: #d6e885; }
@@ -24,22 +27,26 @@ a:visited { color: #689ead; }
     #widget-full { display: none; }
     #widget-small { display: block; }
     #widget-box { left: 20px; bottom: 40px; } 
+    .arrow-left { height: 60px; }
 }
 @media (980px < width < 1100px) { 
     #back-panel { flex-basis: auto; max-width: 90%; }
     #widget-full { display: none; }
     #widget-small { display: block; }
     #widget-box { left: 20px; bottom: 40px; }
+    .arrow-left { height: 60px; }
 }
 @media (1100px < width) { 
     #back-panel { flex-basis: 80%; max-width: 1000px; } 
     #widget-full { display: none; }
     #widget-small { display: bloxk; }
     #widget-box { left: 10%; bottom: 40px; }
+    .arrow-left { height: 4vh; }
 }
 @media (1500px < width) {
     #widget-full { display: block; }
     #widget-small { display: none; }
+    .arrow-left { height: 2.6vh; }
 }
 
 #widget-box {
@@ -53,7 +60,9 @@ a:visited { color: #689ead; }
 }
 #widget-box a { text-decoration: none; color: var(--accent-special); }
 #widget-box:hover a { color: var(--accent-light); }
-#widget-small { font-size: 3vh; padding: 0 5px 0 5px; }
+#widget-small { font-size: 3vh; padding: 0; aspect-ratio: 1/1;  }
+.arrow-left { position: relative; filter: var(--color-icon-static); }
+#widget-box:hover .arrow-left { filter: var(--color-icon-hover); }
 
 /* OPEN/CLOSED commissions */
 .active-button {
@@ -161,18 +170,27 @@ a:visited { color: #689ead; }
 /* Everything that's hidden */
 .hidden {
     display: none; /* don't render content initially, toggles with js */
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
     
-     /* after the element is toggled, this keeps it hidden */
-    visibility: hidden;
-    transition-property: display margin-top;
-    transition-duration: 1s;
+    transition:
+        opacity 0.1s,
+        max-height 0.4s ease-out,
+        display 0.4s allow-discrete;
     
-    position: relative;
-    padding-top: 220px;
-    
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    position: relative; padding: 220px 20px 20px 20px;
+}
+.hidden-show {
+    display: block;
+    opacity: 1;
+    max-height: auto;
+}
+@starting-style {
+  .hidden-show {
+    opacity: 0;
+    max-height: 0;
+  }
 }
 
 .uptick { /* uptick */    
@@ -315,7 +333,6 @@ a:visited { color: #689ead; }
     font-family: "Poppins", arial, sans-serif; /* font */
     word-break: break-word;
     
-    color: black; font-size: 2.6vh; text-decoration: none;
+    color: black; font-size: 2.4vh; text-decoration: none;
 }
-.arrow { font-size: 3vh; }
-
+.arrow-right { height: 2.4vh; position: relative; bottom: 0.7vh; /* no filter because the font is black */ }

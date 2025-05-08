@@ -6,8 +6,11 @@
     width: 25px;
     height: 25px;
     
-    background: #0f1213 url("/content/Icons/link.png") no-repeat center;  
+    background: transparent url("/content/Icons/link.png") no-repeat center;  
+    filter: invert(100%);
 }
+.share:hover { filter: var(--color-icon-hover); } 
+/* color defined per page, according to this fiddle: https://codepen.io/sosuke/pen/Pjoqqp */
 
 @media (width < 1200px) {
     .share { background-size: 1.5em; top: 65px; }
@@ -30,6 +33,7 @@
     
     z-index: 1000;
     display: none;
+    border: 5px var(--accent-dark) double;  
     
     transition: all .1s ease;
 }

@@ -21,8 +21,9 @@ function openBanner(div) {
     text.children[0].style.display = "none"; //remove title, don't remove price
     downtick.style.display = "none"; //remove the downtick
     
-    hidden.style.display = "block"; //show hidden-box
-    hidden.style.visibility = "visible";
+    //hidden.style.display = "block"; //show hidden-box
+    hidden.classList.toggle("hidden-show");
+    hidden.style.maxHeight = hidden.scrollHeight + "px";  
     
     closeButton.style.display = "block"; //show close button    
     console.log("show hidden-box");
@@ -37,7 +38,11 @@ function openBanner(div) {
     // Close hidden-box
     closeButton.onclick = function() { //close button
         //reset commission banner to default
-        hidden.style.display = "none";
+        //hidden.style.display = "none";
+        hidden.classList.toggle("hidden-show");
+        hidden.style.maxHeight = 0;
+        hidden.style.padding = 0;
+        
         gradient.style.display = "block";
         text.children[0].style.display = "block";
         downtick.style.display = "block";

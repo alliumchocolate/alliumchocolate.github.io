@@ -1,215 +1,42 @@
-/* GROUNDS
- * some details:
- * currently idk lol
- */
-
-body {
-    background-color: black;
-    color: white;
-    
+:root {
+    --accent-light: #dfa321;
+    --accent-dark: #863c29;
+    --accent-special: #bd630e; 
 }
 
-/* top level rules */
-p {
-    color: #c2c2c2;
-}
+a:link { color: #966b33; }
+a:visited { color: #a83123; }
 
-img { 
-    vertical-align: bottom;
-}
 
-/* top level rules end */
-
-body {
-    background-color: black;
-    color: white;
-}
-
-header {    
-    height: auto;
-    
-    border: 5px #976f19 double;
-    
-    padding: 20px;
-    margin-top: 20px;
-    
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    color: #dfa321;
-}
-
-header p {
-    margin: 2px;
-    font-style: italic;
-}
-
-header a {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-header nav {
-    margin: 5px;
-    margin-top: 10px;
-    padding: 0;
-}
-
-a:link {
-    color: #966b33;
-}
-a:visited {
-    color: #a83123;
-}
-
-.post {
-    height: auto;
-    
-    padding: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    
-    border: 5px #863c29 double;
-    
-    position: relative;
-}
-
-.post h1, h2, h3, h4, h5, h6 {
-    color: #bd630e;    
-    position: relative;
-}
-
-.player {    
-    position: relative;
-    margin-top: 20px;
-}
-
+.player { position: relative; margin-top: 20px; }
 .audio-box { position: relative; } /* this box might or might not be useless */
 
-.audio-box audio {
-    position: relative;
-    width: 100%;
-}
+.audio-box audio { position: relative; width: 100%; }
+.song-data { position: relative; display: flex; }
 
-.song-data {
-    position: relative;
-    display: flex;
-}
-
-.icon-box {
-    position: relative;
-    flex: 1 1 auto;
-}
-
-.icon {
-    position: relative;
-    
-    max-height: 150px;
-    
+.icon-box { position: relative; flex: 1 1 auto; }
+.icon { 
+    position: relative; max-height: 150px;
     object-fit: cover;    
-    border: 2px #976f19 solid;
+    border: 2px var(--accent-special) solid;
 }
-
 .desc-box {
-    position: relative;
-    flex: 1 1 auto;
-            
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
+    position: relative; flex: 1 1 auto;
+    width: 100%; display: flex; flex-direction: column; 
     margin-left: 20px;
 }
-
-.desc-box h3 {
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-
-.desc-box p {
-    padding-top: 0;
-    padding-bottom: 0;
-
-    margin-top: 10px;    
-    margin-bottom: 10px;
-}
-
+.desc-box h3 { position: relative; padding: 0; margin: 0; }
+.desc-box p { padding: 0; margin-top: 10px; margin-bottom: 10px; }
 .desc-box aside {
-    color: #ad6119;
-    position: relative;
-    
-    margin-top: auto;
-    
-    font-size: 2.2vh;
+    margin-top: auto; 
+        
+    position: relative !important; /* gotta unset all of the styles from blog-page */
+    font-size: 2.2vh !important;
+    top: initial !important; 
+    right: initial !important;
 }
 
-/*@media (width < 980px)
-{
-    .icon { height: 200px; width: 200px; }   
-}
-
-@media (width > 980px)
-{
-    .icon { height: 150px; width: 150px; }   
-}*/
-
-footer {
-    height: auto;
-    
-    border: 5px #976f19 double;
-    
-    padding: 5px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-footer p {
-    text-align: center;
-    color: #656565;
-}
-
-footer em {
-    color: #976f19;
-}
-
-
-.centered {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.main-box {
-    display: flex;
-    position: relative;
-    width: 40vw;
-}
-
-.story {
-    height: auto;
-    
-    border: 5px #976f19 double;
-    
-    padding: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    
-    text-align: center; 
-}
-
-#clouds {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background: black url("/content/attic_bg.jpg") no-repeat top;
-    background-size: cover;
-}
+#clouds { background: black url("/content/attic_bg.jpg") no-repeat top; }
 
 
 /* page-box centered
