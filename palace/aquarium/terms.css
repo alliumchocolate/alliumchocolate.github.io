@@ -3,6 +3,8 @@
     --accent-dark: #411e94;
     --accent-special: #7484f1;
 
+    --color-icon-static: invert(61%) sepia(38%) saturate(5961%) hue-rotate(209deg) brightness(99%) contrast(90%);
+    --color-icon-hover: invert(77%) sepia(74%) saturate(7255%) hue-rotate(232deg) brightness(101%) contrast(96%);
 }
 
 a:link { color: #3081eb; }
@@ -25,22 +27,26 @@ a:visited { color: #bd68de; }
     #widget-full { display: none; }
     #widget-small { display: block; }
     #widget-box { left: 20px; bottom: 40px; } 
+    .arrow-left { height: 60px; }
 }
 @media (980px < width < 1100px) { 
     #back-panel { flex-basis: auto; max-width: 90%; }
     #widget-full { display: none; }
     #widget-small { display: block; }
     #widget-box { left: 20px; bottom: 40px; }
+    .arrow-left { height: 60px; }
 }
 @media (1100px < width) { 
     #back-panel { flex-basis: 80%; max-width: 1000px; } 
     #widget-full { display: none; }
     #widget-small { display: bloxk; }
     #widget-box { left: 10%; bottom: 40px; }
+    .arrow-left { height: 4vh; }
 }
 @media (1500px < width) {
     #widget-full { display: block; }
     #widget-small { display: none; }
+    .arrow-left { height: 2.6vh; }
 }
 
 #widget-box {
@@ -54,7 +60,9 @@ a:visited { color: #bd68de; }
 }
 #widget-box a { text-decoration: none; color: var(--accent-special); }
 #widget-box:hover a { color: var(--accent-light); }
-#widget-small { font-size: 3vh; padding: 0 5px 0 5px; }
+#widget-small { font-size: 3vh; padding: 0; aspect-ratio: 1/1;  }
+.arrow-left { position: relative; filter: var(--color-icon-static); }
+#widget-box:hover .arrow-left { filter: var(--color-icon-hover); }
 
 .override-style { /* removes borders & backgrounds from elements that shouldnt have them */
     border: none !important;
@@ -115,7 +123,7 @@ a:visited { color: #bd68de; }
     margin: 0; padding-right: 10px; text-align: center;
 }
 .process-icon { font-size: 5vh; margin: 0; padding-right: 10px; text-align: center; }
-.process p { margin: 0; width: fit-content; }
+.process p { margin: 0; width: fit-content; text-align: left; }
 .process-revisions { color: var(--accent-special); }
 
 

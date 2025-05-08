@@ -101,6 +101,21 @@ a:visited { color: #689ead; }
 .commission-box:hover { border: 5px var(--accent-light) double; }
 .commission-box:hover .banner .downtick { visibility: visible; }
 
+.downtick { 
+    visibility: hidden;
+    position: absolute; margin: 20px; margin-left: 25px;
+    background-color: rgba(0, 0, 0, 0); border: 0; /* delete button style */
+    
+    background: transparent url("/content/Icons/accordion_arrow.png") no-repeat center;
+    width: 3em; height: 3em; background-size: contain;
+    
+    transform: rotate(0deg); /* rotates it */        
+    transition: transform 0.4s;
+}
+.downtick-open {
+    transform: rotate(-180deg);
+}
+
 /* Commission section banner */
 .banner {
     position: relative;
@@ -123,88 +138,62 @@ a:visited { color: #689ead; }
 }
 .banner-gradient:hover { background-color: rgb(255, 255, 255, 0.15); }
 
-.banner-text {
-    display: flex;
+.banner-text { /* commission type & price on banner */
     width: 100%;
+    height: fit-content;
     
     position: absolute; top: 200px;
     transform: translateY(-100%);
 
-    word-break: break-word; overflow: hidden;
+    word-break: break-word; overflow: hidden; 
     text-shadow: 2px 3px 0 black;
 }
-.banner-text h2 {
-    position: relative; margin: 0; padding: 0; margin-top: auto;
-    flex-shrink: 2;
-    
-    padding-left: 15px; padding-bottom: 10px;
+.commission-type { 
+    position: relative; margin: 0; padding: 0 0 20px 20px; float: left;
+    bottom: -3vh;
 }
-.banner-text h1 {
-    position: relative; margin: 0; padding: 0;
-    margin-left: auto; margin-top: auto; 
-    
+.price {
+    position: relative; margin: 0; padding: 0 20px 12px 0; float: right;
     font-size: 6vh;
-    
-    flex-shrink: 0;
-    padding-right: 15px; padding-bottom: 10px;
 }
-.banner-text span {
-    font-size: 3vh;
-}
-.downtick { /* replicates the close button but on open */
-    visibility: hidden;
-    position: absolute;
-    
-    top: 0; /* align downtick to the close tick */
-    margin-top: -15px;
-    padding-right: 17px;
-    
-    font-family: "MS DOS", arial, sans-serif; /* font */
-    font-size: 4em;
-    text-shadow: -2px -3px 0 black;
-    
-    transform: rotate(180deg); /* rotates it */
-    color: #ffffff; /* X color */
+.price span { font-size: 3vh; }
+
+/* banner-opening button */
+.accordion-open {
+    background-color: rgba(0, 0, 0, 0); border: 0; /* override button style */
+    width: 100%; height: 200px; /* expand to full size */
+    position: relative; z-index: 10;
+    display: block;
 }
 
 /* Everything that's hidden */
 .hidden {
     display: none; /* don't render content initially, toggles with js */
     opacity: 0;
-    max-height: 0;
     padding: 0;
+    max-height: 0;
     
     transition:
-        opacity 0.1s,
+        opacity 0.4s,
         max-height 0.4s ease-out,
         display 0.4s allow-discrete;
     
-    position: relative; padding: 220px 20px 20px 20px;
+    position: relative; 
 }
 .hidden-show {
     display: block;
     opacity: 1;
     max-height: auto;
+    padding: 220px 20px 20px 20px;
 }
 @starting-style {
   .hidden-show {
     opacity: 0;
     max-height: 0;
+    padding: 0;
   }
 }
 
-.uptick { /* uptick */    
-    position: absolute;
-    top: 30px;
-    margin: 0;
-    left: 25px;
-    
-    font-family: "MS DOS", arial, sans-serif; /* font */
-    font-size: 4em;
-    text-shadow: 2px 3px 0 black;
-    
-    color: #ffffff; /* X color */
-}
 .close { /* close button */   
     position: absolute;
     top: 0;
@@ -298,7 +287,7 @@ a:visited { color: #689ead; }
 .process-revisions { color: var(--accent-special); }
 
 /* questions note */
-.questions-note { text-align: center; width: 70%; margin-top: 50px; margin-bottom: 30px; }
+.questions-note { text-align: center; width: 70%; margin-top: 30px; margin-bottom: 30px; }
 .questions-note h4 { margin: 0; }
 .questions-note p { margin: 5px; }
 .questions-note-email { color: var(--accent-special); }
@@ -336,3 +325,38 @@ a:visited { color: #689ead; }
     color: black; font-size: 2.4vh; text-decoration: none;
 }
 .arrow-right { height: 2.4vh; position: relative; bottom: 0.7vh; /* no filter because the font is black */ }
+
+/* PAPERCRAFT SECTION */
+.papercraft-active-box { text-align: center; }
+#papercraft-open { display: none; /* toggle if closed */ background-color: #49941f; }
+#papercraft-closed { display: block; /* toggle if closed */ background-color: #c30e0e; }
+
+.papercraft-center { text-align: center; }
+.papercraft-margin { margin-bottom: 40px; }
+
+.template-example { width: 100%; height: fit-content; display: grid; }
+@media (max-width: 800px) { 
+    .template-example {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+}
+@media (width > 800px) { 
+    .template-example { 
+        grid-template-columns: repeat(2, minmax(0, 1fr)); 
+        grid-template-rows: auto; 
+        gap: 10px; 
+    }
+} 
+.template-example img { position: relative; width: 100%; height: auto; object-fit: contain; }
+.template-example div { position: relative; }
+.template-example-paragraph {
+    background: linear-gradient(90deg,rgba(130, 163, 84, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    padding: 15px; margin: 0 0 15px 0;
+}
+.template-example-paragraph h4 { padding: 0; margin: 0; }
+.template-example-paragraph p { margin: 10px 0 0 0; }
+
+
+

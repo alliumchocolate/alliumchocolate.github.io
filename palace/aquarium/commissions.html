@@ -61,53 +61,56 @@
           <!-- <p>Click on any of the sections below for details.</p> -->
           <p>Look out on my <a href="/palace/aquarium.html">socials</a> for announcements!</p>
           <br><br>
-          <h3>How does this work?</h3>
+          
+          <h3 id="commission-process">How does this work?</h3>
           <table class="process centered">
-                <tr> <!-- 1 -->
-                  <td><h2 class="process-step">1</h2></td><td><p class="process-icon">📝</p></td>
-                  <td><p class="process-text">Send in the form</p></td>
-                </tr>
-                <tr> <!-- 2 -->
-                  <td><h2 class="process-step">2</h2></td><td><p class="process-icon">📧</p></td>
-                  <td><p class="process-text">I accept your commission</p></td>
-                </tr>
-                <tr> <!-- 3 -->
-                  <td><h2 class="process-step">3</h2></td><td><p class="process-icon">💸</p></td>
-                  <td><p class="process-text">Half-payment</p></td>
-                </tr>
-                <tr> <!-- 4 -->
-                  <td><h2 class="process-step">4</h2></td><td><p class="process-icon">🎨</p></td>
-                  <td><p class="process-text">I work on your commission <span class="process-revisions"> (3 revisions)</span></p></td>
-                </tr>
-                <tr> <!-- 5 -->
-                  <td><h2 class="process-step">5</h2></td><td><p class="process-icon">💸</p></td>
-                  <td><p class="process-text">Rest of the payment</p></td>
-                </tr>
-                <tr> <!-- 1 -->
-                  <td><h2 class="process-step">6</h2></td><td><p class="process-icon">🎉</p></td>
-                  <td><p class="process-text">You receive the artwork!</p></td>
-                </tr>
-              </table>
+            <tr> <!-- 1 -->
+              <td><h2 class="process-step">1</h2></td><td><p class="process-icon">📝</p></td>
+              <td><p class="process-text">Send in the form</p></td>
+            </tr>
+            <tr> <!-- 2 -->
+              <td><h2 class="process-step">2</h2></td><td><p class="process-icon">📧</p></td>
+              <td><p class="process-text">I accept your commission</p></td>
+            </tr>
+            <tr> <!-- 3 -->
+              <td><h2 class="process-step">3</h2></td><td><p class="process-icon">💸</p></td>
+              <td><p class="process-text">Half-payment</p></td>
+            </tr>
+            <tr> <!-- 4 -->
+              <td><h2 class="process-step">4</h2></td><td><p class="process-icon">🎨</p></td>
+              <td><p class="process-text">I work on your commission <span class="process-revisions"> (3 revisions)</span></p></td>
+            </tr>
+            <tr> <!-- 5 -->
+              <td><h2 class="process-step">5</h2></td><td><p class="process-icon">💸</p></td>
+              <td><p class="process-text">Rest of the payment</p></td>
+            </tr>
+            <tr> <!-- 1 -->
+              <td><h2 class="process-step">6</h2></td><td><p class="process-icon">🎉</p></td>
+              <td><p class="process-text">You receive the artwork!</p></td>
+            </tr>
+          </table>
           <p>And that's it! Remember to check the <a href="terms.html">terms</a> before commissioning.</p>
           <br><br>
           <h3>What can you commission me for?</h3>
         </article>
       </div>
       
-      <!-- Comission section -->
+      <!-- Clean sketch section -->
       <div class="page-box centered">
         <article class="post commission-box">
-          <div class="banner" onclick=openBanner(this)>            
+          <div class="banner">            
             <img class="banner-image" src="/content/Commissions/Sketch/Cover.jpg" alt="sketch">
             <div class="banner-gradient"></div>
-            <p class="downtick">^</p>
+            <button class="downtick"></button>
+            <!-- opens banner -->
+            <button class="accordion-open" onclick=openAccordion(this)></button>
             <div class="banner-text">
-              <h2>Clean sketch</h2>
-              <h1><span>USD </span>30+</h1>
+              <h2 class="commission-type">Clean sketch</h2>
+              <h1 class="price"><span>USD </span>30+</h1>
             </div>
             
             <div class="hidden">
-              <button class="close"></button><p class="uptick">^</p>
+              <button class="close"></button>
               <h2>Clean sketch</h2>              
               <div class="examples"> <!-- Sketch examples have a HSL(0, 84, 0) background -->
                 <div><figure>
@@ -170,19 +173,21 @@
         </article>
       </div>
             
-      <!-- Comission section -->
+      <!-- Colored section -->
       <div class="page-box centered">
         <article class="post commission-box">
-          <div class="banner" onclick=openBanner(this)>            
+          <div class="banner">            
             <img class="banner-image" src="/content/Commissions/Colored/Cover.jpg" alt="Colored drawing of Albrax from Beastieball">
             <div class="banner-gradient"></div>
-            <p class="downtick">^</p>
+            <button class="downtick"></button>
+            <!-- opens banner -->
+            <button class="accordion-open" onclick=openAccordion(this)></button>
             <div class="banner-text">
-              <h2>Colored</h2>
-              <h1><span>USD </span>45+</h1>
+              <h2 class="commission-type">Colored</h2>
+              <h1 class="price"><span>USD </span>45+</h1>
             </div>
             <div class="hidden">
-              <button class="close"></button><p class="uptick">^</p>
+              <button class="close"></button>
               <h2>Colored</h2>
               
               <div class="examples">
@@ -246,20 +251,22 @@
         </article>
       </div>
       
-      <!-- Comission section -->
+      <!-- Painterly section -->
       <div class="page-box centered">
         <article class="post commission-box">
-          <div class="banner" onclick=openBanner(this)>            
+          <div class="banner">            
             <img class="banner-image" src="/content/Commissions/Painterly/Cover.jpg" alt="painting">
             <div class="banner-gradient"></div>
-            <p class="downtick">^</p>
+            <button class="downtick"></button>
+            <!-- opens banner -->
+            <button class="accordion-open" onclick=openAccordion(this)></button>
             <div class="banner-text">
-              <h2>Painterly render</h2>
-              <h1><span>USD </span>60+</h1>
+              <h2 class="commission-type">Painterly render</h2>
+              <h1 class="price"><span>USD </span>60+</h1>
             </div>
             
             <div class="hidden">
-              <button class="close"></button><p class="uptick">^</p>
+              <button class="close"></button>
               <h2>Painterly render</h2>              
               <div class="examples">
                 <div><figure>
@@ -305,11 +312,11 @@
               </table>
               <p class="nsfw-note centered">If you want to commission me for NSFW art, please check <a href="">this</a> form! 🔞</p>
               <br>
-                <section class="questions-note centered">
-                  <h4>Still have questions?</h4>
-                  <p>Feel free to contact me via <a href="/palace/aquarium.html">socials</a> or via e-mail:</p>
-                  <p class="questions-note-email">alliumchocolate@pm.me</p>
-                </section>
+              <section class="questions-note centered">
+                <h4>Still have questions?</h4>
+                <p>Feel free to contact me via <a href="/palace/aquarium.html">socials</a> or via e-mail:</p>
+                <p class="questions-note-email">alliumchocolate@pm.me</p>
+              </section>
               <br>
               <div class="button-container">
                 <a class="terms-button" href="terms.html"><p>Terms (read this first!)</p></a>
@@ -322,22 +329,117 @@
         </article>
       </div>
       
-      <!-- Comission section -->
+      <!-- Papercraft section -->
       <div class="page-box centered">
         <article class="post commission-box">
-          <div class="banner" onclick=openBanner(this)>            
-            <img class="banner-image" src="/content/Craftsroom/Cocoa/Main_cover.jpg" alt="papercraft">
+          <div class="banner">            
+            <img class="banner-image" src="/content/Commissions/Papercraft/Cover.jpg" alt="papercraft">
             <div class="banner-gradient"></div>
-            <p class="downtick">^</p>
+            <button class="downtick"></button>
+            <!-- opens banner -->
+            <button class="accordion-open" onclick=openAccordion(this)></button>
             <div class="banner-text">
-              <h2>Papercraft</h2>
-              <h1><span>USD </span>120</h1>
+              <h2 class="commission-type">Papercraft</h2>
+              <h1 class="price"><span>USD </span>280</h1>
             </div>
             
             <div class="hidden">
-              <button class="close"></button><p class="uptick">^</p>
+              <button class="close"></button>
               <h2>Papercraft</h2>
-              <p>COMING SOON!</p>
+              <section class="papercraft-active-box">
+                <p>My papercraft commissions are currently:</p>
+                <div class="active-button" id="papercraft-open"><p>OPEN</p></div>
+                <div class="active-button" id="papercraft-closed"><p>CLOSED</p></div>
+                <!-- <p>Click on any of the sections below for details.</p> -->
+                <p>Look out on my <a href="/palace/aquarium.html">socials</a> for announcements!</p>
+              </section>
+              <br>
+              
+              <section class="centered papercraft-intro">
+                <h3>What is a papercraft?</h3>
+                <p>Also sometimes called a paper toy, a papercraft is a buildable toy made of paper!</p>
+                <p>In this context, this means a template that you can print, cut out and then glue together to construct a physical paper figure.</p>
+              </section>
+              <br>
+              
+              <h3>What can I expect?</h3>
+              <section class="template-example papercraft-margin">
+                <img onclick=modal(this) src="/content/Commissions/Papercraft/Template.jpg" alt="Template of a papercraft">
+                <div>
+                  <div class="template-example-paragraph">
+                    <h4>Template</h4>
+                    <p>You will get a print-ready, buildable template like the one here of your chosen subject, be it a character, your pet, or really, any object 💛</p>
+                  </div>
+                  <div class="template-example-paragraph">
+                    <h4>Process</h4>
+                    <p>Due to the low-poly nature of papercrafts, things work best in a cutsey style! I will work with you to develop the design into a fun and playful craft.</p>
+                  </div>
+                  <div class="template-example-paragraph">
+                    <h4>Format</h4>
+                    <p>You will get a <strong>600 DPI</strong> file in <strong>.PDF</strong> (or <strong>.SVG</strong>, if you prefer) format.</p>
+                  </div>
+                </div>
+              </section>
+              
+              <section papercraft-margin>
+                <h3>How does a built papercraft look like?</h3>
+                <p>As you can see below, constructed papercrafts have a geometric, low-poly appearance, similar to origami or old 3D games. Templates printed on a single A4 page make a model roughly the size of a fist. Click to zoom in!</p>
+                <div class="examples ">
+                  <div><figure>
+                      <img onclick=modal(this) 
+                           src="/content/Commissions/Papercraft/Cocoa.jpg" alt="Papercraft of Cocoa">
+                    </figure></div>
+                  <div><figure>
+                      <img onclick=modal(this) style="object-position: calc(90%)"
+                           src="/content/Commissions/Papercraft/Patches.jpg" alt="Papercraft of Patches">
+                    </figure></div>
+                  <div><figure>
+                      <img onclick=modal(this) style="object-position: calc(80%)"
+                           src="/content/Commissions/Papercraft/Pizza.jpg" alt="Papercraft of Pizza">
+                    </figure></div>
+                </div>
+              </section>
+              
+              <section class="papercraft-margin">
+                <h3>I want to try first!</h3>
+                <p>Check out my <a href="/palace/study/craftsroom.html">Crafstroom</a> page, where you can download some of my completed papercrafts and print them out!</p>
+              </section>
+              
+              <section class="papercraft-margin centered"> 
+                <h3>What does the process look like?</h3>
+                <p>The ordering &amp; payment process is identical as with regular commissions, outlined <a href="#commission-process">here</a>. But due to the complexity of this medium, you're allowed more revisions during the production:<p>
+                <table class="process centered">
+                  <tr> <!-- 1 -->
+                    <td><p class="process-icon">📝</p></td>
+                    <td><p class="process-text">Concept work <span class="process-revisions"> (2 revisions)</span></p></td>
+                  </tr>
+                  <tr> <!-- 2 -->
+                    <td><p class="process-icon">💻</p></td>
+                    <td><p class="process-text">3D model <span class="process-revisions"> (2 revisions)</span></p></td>
+                  </tr>
+                  <tr> <!-- 3 -->
+                    <td><p class="process-icon">🎨</p></td>
+                    <td><p class="process-text">Painting</p></td>
+                  </tr>
+                  <tr> <!-- 4 -->
+                    <td><p class="process-icon">📏</p></td>
+                    <td><p class="process-text">Layout</p></td>
+                  </tr>
+                </table>
+              </section>
+                            
+              <section class="questions-note centered">
+                  <h4>Still have questions?</h4>
+                  <p>Feel free to contact me via <a href="/palace/aquarium.html">socials</a> or via e-mail:</p>
+                  <p class="questions-note-email">alliumchocolate@pm.me</p>
+                </section>
+              <br>
+              <div class="button-container">
+                <a class="terms-button" href="terms.html"><p>Terms (read this first!)</p></a>
+                <a class="form-button" href="">
+                  <div><p>Papercraft commission <img class="arrow-right" src="/content/Icons/arrow_right.png"></p></div>
+                </a>
+              </div>
             </div>
           </div>
         </article>
