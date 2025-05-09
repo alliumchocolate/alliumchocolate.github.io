@@ -6,6 +6,9 @@
 :root {
   --accent-light: #ffffff;
   --accent-dark: #bbbbbb;
+  
+  --color-icon-static: invert(73%);
+  --color-icon-hover: invert(100%);
 }
 
 a:link { color: #4b69c5; }

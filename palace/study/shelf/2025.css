@@ -4,12 +4,15 @@
  */
 
 :root {
-  --accent-light: #427ef7;
-  --accent-dark: #1676f9;
+  --accent-light: #b3daff;
+  --accent-dark: #829ec4;
+  
+  --color-icon-static: invert(63%) sepia(14%) saturate(760%) hue-rotate(175deg) brightness(95%) contrast(93%);
+  --color-icon-hover: invert(76%) sepia(38%) saturate(425%) hue-rotate(184deg) brightness(102%) contrast(103%);
 }
 
-a:link { color: #4b69c5; }
-a:visited { color: #323aaf; }
+a:link { color: #6989ec; }
+a:visited { color: #636587; }
 
 #clouds {
   background: black url("/content/2025_bg.jpg") no-repeat top;

@@ -4,8 +4,11 @@
  */
 
 :root {
-  --accent-light: #9ddd1c;
-  --accent-dark: #21bb4e;
+  --accent-light: #b9f558;
+  --accent-dark: #51a04d;
+  
+  --color-icon-static: invert(60%) sepia(12%) saturate(1677%) hue-rotate(69deg) brightness(88%) contrast(96%);
+  --color-icon-hover: invert(96%) sepia(50%) saturate(1134%) hue-rotate(29deg) brightness(116%) contrast(92%);
 }
 
 a:link { color: #4b69c5; }
