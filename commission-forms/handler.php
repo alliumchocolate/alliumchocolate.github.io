@@ -8,7 +8,7 @@
     
     $payload = str_replace("\n.", "\n..", $payload); //removes dots on new lines and turns them into double dots (some bs stuff)
 
-    mail('alliumchocolate@pm.me', 'Form results', $payload);
+    mail('temporary@aa', 'Form results', $payload);
 
     echo 'sent! hopefully';
 ?>
