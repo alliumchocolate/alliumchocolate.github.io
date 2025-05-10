@@ -55,14 +55,14 @@
         </div>
         
         <div class="page-box centered override-style">
-            <form action="/commission-forms" method="post">
+            <form action="/commission-forms/handler.php" method="post">
                 <p>
                     <label for="name">Name <span>(required)</span>:</label>
                     <input type="text" id="name" name="user_name" placeholder="your name here" required />
                 </p>
                 <p>
                     <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="user_email">
+                    <input type="email" id="mail" name="user_email" maxlength="70">
                 </p>
                 <p>
                     <label for="msg">Message:</label>

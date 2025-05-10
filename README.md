@@ -1,4 +1,14 @@
-# alliumchocolate.github.io
-The Mind Palace website project
+# alliumchocolate.com
+A website project
+---
 
-I think I'll put more stuff here later; but as a quick overview, this project is to create a personal website for myself. If I run out of space, I'll probably upgrade to a different host, but for now this is good!
+Welcome to my corner of the internet!
+You've found yourself on the back-end of my website.
+
+Feel free to dig around if that's what you're here for :p
+
+---
+All assets made by me. No generative AI was used in the production.
+
+@alliumchocolate
+www.alliumchocolate.com
