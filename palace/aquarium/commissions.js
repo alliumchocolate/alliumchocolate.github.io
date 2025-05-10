@@ -7,7 +7,7 @@ function openAccordion(accordionButton) {
         allowRun = false; //reset allowRun
         return;
     }
-    
+        
     console.log("Commission function opens");
     var image = accordion.children[0];
     var gradient = accordion.children[1];

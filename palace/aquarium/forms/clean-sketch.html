@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alliumchocolate - Clean sketch commission</title>
+    <link rel="stylesheet" href="form.css">
+      
+    <link rel="stylesheet" href="/utility/fonts.css">
+    <link rel="stylesheet" href="/utility/font_sizes.css">
+    <link rel="stylesheet" href="/utility/responsive-page-box.css">
+    <link rel="stylesheet" href="/utility/blog-page.css">
+    
+    <!-- Utilities -->
+    <link rel="stylesheet" href="/utility/share-button.css">
+    <link rel="stylesheet" href="/utility/modal.css">
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <meta content="Alliumchocolate - Commissions" property="og:title" />
+    <meta content="Pricing, Terms, FAQ" property="og:description" />
+    <meta content="https://alliumchocolate.com/aquarium/commissions.html" property="og:url" />
+    <meta content="https://alliumchocolate.com/content/greenhouse_bg.jpg" property="og:image" />
+    <meta content="#5b8e15" data-react-helmet="true" name="theme-color" /> 
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+	 <script src="bower_components/html5shiv.js"</script>
+    <![endif]-->
+    </head>
+    <body>
+               
+        <div id="modal"> <!-- Modal for image zoom. Requires modal.js at the bottom of the page and modal.css link, as well as onclick=modal(this) tags --> 
+          <div id="modal-screen-cover"></div>
+          <div id="modal-box">
+            <div id="modal-wrapper">
+              <img id="modal-image" src="/content/Icons/404.jpg">
+              <button id="close-modal">x</button>
+            </div>
+          </div>
+        </div> <!-- <script src="/utility/modal.js"></script> <link rel="stylesheet" href="/utility/modal.css"> -->
+
+        <div id="clouds"></div>
+        <div id="back-panel"></div>
+
+        <!-- Floating panel -->
+        <nav id="widget-box">
+          <a id="widget-full" href="/index.html"><img class="arrow-left" src="/content/Icons/arrow_left.png"> Return to website</a>
+          <a id="widget-small" href="/index.html"><img class="arrow-left" src="/content/Icons/arrow_left.png"></a>
+        </nav>  
+
+        <div class="page-box centered override-style">
+            <header class="override-style">
+            <h1>Art commissions</h1>
+            </header>
+        </div>
+        
+        <div class="page-box centered override-style">
+            <form action="/commission-forms" method="post">
+                <p>
+                    <label for="name">Name <span>(required)</span>:</label>
+                    <input type="text" id="name" name="user_name" placeholder="your name here" required />
+                </p>
+                <p>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email">
+                </p>
+                <p>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message" placeholder="aaa"></textarea>
+                </p>
+                <p class="button">
+                    <button type="submit">Send your message</button>
+                </p>
+            </form>
+        </div>
+        
+                    
+        <div class="page-box centered override-style">
+            <footer class="override-style">
+                <p>Made by Alice - <em>@alliumchocolate</em> - <a href="/aquarium.html">Contact</a></p>
+            </footer>
+        </div>    
+
+        <script src="/commissions.js"></script>  
+        <script src="/utility/modal.js"></script>  
+      
+    </body>
+</html>
