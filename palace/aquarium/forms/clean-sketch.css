@@ -1,0 +1,15 @@
+:root {
+    --accent-light: #a9bfe6;
+    --accent-dark: #727272;
+    --accent-special: #a3a3a3;
+    
+    --color-icon-static: invert(64%);
+    --color-icon-hover: invert(78%) sepia(17%) saturate(558%) hue-rotate(182deg) brightness(97%) contrast(86%);
+}
+
+a:link { color: #6586ee; }
+a:visited { color: #c97ee1; }
+
+#clouds {
+    background: black url("/content/Commissions/Sketch/Form-cover.jpg") no-repeat top;
+}

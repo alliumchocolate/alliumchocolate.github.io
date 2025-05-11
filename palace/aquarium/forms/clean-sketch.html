@@ -3,6 +3,7 @@
   <head>
     <title>Alliumchocolate - Clean sketch commission</title>
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="clean-sketch.css">  
       
     <link rel="stylesheet" href="/utility/fonts.css">
     <link rel="stylesheet" href="/utility/font_sizes.css">
@@ -44,33 +45,153 @@
 
         <!-- Floating panel -->
         <nav id="widget-box">
-          <a id="widget-full" href="/index.html"><img class="arrow-left" src="/content/Icons/arrow_left.png"> Return to website</a>
+          <a id="widget-full" href="/index.html"><img class="arrow-left" src="/content/Icons/arrow_left.png"> Return to commissions</a>
           <a id="widget-small" href="/index.html"><img class="arrow-left" src="/content/Icons/arrow_left.png"></a>
         </nav>  
 
         <div class="page-box centered override-style">
             <header class="override-style">
-            <h1>Art commissions</h1>
+            <h1>Clean Sketch</h1>
+            <p>Commission form</p>
             </header>
         </div>
         
+        <br>
+            <div class="page-box centered override-style">
+                <p>Hello! If you wish to commission me for a <strong>Clean Sketch commission</strong>, please fill out this form - it will e-mail me your request!</p>
+            </div>
+        <br><br>
+        
         <div class="page-box centered override-style">
             <form action="/commission-forms/handler.php" method="post">
-                <p>
-                    <label for="name">Name <span>(required)</span>:</label>
-                    <input type="text" id="name" name="user_name" placeholder="your name here" required />
-                </p>
-                <p>
-                    <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="user_email" maxlength="70">
-                </p>
-                <p>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message" placeholder="aaa"></textarea>
-                </p>
-                <p class="button">
-                    <button type="submit">Send your message</button>
-                </p>
+                <fieldset> <!-- CONTACT -->
+                    <legend><h2>Contact</h2></legend>
+                
+                    <p class="form-text-box centered">
+                        <label for="form-mail">Contact e-mail <span class="form-required">(required)</span>:</label>
+                        <input type="email" class="form-text-input" id="form-mail" name="email" placeholder="e-mail" required>
+                    </p>    
+                </fieldset>
+                <fieldset> <!-- COMMISSION -->
+                    <legend><h2>Commission</h2></legend>
+                    <p class="legend-subtitle">Select commission type <span class="form-required">(required)</span>:</p>
+                    
+                    <!-- Examples are a radio set of 3 choice -->
+                    <!-- [ ] [ ] [ ] -->
+                    
+                    <script> <!-- If you click on the image, enable the button -->
+                        function imageClick(container) {
+                            // radioButton = figure > div > div > input 
+                            var radioButton = container.children[1].children[0].children[0];
+                            radioButton.checked = true;
+                            console.log("radio-box clicked");
+                        }
+                    </script>
+                    
+                    <div class="examples">
+                        <figure onclick=imageClick(this)>
+                            <img src="/content/Commissions/Sketch/Portrait.jpg" alt="Sketch portrait of a feminine character - Valerie from Beastieball">
+                            <div class="input-box centered">
+                                <div class="form-radio-container">
+                                    <input class="form-radio" type="radio" id="form-type" name="type" required>
+                                </div>
+                                <label for="form-type1">Portrait</label>
+                            </div>
+                        </figure>
+                        <figure onclick=imageClick(this)>
+                            <img src="/content/Commissions/Sketch/Half-body.jpg" alt="Sketch half-body drawing of a scientist - Celia from Beastieball">
+                            <div class="input-box centered">
+                                <div class="form-radio-container">
+                                    <input class="form-radio" type="radio" id="form-type2" name="type">
+                                </div>
+                                <label for="form-type2">Half body</label>
+                            </div>
+                        </figure>
+                        <figure onclick=imageClick(this)>
+                            <img src="/content/Icons/404.jpg" alt="portrait">
+                            <div class="input-box centered">
+                                <div class="form-radio-container">
+                                    <input class="form-radio" type="radio" id="form-type3" name="type">
+                                </div>    
+                                <label for="form-type3">Full body</label>
+                            </div>
+                        </figure>
+                    </div>
+                </fieldset>
+                <fieldset> <!-- ADDONS -->
+                    <legend><h2>Add-ons</h2></legend>
+                    <p class="legend-subtitle">(optional)</p>        
+                    
+                    <div class="addon-container centered">
+                        <div class="checkbox-box">
+                            <input type="checkbox" id="form-addon1" name="addon">
+                            <label for="form-addon1">Add another subject</label>
+                        </div>
+                        <div class="checkbox-box">
+                            <input type="checkbox" id="form-addon2" name="addon">
+                            <label for="form-addon2">Add a background</label>
+                        </div>
+                    </div>
+                    
+                    <p class="form-text-box centered">If you wish to add more subjects than one, or have other requests, put them in the <strong>Additional Notes</strong> at the end of the form!</p>
+                </fieldset>
+                <fieldset> <!-- REFERENCES -->
+                    <legend><h2>References</h2></legend>
+                    
+                    <p class="form-text-box centered">
+                        <label for="form-ref1">Reference image link <span class="form-required">(required)</span>:</label>
+                        <input type="url" class="form-text-input" id="form-ref1" name="url" 
+                               placeholder="Link to an image" required>
+                    </p>
+                    <p class="form-text-box centered form-text-note">You can upload images to a site like <a href="https://imgur.com/upload">imgur</a> to get an image link.</p>
+                    
+                    <p class="form-text-box centered">
+                        <label for="form-ref2">Additional reference image link (optional):</label>
+                        <input type="url" class="form-text-input" id="form-ref2" name="url" 
+                               placeholder="Link to an image">
+                    </p>
+                    <p class="form-text-box centered">
+                        <label for="form-ref3">Additional reference image link (optional):</label>
+                        <input type="url" class="form-text-input" id="form-ref3" name="url" 
+                               placeholder="Link to an image">
+                    </p>
+                    <p class="form-text-box centered">
+                        <label for="form-ref4">Additional reference image link (optional):</label>
+                        <input type="url" class="form-text-input" id="form-ref4" name="url" 
+                               placeholder="Link to an image">
+                    </p>
+                    
+                    <p class="form-text-bottom form-text-box centered">You can add additional references in the <strong>Additional notes</strong> section at the end.</p>
+                </fieldset>
+                <fieldset> <!-- OTHER -->
+                    <legend><h2>Sharing</h2></legend>
+                
+                    <p class="form-share-note form-text-box centered">Are you okay with the final artwork being shared on my social media? <span class="form-required">(required)</span></p>
+                    
+                    <div class="form-share centered">
+                        <div class="form-share-input input-box">
+                            <div class="form-radio-container">
+                                <input class="form-radio" type="radio" id="form-share-yes" name="share" required>
+                            </div>
+                            <label for="form-share-yes">Yes</label>
+                        </div>
+                        <div class="form-share-input input-box">
+                            <div class="form-radio-container">
+                                <input class="form-radio" type="radio" id="form-share-no" name="share">
+                            </div>
+                            <label for="form-share-no">No</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Additional notes</h2></legend>
+                    
+                    <div class="form-notes-box form-text-box centered">
+                        <label for="form-notes">If you have anything else to add, do so here (optional):</label>
+                        <textarea class="form-notes-input" rows="8" id="form-notes" name="additional-notes"
+                                  placeholder="Additional references, details, requests, etc."></textarea>
+                    </div>
+                </fieldset>
             </form>
         </div>
         
