@@ -149,6 +149,13 @@ legend h2 { margin: 0; }
     background-color: color-mix(in srgb, var(--accent-light), transparent 85%); 
 }
 
+/* SPECIAL */ /* This special type of button monitors checkmarks & radio buttons for clicks on the bg. */
+.input-hitbox { 
+    position: absolute; 
+    width: 100%; height: 100%; 
+    top: 0; left: 0;
+}
+
 /* RADIO BUTTONS */
 .form-radio-container {
     display: block; position: relative; width: 21px; height: 21px;
@@ -180,6 +187,7 @@ input[class="form-radio"]:checked {
     text-align: left; vertical-align: top; 
     margin: 0; padding: 10px 15px 10px 0;
 }
+.checkbox-box label a { font-family: "Poppins", arial, sans-serif; font-size: 2.3vh; }
 
 input[type="checkbox"] {
     appearance: none;
@@ -228,7 +236,7 @@ input[type="checkbox"]:checked + label { color: var(--accent-light); }
     display: block; width: 500px; min-height: 100px; box-sizing: border-box;
     background-color:  var(--input-black);
     border: 2px var(--accent-dark) solid;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     
     font-family: "Hyperlegible", arial, sans-serif; font-size: 2.1vh;
     color: var(--p-color);
@@ -236,3 +244,34 @@ input[type="checkbox"]:checked + label { color: var(--accent-light); }
     resize: vertical;
 }
 .form-notes-input:placeholder-shown { font-style: italic; }
+
+
+/* SUBMIT BUTTON */
+.submit-box { 
+    display: flex; width: 100%; padding: 30px; box-sizing: border-box; 
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.submit-button {
+    font-family: "Poppins", arial, sans-serif; font-size: 2.5vh;
+    box-shadow: 0; border: 0;
+    padding: 20px 40px 20px 40px;
+    margin-left: auto;
+    
+    transition: 0.1s all ease-in;
+    background-color: white; color: black;
+}
+.submit-button:hover {
+    background-color: black; color: white;
+}
+
+.gdpr-note { font-size: 2vh; color: var(--accent-dark); text-align: center; }
+
+
+
+
+
+
+
+
+
+

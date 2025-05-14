@@ -1,17 +1,17 @@
 :root {
-    --accent-light: #8c66fa;
-    --accent-dark: #411e94;
-    --accent-special: #7484f1;
+    --accent-light: #87d7ff;
+    --accent-dark: #31497d;
+    --accent-special: #63a6f0;
 
-    --color-icon-static: invert(61%) sepia(38%) saturate(5961%) hue-rotate(209deg) brightness(99%) contrast(90%);
-    --color-icon-hover: invert(77%) sepia(74%) saturate(7255%) hue-rotate(232deg) brightness(101%) contrast(96%);
+    --color-icon-static: invert(61%) sepia(57%) saturate(1089%) hue-rotate(185deg) brightness(98%) contrast(92%);
+    --color-icon-hover: invert(79%) sepia(5%) saturate(4518%) hue-rotate(173deg) brightness(100%) contrast(104%);
 }
 
-a:link { color: #3081eb; }
+a:link { color: #5e9cee; }
 a:visited { color: #bd68de; }
 
 #clouds {
-    background: black url("/content/terms_bg.jpg") no-repeat top;
+    background: black url("/content/Commissions/submitted_bg.jpg") no-repeat top;
 }
 #back-panel {
     height: 100%; width: 100%;
@@ -70,48 +70,12 @@ a:visited { color: #bd68de; }
 }
 .story {padding-top: 0 !important; }
 
-.paragraph {    
-    background: linear-gradient(90deg, rgba(65, 30, 148, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-    
-    padding: 20px; margin: 15px;
+.paragraph {        
+    padding: 20px; margin: 15px; text-align: center;
 }
 .paragraph h2 { margin: 10px; margin-bottom: 15px; }
 .paragraph p { margin: 10px; }
 .paragraph strong { color: var(--accent-special); }
-
-
-/* table with additional pricing */
-.pricing-table { 
-    display: flex; 
-    margin-top: 30px; margin-bottom: 30px; 
-    
-    position: relative;
-    left: 50%; transform: translateX(-50%);
-    width: fit-content; 
-    
-    word-break: break-word;
-}
-.pricing-table p { padding: 0; margin: 5px 20px 5px 0; }
-.pricing-table h4 { margin: 0; text-align: right; }
-
-/* Dos/donts table */
-.range-table {
-    position: relative;
-    left: 50%; transform: translateX(-50%);
-    text-align: center;
-    
-    width: 100%; 
-    word-break: break-word;
-
-    border-collapse: separate;
-    border-spacing: 10px;
-}
-.range-table h3 { margin: 0; padding: 12px 10px 10px 10px; }
-.range-table-green { color: #65c75b; }
-.range-table-red { color: #e53d3d; }
-.good { background-color: rgba(22, 48, 8, 0.3); }
-.bad { background-color: rgba(57, 15, 15, 0.3); }
-.range-table p { margin: 8px; }
 
 /* process step-by-step */
 .process { margin: 40px 0 40px 0; }

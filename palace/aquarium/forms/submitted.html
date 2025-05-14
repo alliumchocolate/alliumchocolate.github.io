@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alliumchocolate - Commissions</title>
+    <link rel="stylesheet" href="submitted.css">
+    <link rel="stylesheet" href="/utility/fonts.css">
+    <link rel="stylesheet" href="/utility/font_sizes.css">
+    <link rel="stylesheet" href="/utility/responsive-page-box.css">
+    <link rel="stylesheet" href="/utility/blog-page.css">
+    
+    <!-- Utilities -->
+    <link rel="stylesheet" href="/utility/share-button.css">
+    <link rel="stylesheet" href="/utility/modal.css">
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <meta content="Alliumchocolate - Terms of Service" property="og:title" />
+    <meta content="Terms of service for art commissions" property="og:description" />
+    <meta content="https://alliumchocolate.com/aquarium/terms.html" property="og:url" />
+    <meta content="https://alliumchocolate.com/content/terms.jpg" property="og:image" />
+    <meta content="#5b8e15" data-react-helmet="true" name="theme-color" /> 
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+	 <script src="bower_components/html5shiv.js"</script>
+    <![endif]-->
+    </head>
+    <body>
+               
+        <div id="modal"> <!-- Modal for image zoom. Requires modal.js at the bottom of the page and modal.css link, as well as onclick=modal(this) tags --> 
+          <div id="modal-screen-cover"></div>
+          <div id="modal-box">
+            <div id="modal-wrapper">
+              <img id="modal-image" src="/content/Icons/404.jpg">
+              <button id="close-modal">x</button>
+            </div>
+          </div>
+        </div> <!-- <script src="/utility/modal.js"></script> <link rel="stylesheet" href="/utility/modal.css"> -->
+
+        <div id="clouds"></div>
+        <div id="back-panel"></div>
+
+        <!-- Floating panel -->
+        <nav id="widget-box">
+          <a id="widget-full" href="/palace/greenhouse.html"><img class="arrow-left" src="/content/Icons/arrow_left.png"> Return to website</a>
+          <a id="widget-small" href="/palace/greenhouse.html"><img class="arrow-left" src="/content/Icons/arrow_left.png"></a>
+        </nav>  
+
+        <div class="page-box centered override-style">
+            <header class="override-style">
+            <h1>Thank you!</h1>
+            <p>Your commission request has been sent.</p>
+        </header>
+        </div>
+
+        <div class="page-box centered override-style">
+            <section class="paragraph">
+                <p>You should receive an automatic e-mail soon, confirming I've received your request.</p>
+                <br><br>
+                
+                <h2>Whats next?</h2>
+                <p>Simply, wait - I'll get back to you at the e-mail you've provided, and let you know whether I'm able to accept the commission.</p>
+                <p>I'll also provide you with any further details that might be relevant.</p>
+                
+                <br><br>
+                <p>As a reminder, the process looks as follows:</p>
+                
+                <table class="process centered">
+                    <tr> <!-- 1 -->
+                      <td><span class="process-step">1</span></td><td><span class="process-icon">📝</span></td>
+                      <td><p class="process-text">Send in the form</p></td>
+                    </tr>
+                    <tr> <!-- 2 -->
+                      <td><span class="process-step">2</span></td><td><span class="process-icon">📧</span></td>
+                      <td><p class="process-text">I accept your commission</p></td>
+                    </tr>
+                    <tr> <!-- 3 -->
+                      <td><span class="process-step">3</span></td><td><span class="process-icon">💸</span></td>
+                      <td><p class="process-text">Half-payment</p></td>
+                    </tr>
+                    <tr> <!-- 4 -->
+                      <td><span class="process-step">4</span></td><td><span class="process-icon">🎨</span></td>
+                      <td><p class="process-text">I work on your commission <span class="process-revisions"> (3 revisions)</span></p></td>
+                    </tr>
+                    <tr> <!-- 5 -->
+                      <td><span class="process-step">5</span></td><td><span class="process-icon">💸</span></td>
+                      <td><p class="process-text">Rest of the payment</p></td>
+                    </tr>
+                    <tr> <!-- 1 -->
+                      <td><span class="process-step">6</span></td><td><span class="process-icon">🎉</span></td>
+                      <td><p class="process-text">You receive the artwork!</p></td>
+                    </tr>
+                </table>
+                <br>
+                
+                <p>Why not check out my <a href="/palace/greenhouse.html">other projects</a> in the meantime?</p>
+            </section>
+        </div>
+        
+
+        <div class="page-box centered override-style">
+        <footer class="override-style">
+          <p>Made by Alice - <em>@alliumchocolate</em> - <a href="/aquarium.html">Contact</a></p>
+        </footer>
+        </div>    
+
+        <script src="commissions.js"></script>  
+        <script src="/utility/modal.js"></script>  
+      
+    </body>
+</html>

@@ -1,0 +1,15 @@
+:root {
+    --accent-light: #f1a42c;
+    --accent-dark: #473e35;
+    --accent-special: #d6814e;
+    
+    --color-icon-static: invert(51%) sepia(6%) saturate(6423%) hue-rotate(334deg) brightness(123%) contrast(68%);
+    --color-icon-hover: invert(84%) sepia(25%) saturate(4742%) hue-rotate(338deg) brightness(99%) contrast(92%);
+}
+
+a:link { color: #6586ee; }
+a:visited { color: #c97ee1; }
+
+#clouds {
+    background: black url("/content/Commissions/Painterly/painterly-form.jpg") no-repeat left;
+}

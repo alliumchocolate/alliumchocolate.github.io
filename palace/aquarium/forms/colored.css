@@ -1,0 +1,15 @@
+:root {
+    --accent-light: #cdec41;
+    --accent-dark: #423d3a;
+    --accent-special: #c48446;
+    
+    --color-icon-static: invert(54%) sepia(70%) saturate(398%) hue-rotate(348deg) brightness(91%) contrast(83%);
+    --color-icon-hover: invert(94%) sepia(100%) saturate(663%) hue-rotate(11deg) brightness(96%) contrast(91%);
+}
+
+a:link { color: #e8de76; }
+a:visited { color: #a05e6b; }
+
+#clouds {
+    background: black url("/content/Commissions/Colored/Cover.jpg") no-repeat top;
+}
