@@ -258,10 +258,10 @@ input[type="checkbox"]:checked + label { color: var(--accent-light); }
     margin-left: auto;
     
     transition: 0.1s all ease-in;
-    background-color: white; color: black;
+    background-color: var(--accent-light); color: black;
 }
 .submit-button:hover {
-    background-color: black; color: white;
+    background-color: white;
 }
 
 .gdpr-note { font-size: 2vh; color: var(--accent-dark); text-align: center; }
