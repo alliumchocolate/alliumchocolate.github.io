@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alliumchocolate - Greenhouse</title>
+    <link rel="stylesheet" href="greenhouse.css">
+    <link rel="stylesheet" href="/utility/fonts.css">
+    <link rel="stylesheet" href="/utility/font_sizes.css">
+    <link rel="stylesheet" href="/utility/responsive-page-box.css">
+    <link rel="stylesheet" href="/utility/blog-page.css">
+    
+    <!-- utilities -->
+    <link rel="stylesheet" href="/utility/share-button.css">
+    <link rel="stylesheet" href="/utility/modal.css">
+
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <meta content="Alliumchocolate - Greenhouse" property="og:title" />
+    <meta content="Personal blog" property="og:description" />
+    <meta content="https://alliumchocolate.com/greenhouse.html" property="og:url" />
+    <meta content="https://alliumchocolate.com/content/backgrounds/greenhouse_bg.jpg" property="og:image" />
+    <meta content="#5b8e15" data-react-helmet="true" name="theme-color" /> 
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+	 <script src="bower_components/html5shiv.js"</script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="modal"> <!-- Modal for image zoom. Requires modal.js at the bottom of the page and modal.css link --> 
+        <div id="modal-screen-cover"></div>
+        <div id="modal-box">
+          <div id="modal-wrapper">
+            <img onclick="modal(this)" id="modal-image" src="/content/Icons/404.jpg">
+            <button id="close-modal">x</button>
+          </div>
+        </div>
+    </div>     
+
+    <div id="clouds"></div>
+    
+    <!-- JS section -->
+    <script>
+      function copyLink(section) {
+      navigator.clipboard.writeText("https://alliumchocolate.com/greenhouse.html#" + section);
+      document.getElementById('copy-dialog').style.display = 'block';
+        
+      setTimeout(function(){
+        document.getElementById('copy-dialog').style.display = 'none';
+      }, 1000);
+      }
+    </script>
+    <!-- JS section-->
+    
+    <div class="page-box centered">
+      <header>
+        <h1>Greenhouse</h1>
+        <p>The personal blog</p>
+        <nav>
+          <a href="/index.html">Gate</a> <!-- Intro page -->
+          <a href="greenhouse.html">Greenhouse</a> <!-- Personal blog --> 
+          <a href="study.html">Study</a> <!-- Art directory -->
+          <a href="aquarium.html">Aquarium</a> <!-- Contact -->
+        </nav>
+      </header>
+    </div>
+    
+    <!-- copy dialog -->
+    <div id="copy-dialog" class="centered">
+      <p>Link copied!</p>
+    </div>
+    
+    <!-- the story part -->
+    <div class="page-box centered">
+      <section class="story">
+        <p><em>In a quiet, sunbathed corner of one of the many courts, you find an old greenhouse. A teal patina has covered all of the exposed copper, and the glass has become cloudy from age.</em></p>
+        <p><em>Walking inside, it seems oddly larger than it's exterior would allow; Plants are stacked row after row, interlaced with water works, careful arrangements of lamps and decorative stones.</em></p>
+      </section>
+    </div>
+    
+    <!-- Post format
+    <div class="page-box centered">
+      <article class="post">
+        <h2 id="title">Title</h2>
+        <p>Paragraph</p>
+        <aside>13th February 2025</aside>
+        <div class="share" onclick="copyLink('title')"></div>
+      </article>
+    </div>
+    -->
+
+    <!-- Post -->
+    <div class="page-box centered">
+      <article class="post">
+        <h2 id="photopril-2025">Photopril 2025</h2>
+        <p>Late in March, when I was working on my daily Kimodameshi studies, I've felt a pull to do something new.</p>
+        <p>Soon, I've found <a href="https://youtu.be/dj6amN_f8g0?si=pAjnaWcirri0ROvt">this video</a> by Schlanman about taking 'hard photos', and I've realised that photography might be more fun than I used to think.</p>
+        <p>It didn't take long until I've had an old digicam from 2011, the Olympus PEN E-PL2, in my hands. I've committed to taking a photo a day for the entirety of April. And so I did!</p>
+        
+        <h3>The rules</h3>
+        <p>There were some rules I've kept to all throughout the month. Loosely, here they are:</p>
+        <ul>
+          <li><strong>It has to be interesting.</strong>
+          <p>Well, at least according to my own judgement. I'm just starting the journey after all! This ensures, though, that I put in <em>an</em> effort; Make art!</p></li>
+          <li><strong>It has to be taken that day.</strong>
+          <p>No taking photos in batches, and releasing them one by one. It makes sure I do something <em>every</em> day!</p></li>
+          <li><strong>Manual control ONLY!</strong>
+          <p>I have to set up the exposure, focus, etc. by hand. The project is, in part, a way for me to get some mileage with a camera.</p></li>
+          <li><strong>It can be anything.</strong>
+          <p>Mixed media, photoshop jobs, staged stuff, anything goes. I didn't end up doing a ton of mixed media photos, but I remember the ones I did quite fondly.</p></li>
+        </ul>
+        
+        <h3>Say cheese!</h3>
+        <p>With the stage set, I've went on and did the thing. I took a photo every single day - sometimes this meant I would be going out after midnight, sometimes the projct took me on whole daytrips, sometimes I would spend hours taping cardboard together;</p>
+        <p>It was really, really fun. I think there was some idea in the back of my head that this was my plenairpril; I've ended up finding a whole new world instead.</p>
+        <p>You can head to the <a href="/art/SDcard.css">SD Card</a>, where I've uploaded every single photo I ended up with; Or look at this compilation below. Click to open a high-quality version.</p>
+        <a href="/content/Greenhouse/photopril-2025/photopril_4k.png" target="_blank"><img src="/content/Greenhouse/photopril-2025/photopril_thumbnail.jpg" class="centered" width="100%" alt="compilation of 30 photos with labels for genre"></a>
+        
+        <p><strong>P.S.</strong> Hope you enjoy these posts; I'll also update you that I've added mobile support to the website, as well as the ability to click on images to enlarge. Becoming more profficient in web-dev as I go c:</p>
+        <p>Cheers!</p>
+        <aside>2nd May 2025</aside>
+        <div class="share" onclick="copyLink('photopril-2025')"></div>
+      </article>
+    </div>
+    
+    
+    <!-- post -->
+    <div class="page-box centered">
+      <article class="post">
+        <h2 id="egg-paintathon-2025">Egg Paintathon 2025</h2>
+        <p>This weekend, I took part in the <a href="https://x.com/LightBoxExpo/status/1906021031736672643">Easter LBX Paintathon</a> alongside a couple of friends!</p>
+        <p>This was a really really fun project. As I've found myself in a leadership role, my head's been spinning about it for a while haha. I've wanted to make this small post to document how it went :p</p>
+        <p>First - who are these 'friends'? Introducing <strong>The Feam</strong>:</p>
+        <ul>
+          <li><a href="/aquarium.html">Myself</a>!</li>
+          <li><a href="https://www.instagram.com/surmountbyscorn">SurmountByScorn</a> - also on <a href="https://substack.com/@surmountbyscorn?r=485vyv&utm_medium=ios">Substack</a>!</li>
+          <li><a href="https://www.instagram.com/0mnation">Omnation</a>!</li>
+          <li><a href="https://www.instagram.com/hokeypokeyraccoon">Hokeypokey</a>!</li>
+          <li><a href="https://www.instagram.com/enoch_s_az">J'aime</a>!</li>
+          <li><a href="https://www.instagram.com/soleduck.art">Sole Duck</a>!</li>
+          <li><em>Tofu</em>! ...who has no socials they want to share.</li>
+          <li><a href="https://www.instagram.com/scoooott.art/">Scoooott</a> - who couldn't participate this time, but we still appreciate them!</li>
+        </ul>
+        
+        <p>We've all met through <a href="https://www.chroma-corps.com">Chroma Corps</a>, and have already done a paintathon before together. If you don't know, the LBX paintathons are sort of like a game-jam, but for art; You make a 4-8 artist team, and create a collaborative painting on a theme over just 24h.</p>
+        <p>This event had an additional gimmick, where we had to include easter eggs to franchises in the magitek genre.</p>
+        
+        <strong>What is magitek?</strong>
+        <p>Good question! We also weren't quite sure about the limits of this genre, so before the paintathon started, we've brainstormed a google doc of all examples we could think of.</p> 
+        <p>First of all, Mickey Mouse's Clubhouse is magitek. Spongebob, too, though by a technicality; And it also turns out we know a lot more games than other media.</p>
+        <p>With this established, it's time to start!</p>
+        
+        <h3>The Paintathon begins</h3>
+        <p>With the theme revealed - <strong>Excquisite Invention</strong> - we spent about ~3h thinking, thumbnailing, and discussing the direction we want to go. We've explored a couple of directions, like something about Gourmand from Rain World, something set during the late XIXth/early XXth century World Fairs, and some intricate mechanical puzzles.</p>
+        <p>We've also quickly found the idea of an "Iron Chef" - a cooking show where a robot chef competes against a human chef, <a href="https://en.wikipedia.org/wiki/John_Henry_(folklore)">John Henry style</a>.</p>
+        <p>While we were trying to resolve some compositional issues with the Iron Chef, <a href="https://www.instagram.com/0mnation">Omnation</a>, despite being sick, swooped in with a scientist building a robotic lover, and we instantly loved the idea enough to switch over.</p>
+                
+        <h4>Magma</h4>
+        <p>Our next step was to go onto a magma, and start sketching together! We've quickly established a general plan, and then divided up roles. <a href="https://www.instagram.com/soleduck.art">Duck</a> would work on the characters, <a href="https://www.instagram.com/surmountbyscorn">Scorn</a> would would work on a color key, and I would continue refining the sketch, alongside <a href="https://www.instagram.com/enoch_s_az">J'aime</a> who got there later. The rest of the members were unavailable or asleep at this stage already.</p>
+        
+        <h4>Painting</h4>
+        <p>And then we started rendering! Couple of us have stayed up very late but we got a really good bite on the render.</p>
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/egg-paintathon-2025/how_late.jpg" width="60%" alt="Screenshot of a discord conversation. Scorn asks 'What time is it for you btw?', I reply '1:30', Duck replies '3:30'">
+        <p>We're from all around the globe, but personally I've ended up going to bed around 4 in the morning.</p>
+        
+        <p>Short sleep later, we've gotten back into it, the friends in eastern time zones hopped in to help with the painting, and slowly, quite literally ~40 minutes before the deadline, I've got everyone to send me their files, so that I could merge them together and apply final post-processing.</p>
+        
+        <h4>Submission</h4>
+        <p>And that's time! We've submmited the piece - you can find the 'official' instagram post <a href="https://www.instagram.com/p/DH1EHwFoYYO/">here</a>. Here it is in full glory:</p>
+        <img  onclick="modal(this)" class="centered" src="/content/2025/TheFeam_KaffeeTheMaker_small.jpg" width="100%" alt="Paintathon piece depicting an old mechanic building a robotic man in a busy workshop">
+        <p>But if you remember, we had to include easter eggs into the painting! Can you spot them? Hover over or tap on the box below to see all of them outlined:</p>
+        <div class="spoiler-box">
+          <img class="centered" src="/content/Greenhouse/egg-paintathon-2025/TheFeam_KaffeeTheMaker_Hints_small.jpg" width="100%" alt="Paintathon piece depicting an old mechanic building a robotic man in a busy workshop, with several objects outlined">
+          <div class="spoiler-tag"><p>Hover/tap to uncover</p></div>
+        </div>
+        <p class="attribution"><em>You can <a href="/content/Greenhouse/egg-paintathon-2025/TheFeam_KaffeeTheMaker_Hints_small.jpg" target="_blank">click here</a> to view this in full size in a new tab.</em></p>
+        
+        <p>Oh, also. For the submission, we've also had to prepare process screenshots - just as proof, etc. Following from the last paintathon we've done as a group, I've put together the image below:</p>
+        <a href="/content/Greenhouse/egg-paintathon-2025/BTS.png" target="_blank"><img class="centered" src="/content/Greenhouse/egg-paintathon-2025/BTS.png" width="100%" alt="Collage of screenshots from the painting process"></a>
+        <p class="attribution"><em>This one might be better opened in a new tab.</em></p>
+        
+        <h4>Results</h4>
+        <p>I'm adding this section in a bit later, since the results were just published!</p>
+        <p>Well, we didn't win lol. But we were always the For Fun Feam anyway. Oh, also, our friends <em>did</em> make it far! 3 groups made it to top 10, and one of them made it all the way to top 3!</p>
+        
+        <p>I hope to see you next paintathon, or even earlier, at Chroma Corps - cheers!</p>
+        <aside>3rd April 2025</aside>
+        <div class="share" onclick="copyLink('egg-paintathon-2025')"></div>
+      </article>
+    </div>
+    
+    <!-- post -->
+    <div class="page-box centered">
+      <article class="post">
+        <h2 id="the-papercraft-process">The Papercraft Process</h2>
+        <p>Foreword: During Kimodameshi 7, I've made <a href="/art/craftsroom.html#cocoa">this papercraft</a>. While preparing, some folks asked how I make these. Seeing as it's a common question, I documented the process!</p>
+        <p>I'll start by shouting out Alex from <a href="https://folduptoys.com">Fold Up Toys</a>, who is my own inspiration. Paper engineering is a super fun hobby, and it's less intimidating than it might seem. I'm no expert myself, either - just sharing what I've learned!</p>
+        <p>For this lengthy showcase, we will be working on a papercraft of Cocoa, <a href="https://www.instagram.com/p/DGBbfB5xt-H/?hl=en">a character by @waifuarts</a>!</p>
+        
+        <strong>Table of contents</strong>
+        <div class="table-of-contents">
+          <ol>
+            <li><a href="#the-papercraft-process-1">Concept</a></li>
+            <li><a href="#the-papercraft-process-2">Model</a></li>
+            <li><a href="#the-papercraft-process-3">Layout</a>
+              <ol>
+                <li><a href="#the-papercraft-process-3-1">Exporting 3D to 2D</a></li>
+                <li><a href="#the-papercraft-process-3-2">Arranging the net</a></li>
+                <li><a href="#the-papercraft-process-3-3">Tabs</a></li>
+              </ol>
+            </li>
+            <li><a href="#the-papercraft-process-4">Texture</a></li>
+            <li><a href="#the-papercraft-process-5">Key</a></li>
+            <li><a href="#the-papercraft-process-6">Export</a>
+              <ol>
+                <li><a href="#the-papercraft-process-6-1">Photos</a></li>
+              </ol>
+            </li>
+            <li><a href="#the=papercraft-process-7">Conclusion</a></li>
+          </ol>
+        </div>
+        
+        <!-- Step 1 -->
+        <h3 id="the-papercraft-process-1">Step 1: Concept</h3>
+        <p>First, we need to decide what we'll be making! This means poses, expressions, but also folds, and structure.</p>
+        <p>Here's some key points I've learned to keep in mind while designing:</p>
+        <ul>
+          <li><strong>Minimize piece count</strong>,</li>
+          <li><strong>Minimize paper</strong>,</li>
+          <li><strong>Minimize glueing</strong>,</li>
+          <li><strong>Preserve the toy's balance</strong>.</li>
+        </ul>
+        <p>For example, minimizing piece count makes the build more intuitive. Fail to make the toy balanced, and it'll topple over from the slightest draft! Additionally, figuring out the techniques and folds you want to use, will save you some time later.</p>
+        <p>For Cocoa, I've quickly decided on this kneeling pose:</p>
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/the-papercraft-process/concept.jpg" width="100%" alt="Sketches of a character with made with geometric shapes">
+        <p class="attribution"><em>Remember to use your fundamentals! Composition or anatomy is just as important in papercrafts as it is in painting.</em></p>
+        
+        <!-- Step 2 -->
+        <h3 id="the-papercraft-process-2">Step 2: Model</h3>
+        <p>Some paper engineers jump straight into paper, but for me - the next step is 3D modelling! I use <a href="https://www.blockbench.net">Blockbench</a>, mostly out of familiarity.</p>
+        <p>I use the <strong>generic model</strong> mode, designed for low-poly (rather than Minecraft's voxel focused modes), and I assemble the form I've designed from planes, making liberal use of the vertex snap tool.</p>
+        <p>We're in a unique position, where we can extend certain faces beyond their vertices to add detail. I've done this on my <a href="art/craftsroom.html#paper-pizza">Paper Pizza</a> model, with the ear flaps, as well as the nose:</p>
+        <img  onclick="modal(this)" class="centered" src="/content/Craftsroom/Pizza/Full.jpg" width="100%" alt="Photo of a papercraft Pizza from Chicory">
+        <p class="attribution"><em>You should play <a href="https://store.steampowered.com/app/1123450/Chicory_A_Colorful_Tale/">Chicory: A Colorful tale</a>. It's the best!</em></p>
+        <p>You can also use the material properties of paper, like it's bendiness for curves, or it's springiness for play features - we have a lot of room for creativity.</p>
+        <p> For Cocoa, I've chosen to make use of the extended planes especially around the face, to add dimension to the hair.</p>
+        <table>
+          <tr>
+            <td><img  onclick="modal(this)" src="/content/Greenhouse/the-papercraft-process/model_1.jpg" width="100%" alt="Screenshot of an in-progress 3D model"></td>
+            <td><img  onclick="modal(this)" src="/content/Greenhouse/the-papercraft-process/model_2.jpg" width="100%" alt="Screenshot of an in-progress 3D model"></td>
+          </tr>
+        </table>
+        <p class="attribution"><em>Piecing together the 3D model</em></p>
+        
+        <!-- Step 3 -->
+        <h3 id="the-papercraft-process-3">Step 3: Layout</h3>
+        <p>Layout, in this context, refers to the <em>net</em> of the papercraft - our end goal is to create a flat, 2D image that the builder can then print, cut out and fold into a 3D model.</p>
+        <p>You might remember learning about nets of polyhedra from geometry. This is essentially what we're making!</p>
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/the-papercraft-process/unfolding-net.gif" width="70%" alt="Animation of a folding net">
+        <p class="attribution"><em>Folding net of a dodecahedron, by <a href="//commons.wikimedia.org/wiki/User:A2569875" title="User:A2569875">A2569875</a> on wikipedia - <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=24803472">Source</a></em></p>
+        
+        <!-- 3.1 -->
+        <h4 id="the-papercraft-process-3-1">3.1: Exporting 3D to 2D</h4>
+        <p>First, we need to somehow get the faces of the 3D model into 2D, while preserving all of the relative lengths and angles.</p>
+        <p>With some research, I've settled on this process to do so:</p>
+        <ol>
+          <li>Export the blockbench model as a <strong>.obj</strong> file,</li>
+          <li>Open <a href="https://www.blender.org">Blender</a>, with the <a href="https://blender-addons.org/export-paper-model-addon/">Paper Model addon</a>,</li>
+          <li>Import the <strong>.obj</strong> file into the Blender scene,</li>
+          <li>Go into <strong>Object mode</strong>, select all faces, and merge them with <strong>Ctrl+J</strong>,</li>
+          <li>Go into <strong>Edit mode</strong>, select and triangulate all faces with <strong>Ctrl+T</strong>,</li>
+          <li>Export as <strong>Papercraft model</strong>. I disable tabs, numbers, and set scale to 1:8 so everything fits on one page.</li>
+        </ol>
+        <p>This will leave you with a <strong>.pdf</strong> file with all of the faces laid out flat!</p>
+        <p>I think it's supposed to make a foldable net, but this has never worked as intended for me. We will be optimising the net anyway - all i want from this lovely extension is the list of faces in 2D. </p>
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/the-papercraft-process/flat-export.jpg" width="100%" alt="Screenshot of a disorganised array of polygons">
+        <p class="attribution"><em>Screenshot of the exported file</em></p>
+        
+        <!-- 3.2 -->
+        <h4 id="the-papercraft-process-3-2">3.2: Arranging the net</h4>
+        <p>With the list of faces ready, we can start assembling our net - this can get confusing, but with some effort, and the 3D model still open for reference, you can piece it together.</p>
+        <p>There's no one way to layout a given 3D shape - it's always an optimisation game. Here, for example, you can see some possible nets of a simple cube:</p>
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/the-papercraft-process/cube-nets.png" width="100%" alt="Nets of a cube">
+        <p class="attribution"><em>Nets of a cube, by <a href="//commons.wikimedia.org/wiki/User:Nonenmac" title="User:Nonenmac">R. A. Nonenmacher</a> - <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=4774402">Source</a></em></p>
+        <p>While working on the net, I recommend working in vector design software, for example <a href="https://inkscape.org">Inkscape</a> - this means that rather than pixels, we're working with math under the hood. This lets us zoom infinitely far without losing any quality, which is perfect for print!</p>
+        <p>Here's some tips for assembling the net:</p>
+        <ul>
+          <li><strong>Connect the pieces</strong>
+            <p>The fewer separated pieces your layout has, the less cutting the builder will have to do! Additionally, it'll be easier to keep track of said pieces.</p></li>
+          <li><strong>Make it space efficient</strong>
+            <p>Grouping the pieces efficiently lets you make the layout bigger on the page. This is more material efficient, since we have less unused paper, but also makes the final craft larger!</p></li>
+          <li><strong>One-sided or two-sided?</strong>
+            <p>This is suprisingly non-trivial. Paper has two sides - a PDF has only one. Thus, making a double-sided papercraft requires a lot of additional, careful work. In return, though, you gain a lot of new design avenues.</p>
+            <p>If you settle on one-sided print, remember that you only have that one side - you might realise you've flipped a face around in 3D, putting the print on the inside of the craft!</p></li>
+        </ul>
+        <p>This might be quite overwhelming to take in, but no worries - we have a very strong tool to help us. <strong>Iteration!</strong></p>
+        <p>After some work, I've ended up with this:</p>
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/the-papercraft-process/layout-1.jpg" width="100%" alt="Screenshot from inkscape of a set up layout">
+        <p class="attribution"><em>Screenshot of a prototype layout from Inkscape</em></p>
+        <p>So, instead of worrying how the craft will turn out, let's print it out, and build it!</p>
+        <table>
+          <tr>
+            <td><img  onclick="modal(this)" src="/content/Greenhouse/the-papercraft-process/layout-2.jpg" width="100%" alt="Photo of the printed layout"></td>
+            <td><img  onclick="modal(this)" src="/content/Greenhouse/the-papercraft-process/layout-3.jpg" width="100%" alt="Photo of the assembled prototype layout"></td>
+          </tr>
+        </table>
+        <p class="attribution"><em>Photos from the building of the prototype model</em></p>
+        <p>Now that we have a physical model, held together with tape, we can see if it's easy to build and what needs to be corrected. For some complex models, I might do a bunch of iterations; For others, just 1 or 2 prototypes are sufficient.</p>
+        
+        <!-- 3.3 -->
+        <h4 id="the-papercraft-process-3-3">3.3: Tabs</h4>
+        <p>Tabs are, at least in my mind, what separate a sculpture from a papercraft toy. It's what makes the template shareable, it's how others can enjoy your creation!</p>
+        <p>Here's some things I try to keep in mind while adding tabs:</p>
+        
+        <strong>Edges</strong>
+        <p>If the edge of a tab follows from the edge of a face, you can cut it in one stroke:</p>
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/the-papercraft-process/tabs-1.jpg" width="100%" alt="image showing a comparison between a tab with a shared edge and a tab with an angled edge">
+        <p>Otherwise, making the angle change visually obvious is a good idea.</p>
+          
+        <strong>Dimensions</strong>
+        <ul>
+          <li><strong>Height</strong> (width)
+          <p>If you make the tab very narrow, it will be more space efficient, but it will also be hard to fold. On the other hand, if you make it really wide, it will become hard to press down on when glueing.</p></li>
+          <li><strong>Length</strong>
+          <p>Tabs will usually extend over the entire length of the face. If the face is really long, it might be useful to cut the tab short - this makes it easier to glue, and cuts down on waste.</p></li>
+        </ul>
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/the-papercraft-process/tabs-2.jpg" width="100%" alt="image showing which part of the tab is the height (width, counted from the face forwards), and which is the length (the length from one edge of the tab to the other)">
+        <br>
+        <br>
+        <strong>Where to place</strong>
+        <p>You don't have to place tabs everywhere! Sometimes, it's totally sufficient (and may even be easier) to leave out a tab.</p>
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/the-papercraft-process/tabs-3.jpg" width="100%" alt="Photo of a papercraft with a crafts knife showing a gap where a tab usually could be placed">
+        <br>
+        <br>
+        
+        <!-- Step 4 -->
+        <h3 id="the-papercraft-process-4">Step 4: Texturing</h3>
+        <p>This is my favourite step - now that we have a finalized layout, I open my trusty apps (you can do this in any art program, though I've used <a href="https://www.clipstudio.net/en/">Clip Studio Paint</a> this time) and get to painting.</p>
+        <p>I use the physical model i folded up earlier for reference as to where stuff should go.</p>
+        <p>Fun note here: Most faces of your template will not be the same silhouette as the thing you're trying to portray, so we have a fun creative challenge of squeezing features into these quadrilateral boxes! Kind of like low-poly 3D.</p>
+        <p><em>(Unless you're designing a character from scratch. Then you can just make them be square of course)</em></p>
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/the-papercraft-process/texture-1.jpg" width="100%" alt="Screenshot of a sketched out texture over the template">
+        <p class="attribution"><em>Screenshot of the sketch</em></p>
+        
+        <strong>Medium</strong>
+        <p>Since we're doing this for print, you can either do raster art (ie. with pixels) or vector art (ie. with math). If you do raster art, i recommend using at least <strong>300 DPI</strong>, or ideally, <strong>600 DPI</strong> for your canvas. This will ensure the print comes out clean!</p>
+        <p>If you have a very uniform style, you can consider vector art - it's much more intensive, but on the upside, you'll be able to scale it up as much as you want without any quality loss!</p>
+        <p>Format wise, I usually go with the A4 standard, since it's so common.</p>
+        
+        <strong>Bleed</strong>
+        <p>Most of how you approach this will depend on your art style. But, I get this question every so often, so I'll add that you can add a bleed to your texture, by extending it a couple milimeters beyond the template. This will let the builder make some mistakes while cutting!</p>
+        
+        <table>
+          <tr>
+            <td><img  onclick="modal(this)" src="/content/Greenhouse/the-papercraft-process/texture-2.jpg" width="100%" alt="Screenshot of a single-color bleed layer"></td>
+            <td><img  onclick="modal(this)" src="/content/Greenhouse/the-papercraft-process/texture-3.jpg" width="100%" alt="Screenshot of the flat colors ready"></td>
+          </tr>
+        </table>
+        <p class="attribution"><em>Screenshots of the silhouette bleed layer and the flat colors</em></p>
+        <p>And, eventually, with some work...</p>
+        
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/the-papercraft-process/texture-4.jpg" width="100%" alt="Screenshot of the rendered texture">
+        <p class="attribution"><em>Screenshot of the finished texture</em></p>
+        
+        <!-- Step 5 -->
+        <h3 id="the-papercraft-process-5">Step 5: Key</h3>
+        <p>This stage, like tabs, is really important for the template to be buildable.</p>
+        <p>Currently, we have a net of the craft made of solid, uniform lines. As the artist, you know how to cut and fold it so that it works out - but the builder doesn't! We need to mark out where to cut, as well as where and which way to fold.</p>
+        <p>I do this part in vector design software, like <a href="https://inkscape.org">Inkscape</a>.</p>
+        <p>It's important to be consistent here - if you ask the builder to cut along every thick black line, don't put similar black lines on the template. It could lead to a <em>cut</em>astrophe! (&gt;ᴗ•)</p>
+        
+        <p>Over time, you'll find a key that makes sense to you. I've settled on this:</p>
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/the-papercraft-process/key-1.jpg" width="100%" alt="Papercraft key, noting what kind of line to cut, fold, and glue">
+        <p class="attribution"><em>Sometimes I make the 'glue under print' grid square, depending on what stands out more.</em></p>
+        
+        <p>Something you can also do at this stage is numbering the tabs - When building the prototypes, I note down the easiest order to glue the model in I find, and then order the tabs accordingly.</p>
+        
+        <!-- Step 6 -->
+        <h3 id="the-papercraft-process-6">Step 6: Export</h3>
+        <p>Now that you have your perfected template, I recommend printing it out one last time and folding it - just to check everything's in order.</p>
+        <p>I like to add some flourishes at this stage, like logos or a title, as well as credits.</p>
+        <p>Then, we export! I recommend exporting into <strong>.pdf</strong>, for print, and <strong>.png</strong>, for sharing on social media, which rarely support PDF embeds.</p>
+        
+        <h4 id="the-papercraft-process-6.1">Photos</h4>
+        <p>After all of this work we've done, I temporarily turn my desk into a photo studio.</p>
+        <p>Photos of a papercraft are super easy to share, and they give people an idea of what this niche thing even is! A hidden bonus is that they also help builders know what goes where.</p>
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/the-papercraft-process/photo-1.jpg" width="100%" alt="Photo of my desk with papercrafts laid out amidst a set of random objects">
+        <p class="attribution"><em>The state of my photo studio</em></p>
+        <p>For my photos, I want to have two different colored light sources, so I temporarily tape a piece of paper to my desk lamp for the diffused white light. I also have this bunny shaped night lamp, which has a setting of a really warm, orange light.</p>
+        <p>Then, I arrange a fun background scene, using random objects like my art toolcase and sketchbooks.</p>
+        <img  onclick="modal(this)" class="centered" src="/content/Greenhouse/the-papercraft-process/photo-2.jpg" width="100%" alt="Photo of the papercraft prototypes">
+        <p class="attribution"><em>Prototypes of the Cocoa papercraft</em></p>
+        <p>And I snap some photos with my phone! With some adjusting, we're ready to post.</p>
+        
+        <!-- the end -->
+        <h3 id="the-papercraft-process-7">Conclusion</h3>
+        <p>Thank you for reading along!! This was a super fun project, and I've enjoyed the added challenge of (mostly) coherent documentation.</p>
+        <p>Here's what we've ended up with:</p>
+        <img  onclick="modal(this)" class="centered" src="/content/Craftsroom/Cocoa/Main_cover.jpg" width="100%" alt="Photo of the papercraft from the front">
+        <img  onclick="modal(this)" class="centered" src="/content/Craftsroom/Cocoa/Secondary_cover.jpg" width="100%" alt="Photo of the papercraft from the side">
+        <p class="attribution"><em>Photos of the finished papercraft</em></p>
+        
+        <img  onclick="modal(this)" class="centered" src="/content/Craftsroom/Cocoa/Cocoa%20Papercraft.png" width="100%" alt="The Cocoa Papercraft template">
+        <p class="attribution"><em>The finished template</em></p>
+        
+        <p>You can download the template here, as: <a href="/content/Craftsroom/Cocoa/Cocoa%20Papercraft.pdf" download>PDF (recommended)</a> or <a href="/content//Craftsroom/Cocoa/Cocoa%20Papercraft.png" download>PNG</a>.</p>
+        
+        <p>Cheers!</p>
+        <aside>17th March 2025</aside>
+        <div class="share" onclick="copyLink('the-papercraft-process')"></div>
+      </article>
+    </div>
+    
+    <!-- post -->
+    <div class="page-box centered">
+      <article class="post">
+        <h2 id="the-website-launch">The website launch</h2>
+        <p>Hello!! So this is the day; I've started this project roughly around the 1st of February, which would mean it took me about 17 days.</p>
+        <p>Which, honestly, is not at all bad - I mean, I did not know any HTML or CSS before this.</p>
+        
+        <h3>Why?</h3>
+        <p>I've wanted to join the indie web for a long time. Centralised social media has let us create and connect faster than ever, but it did so at the cost of handing over our expression to corporations. It's not even controversial to state that social media makes our lives worse - it's just an accepted fact.</p>
+        <p>But, in the case of the web... We <em>can</em> just return to how things were. I think this is what pulls me so.</p>
+        
+        <h3>How?</h3>
+        <p>If you're the kind of person to do this, you already know it. But this depends on how you want to do this:</p>
+        
+        <ol>
+          <li>
+            <strong>Without programming:</strong>
+            <p>You can use tools like <a href="https://sites.google.com">Google Sites</a> or <a href="https://wordpress.com/free/">WordPress</a> to make something with absolutely no code.</p>
+            <p>Personally, though, I think you should go with <a href="https://neocities.org">Neocities</a>, and use one of the hundreds of templates other people offer for free.</p>
+          </li>
+          
+          <li>
+            <strong>From scratch:</strong>
+            <p>Firstly, you'll need to learn how to do HTML/CSS. I recommend starting with the <a href="https://www.htmldog.com/guides/html/beginner/">HTML Dog</a> course - It's really easy to follow. After you complete this, do their CSS beginner course, and if you feel up to it - the intermediate ones. This is more than enough to start.</p>
+            <p>Next, you need a host - for this, I recommend <a href="https://neocities.org">Neocities</a> again; It's very simple. If you have some know-how, <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">Github Pages</a> is a great alternative.</p>
+            <p>And that's it! Now that you have the tools, the web is your canvas.</p>
+          </li>
+        </ol>
+        <p>One last thing: If you choose to do this, and need <strong>any</strong> help, please ask me. I will help you. For free. I'm not an expert either, but I've clearly managed; We can figure it out together!</p>
+        
+        <h3>Thank you</h3>
+        <p>For stopping by! Feel free to explore the rest of the palace, as I call it; I've archived actual years of my art here.</p>
+        <p>Cheers!</p>
+        
+        <aside>17th February 2025</aside>
+        <div class="share" onclick="copyLink('the-website-launch')"></div>
+      </article>
+    </div>
+    
+    <!-- post -->
+    <div class="page-box centered">
+      <article class="post">
+        <h2 id="the-first-post">The first post</h2>
+        <p>Hi! whether you've scrolled to this post from far up, or looked here very early on, you've reached the very beginning.</p>
+        <p>I think I'll mostly just update this page with random stuff I'm working on! Like this website for example lol</p>
+        <p>I'll make a bigger post with full behind the scenes of this project when I'm closer to completion, but this has taken a lot of hours so far!!</p>
+        <aside>13th February 2025</aside>
+        <div class="share" onclick="copyLink('the-first-post')"></div>
+      </article>
+    </div>
+
+    <div class="page-box centered">
+      <footer>
+        <p>Made by Alice - <em>@alliumchocolate</em> - <a href="/aquarium.html">Contact</a></p>
+      </footer>
+    </div>
+    
+    <script src="/utility/modal.js"></script>  
+    
+  </body>
+</html>

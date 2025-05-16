@@ -1,0 +1,49 @@
+:root {
+    --accent-light: #df5f21;
+    --accent-dark: #3a6d5f;
+    --accent-special: #a64d0d;
+     /* changes color on hover to accent-light */
+    --color-icon-hover: invert(46%) sepia(20%) saturate(3612%) hue-rotate(347deg) brightness(91%) contrast(92%);
+}
+
+a:link { color: #338b96; }
+a:visited { color: #954614; }
+
+.instructions {
+    height: auto; padding: 20px 40px 40px 40px; margin: 10px 0 10px 0;
+    border: 5px var(--accent-dark) double;
+}
+.instructions h3 { color: var(--accent-light); padding: 0; padding-top: 15px; margin: 0; }
+.instructions p { margin: 10px 0 10px 0; }
+sup { vertical-align: top; position: relative; top: -0.1em; }
+
+.photos {
+    position: relative; width: 100%; height: auto;
+    margin-top: 0; margin-bottom: 30px;
+}
+.folded { position: relative; display: flex; }
+.template { position: relative; display: flex; top: 10px; }
+
+.advert {
+    flex: 1 1 auto; margin-right: 5px; margin-left: 5px;
+    height: 200px; width: 48%; min-width: 0%; object-fit: cover;
+    border: 2px var(--accent-dark) solid;
+}
+
+.pdf {
+    flex: 1 1 auto; margin-right: 5px; margin-left: 5px;    
+    height: auto; width: 48%; min-width: 0%; object-fit: cover;
+    border: 2px var(--accent-dark) solid;
+}
+.pdf:hover, .pdf:active { border: 2px var(--accent-light) solid; }
+
+/* show preview */
+.cover:hover, .cover:active {
+    object-fit: contain; border: 2px var(--accent-light) solid; 
+    overflow: hidden;
+    z-index: 5;
+}
+.papercraft-download { position: relative; }
+
+#clouds { background: black url("/content/backgrounds/craftsroom_bg.jpg") no-repeat top; }
+

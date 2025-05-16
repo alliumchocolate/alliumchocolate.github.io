@@ -1,0 +1,27 @@
+/* TOWER
+ * some details:
+ * the content collumn width: 440px
+ */
+
+:root {
+  --accent-light: #b3daff;
+  --accent-dark: #829ec4;
+  
+  --color-icon-static: invert(63%) sepia(14%) saturate(760%) hue-rotate(175deg) brightness(95%) contrast(93%);
+  --color-icon-hover: invert(76%) sepia(38%) saturate(425%) hue-rotate(184deg) brightness(102%) contrast(103%);
+}
+
+a:link { color: #6989ec; }
+a:visited { color: #636587; }
+
+#clouds {
+  background: black url("/content/backgrounds/2025_bg.jpg") no-repeat top;
+  background-size: cover;
+}
+
+/* For Chroma Corp sections, to separate them */ 
+.cc {
+  border-top: 1px #ffe328 solid; 
+  border-bottom: 1px #ffe328 solid; 
+}
+

@@ -1,0 +1,87 @@
+:root {
+    --accent-light: #ffffff;
+    --accent-dark: #393939;
+    --accent-special: #858585;
+    
+    --color-2025: #b3daff;
+    --color-2024: #eeb62d;
+    --color-2023: #ffffff;
+    --color-2022: #b9f558;
+    --color-2021: #e9517f;
+}
+
+a:link { color: #c5ccd9; }
+a:visited { color: #4e4f5d; }
+
+#clouds { background: black url("/content/backgrounds/shelf_bg.jpg") no-repeat top; }
+
+
+@media(width < 750px) {
+    .sketchbook-entry {
+        width: auto; height: calc(12.5vh + 100px) !important; /* button height + header height + padding */
+        text-align: center;
+        background-size: cover !important;
+    }
+    .sketchbook-gradient { background: linear-gradient(0deg,rgba(0, 0, 0 , 0.5) 0%, rgba(0, 0, 0, 0) 100%); }
+    .sketchbook-entry h2 { 
+        position: relative; height: fit-content; 
+        left: 50%; transform: translate(-50%);
+    }
+    .sketchbook-button { margin-top: 10px; }
+}
+@media(width > 750px) {
+    .sketchbook-entry {
+        display: flex;
+        width: auto; height: calc(10vh + 40px) !important; /* header height + padding */
+        background-size: 105% !important;
+    }
+    .sketchbook-gradient { background: linear-gradient(90deg,rgba(0, 0, 0 , 0.5) 0%, rgba(0, 0, 0, 0) 100%); }
+    .sketchbook-entry h2 { position: absolute; bottom: 0; }
+    .sketchbook-button { margin-left: auto; margin-top: auto; }
+}
+
+.sketchbook-gradient { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
+.sketchbook-entry h2 { font-size: 10vh; margin: 0; z-index: 10; width: fit-content; }
+.sketchbook-button {
+    text-decoration: none;
+    width: fit-content; height: fit-content;
+    position: relative; padding: 10px 20px 10px 20px;
+    
+    font-family: "Poppins", arial, sans-serif; 
+    text-align: center; font-size: 2.4vh; color: black !important;
+    /* background-color determined per-section */
+    background-color: #ffffff; border: 1px transparent solid; 
+}
+.sketchbook-button:hover { border: 1px var(--accent-light) solid; }
+.arrow-right { height: 2.4vh; position: relative; bottom: 0.7vh; /* no filter because the font is black */ }
+
+.color-2025 { background: black url("/content/backgrounds/2025_bg.jpg") no-repeat center; }
+.color-2025 h2 { color: var(--color-2025); }
+.color-2025 a { background-color: var(--color-2025); }
+
+.color-2024 { background: black url("/content/backgrounds/2024_bg.jpg") no-repeat center; }
+.color-2024 h2 { color: var(--color-2024); }
+.color-2024 a { background-color: var(--color-2024); }
+
+.color-2023 { background: black url("/content/backgrounds/2023_bg.jpg") no-repeat center; }
+.color-2023 h2 { color: var(--color-2023); }
+.color-2023 a { background-color: var(--color-2023); }
+.color-2023 .sketchbook-button:hover { border: 1px black solid; }
+
+.color-2022 { background: black url("/content/backgrounds/2022_bg.jpg") no-repeat center; }
+.color-2022 h2 { color: var(--color-2022); }
+.color-2022 a { background-color: var(--color-2022); }
+
+.color-2021 { background: black url("/content/backgrounds/2021_bg.jpg") no-repeat center; }
+.color-2021 h2 { color: var(--color-2021); }
+.color-2021 a { background-color: var(--color-2021); }
+
+/* <!-- 2025 -->
+    <div class="page-box centered">
+      <section class="post sketchbook-entry 2025">
+        <h2>2025</h2>
+        <a class="sketchook-button"></a>
+      </section>
+    </div>
+ * 
+ * */
