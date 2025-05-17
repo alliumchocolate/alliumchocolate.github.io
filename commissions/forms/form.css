@@ -28,7 +28,7 @@
     .arrow-left { height: 60px; }
 }
 @media (1100px < width) { 
-    #back-panel { flex-basis: 80%; max-width: 1000px; } 
+    #back-panel { flex-basis: 80%; max-width: 60%; } 
     #widget-full { display: none; }
     #widget-small { display: bloxk; }
     #widget-box { left: 10%; bottom: 40px; }

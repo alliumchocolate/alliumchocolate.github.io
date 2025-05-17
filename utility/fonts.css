@@ -2,22 +2,32 @@
 
 @font-face {
     font-family: "Hyperlegible";
-    src: url("/content/Fonts/Hyperlegible.ttf");
+    src: url("/content/fonts/Hyperlegible.ttf");
 }
 
 @font-face {
     font-family: "Hyperlegible_italics";
-    src: url("/content/Fonts/Hyperlegible_italic.ttf");
+    src: url("/content/fonts/Hyperlegible_italic.ttf");
 }
 
 @font-face {
     font-family: "MS DOS";
-    src: url("/content/Fonts/MorePerfectDOSVGA.ttf");
+    src: url("/content/fonts/MorePerfectDOSVGA.ttf");
 }
 
 @font-face {
     font-family: "Poppins";
-    src: url("/content/Fonts/Poppins.ttf");
+    src: url("/content/fonts/Poppins.ttf");
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("/content/fonts/Minecraft.otf");
+}
+
+@font-face {
+    font-family: "Minecraft-bold";
+    src: url("/content/fonts/Minecraft-bold.otf");
 }
 
 /* top level rules */

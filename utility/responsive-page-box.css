@@ -20,6 +20,6 @@
 @media (1100px < width) {
     .page-box {
         flex-basis: 80%;
-        max-width: 750px;
+        max-width: 48%;
     }
 }

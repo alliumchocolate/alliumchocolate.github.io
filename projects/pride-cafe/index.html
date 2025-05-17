@@ -1,8 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Title</title>
+  <head>
+    <title>Alliumchocolate - Pride Cafe</title>
+    <link rel="stylesheet" href="pride-cafe.css">
+    <link rel="stylesheet" href="/utility/fonts.css">
+    <link rel="stylesheet" href="/utility/font_sizes.css">
+    <link rel="stylesheet" href="/utility/responsive-page-box.css">
+    <link rel="stylesheet" href="/utility/blog-page.css">
+    
+    <!-- Utilities -->
+    <link rel="stylesheet" href="/utility/share-button.css">
+    <link rel="stylesheet" href="/utility/modal.css">
+    
+    <link rel="icon" type="image/x-icon" href="/content/projects/pride-cafe/favicon.ico">
+    
+    <meta content="Alliumchocolate - Pride Cafe" property="og:title" />
+    <meta content="Queer safe-space that grew from a Minecraft server" property="og:description" />
+    <meta content="https://alliumchocolate.com/commissions/forms/submitted" property="og:url" />
+    <meta content="https://alliumchocolate.com/content/backgrounds/submitted_bg.jpg" property="og:image" />
+    <meta content="#5b8e15" data-react-helmet="true" name="theme-color" /> 
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <!--[if lt IE 9]>
+	 <script src="bower_components/html5shiv.js"</script>
+    <![endif]-->
     </head>
-    <body></body>
+    <body>
+               
+        <div id="modal"> <!-- Modal for image zoom. Requires modal.js at the bottom of the page and modal.css link, as well as onclick=modal(this) tags --> 
+          <div id="modal-screen-cover"></div>
+          <div id="modal-box">
+            <div id="modal-wrapper">
+              <img id="modal-image" src="/content/Icons/404.jpg">
+              <button id="close-modal">x</button>
+            </div>
+          </div>
+        </div> <!-- <script src="/utility/modal.js"></script> <link rel="stylesheet" href="/utility/modal.css"> -->
+
+        <div id="clouds"></div>
+        <div id="back-panel"></div>
+
+        <!-- Floating panel -->
+        <nav id="widget-box">
+          <a id="widget-full" href="/projects"><img class="arrow-left" src="/content/Icons/arrow_left.png"> Return to website</a>
+          <a id="widget-small" href="/projects"><img class="arrow-left" src="/content/Icons/arrow_left.png"></a>
+        </nav>  
+
+        <div class="page-box centered override-style">
+            <header class="override-style">
+                <h1>Pride Café</h1>
+                <p>Queer safe-space that grew from a Minecraft server</p>
+                <span>🟥🟧🟨🟩🟦🟪</span>
+            </header>
+        </div>
+
+        <div class="page-box centered override-style">
+            <section class="paragraph intro-box">
+                <div class="ascii-flag-box">
+                    <!-- this took so long lol but its 100% accurate down to every detail -->
+                <pre class="ascii-flag"><span class="c7">o</span><span class="c0">___</span><span class="cc">..::####::.._</span>
+<span class="c0">_</span><span class="c7">#</span><span class="cc">.:###########:...__...:::</span>
+<span class="c0">__</span><span class="c7">#</span><span class="cc">###:</span><span class="c6">#######</span><span class="cc">:#####||'</span>
+<span class="c0">___</span><span class="c7">#</span><span class="c6">###############|</span>
+<span class="c0">____</span><span class="c7">#</span><span class="c6">#:</span><span class="ce">#########</span><span class="c6">:##||[</span>
+<span class="c0">_____</span><span class="c7">#</span><span class="ce">#############||.</span>
+<span class="c0">______</span><span class="c7">#</span><span class="ce">#:</span><span class="ca">############:..</span>
+<span class="c0">_______</span><span class="c7">#</span><span class="ca">#######</span><span class="c9">::#######:</span>
+<span class="c0">________</span><span class="c7">#</span><span class="ca">|||</span><span class="c9">::#############</span>
+<span class="c0">_________</span><span class="c7">#</span><span class="c9">####||</span><span class="c5">::########|</span>
+<span class="c0">__________</span><span class="c7">#</span><span class="c9">||</span><span class="c5">::##########||'</span>
+<span class="c0">___________</span><span class="c7">#</span><span class="c5">###||''</span><span class="c0">______</span><span class="c5">|'</span>
+<span class="c0">____________</span><span class="c7">#</span><span class="c5">'</span>
+<span class="c0">_____________</span><span class="c7">#</span>
+<span class="c0">______________</span><span class="c7">#</span>
+<span class="c0">_______________</span><span class="c7">#</span>
+<span class="c0">________________</span><span class="c7">#</span>
+<span class="c0">_________________</span><span class="c7">#</span>
+<span class="c0">__________________</span><span class="c7">#</span></pre>
+                <p class="ascii-caption">2nd anniversary ASCII art</p>
+                </div>
+                <div class="intro-text">
+                    <p>The <strong>Pride Café</strong> has started as a Minecraft <a href="https://hypixel.net/play/">Hypixel</a> housing back in 2021, but since then, has grown into a small queer community.</p>
+                    <br><br>
+                    <p>Over the years, the project has slowed down, until eventually, mid-way through 2025, we've decided to put a soft-close on it's story.</p>
+                    <br><br>
+                    <p>This page serves as a tribute to the Pride Café and the people who have shaped it.</p>
+                </div>
+            </section>
+        </div>
+        
+        <div class="page-box centered override-style">
+            <section class="paragraph">
+                <h2>Farewell</h2>
+                <p>The Cafe has found some regulars - the housing has had thousands of visitors, and quite a few of them stopped by for longer, for which I'm eternally grateful. Below are some (anonymized) open letters from our community, gathered as a time capsule:</p>
+                <br>
+                <div class="letters">
+                    <div class="letter-box">
+                        <p>The beauty of the temporary is also its melancholy - what you keep in your heart, though, will live on with you. <br> Thank you, my beloved corner of the internet ❤️</p>
+                        <p>Keep your head held high 🌈</p>
+                    </div>
+                    <div class="letter-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sem id nunc facilisis facilisis non nec eros. Duis eu porttitor enim. Morbi egestas euismod mattis. Curabitur ac eros non nisl placerat cursus. Donec sollicitudin massa nec dictum luctus.</p>
+                    </div>
+                    <div class="letter-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sem id nunc facilisis facilisis non nec eros. Duis eu porttitor enim. Morbi egestas euismod mattis. Curabitur ac eros non nisl placerat cursus. Donec sollicitudin massa nec dictum luctus.</p>
+                    </div>
+                    <div class="letter-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sem id nunc facilisis facilisis non nec eros. Duis eu porttitor enim. Morbi egestas euismod mattis. Curabitur ac eros non nisl placerat cursus. Donec sollicitudin massa nec dictum luctus.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="page-box centered override-style">
+            <section class="paragraph">
+                <h2>Downloads</h2>
+                <p>During its life, the Cafe build has received a handful of updates. You can find <a href="https://litematica.org">Litematics</a> of all of the themes below.</p>
+                <br>
+                <div class="downloads">
+                    <div class="downloads-box">
+                        <img onclick=modal(this) src="/content/projects/pride-cafe/gallery/Pride-Park.jpg" alt="Minecraft screenshot of">
+                        <div class="downloads-text">
+                            <p class="title">Pride Park</p>
+                            <p class="date">Before 13th Nov 2021</p>
+                            <p class="lore">This is what was around just before the Cafe started.</p>
+                            <p class="link">Download: <a href="/content/projects/pride-cafe/schematics/Pride-Park.litematic" download>litematic</a></p>
+                        </div>    
+                    </div>
+                    <div class="downloads-box">
+                        <img onclick=modal(this) src="/content/projects/pride-cafe/gallery/Release-cut.jpg" alt="Minecraft screenshot of">
+                        <div class="downloads-text">
+                            <p class="title">Release cut</p>
+                            <p class="date">13th Nov 2021</p>
+                            <p class="lore">The Cafe as it opened on the first day.</p>
+                            <p class="link">Download: <a href="/content/projects/pride-cafe/schematics/Pride-Cafe-Release-cut.litematic" download>litematic</a></p>
+                        </div>    
+                    </div>
+                    <div class="downloads-box">
+                        <img onclick=modal(this) src="/content/projects/pride-cafe/gallery/Classic.jpg" alt="Minecraft screenshot of">
+                        <div class="downloads-text">
+                            <p class="title">Classic</p>
+                            <p class="date">Nov 2021 - Nov 2022</p>
+                            <p class="lore">The original Cafe, before the 1st anniversary.</p>
+                            <p class="link">Download: <a href="/content/projects/pride-cafe/schematics/Pride-Cafe-Classic.litematic" download>litematic</a></p>
+                        </div>    
+                    </div>
+                    <div class="downloads-box">
+                        <img onclick=modal(this) src="/content/projects/pride-cafe/gallery/Flower.jpg" alt="Minecraft screenshot of">
+                        <div class="downloads-text">
+                            <p class="title">Flowers</p>
+                            <p class="date">Nov 2022 - Dec 2022</p>
+                            <p class="lore">The first theme turned the Cafe into a garden.</p>
+                            <p class="link">Download: <a href="/content/projects/pride-cafe/schematics/Pride-Cafe-Flower.litematic" download>litematic</a></p>
+                        </div>    
+                    </div>
+                    <div class="downloads-box">
+                        <img onclick=modal(this) src="/content/projects/pride-cafe/gallery/Cogs.jpg" alt="Minecraft screenshot of">
+                        <div class="downloads-text">
+                            <p class="title">Cogs</p>
+                            <p class="date">Dec 2022 - Dec 2022</p>
+                            <p class="lore">A brief industrial tangent, full of rockets and steel.</p>
+                            <p class="link">Download: <a href="/content/projects/pride-cafe/schematics/Pride-Cafe-Cogs.litematic" download>litematic</a></p>
+                        </div>    
+                    </div>
+                    <div class="downloads-box">
+                        <img onclick=modal(this) src="/content/projects/pride-cafe/gallery/Cyberpunk.jpg" alt="Minecraft screenshot of">
+                        <div class="downloads-text">
+                            <p class="title">Cyberpunk</p>
+                            <p class="date">Dec 2022 - Jan 2023</p>
+                            <p class="lore">Under the light of neons, the Cafe doesn't sleep.</p>
+                            <p class="link">Download: <a href="/content/projects/pride-cafe/schematics/Pride-Cafe-Cyberpunk.litematic" download>litematic</a></p>
+                        </div>    
+                    </div>
+                    <div class="downloads-box">
+                        <img onclick=modal(this) src="/content/projects/pride-cafe/gallery/Archaeology.jpg" alt="Minecraft screenshot of">
+                        <div class="downloads-text">
+                            <p class="title">Archeology</p>
+                            <p class="date">Jan 2023 - March 2023</p>
+                            <p class="lore">Get out your shovel - we're digging for dino bones!</p>
+                            <p class="link">Download: <a href="/content/projects/pride-cafe/schematics/Pride-Cafe-Archeology.litematic" download>litematic</a></p>
+                        </div>    
+                    </div>
+                    <div class="downloads-box">
+                        <img onclick=modal(this) src="/content/projects/pride-cafe/gallery/Final-theme.jpg" alt="Minecraft screenshot of">
+                        <div class="downloads-text">
+                            <p class="title">Final cut</p>
+                            <p class="date">March 2023 - Forever</p>
+                            <p class="lore">This mix of pride &amp; underwater themeing is what the Cafe remains in to this day.</p>
+                            <p class="link">Download: <a href="/content/projects/pride-cafe/schematics/Pride-Cafe-Final-cut.litematic" download>litematic</a></p>
+                        </div>
+                    </div>
+                    <div class="downloads-box">
+                        <img onclick=modal(this) src="/content/projects/pride-cafe/gallery/Comp.jpg" alt="Minecraft screenshot of">
+                        <div class="downloads-text">
+                            <p class="title">All themes</p>
+                            <p class="date">2021 - 2025</p>
+                            <p class="lore">Every theme in a single file.</p>
+                            <p class="link">Download: 
+                                <a href="/content/projects/pride-cafe/schematics/Pride-Cafe-All.litematic" download>litematic</a>, <a href="/content/projects/pride-cafe/schematics/Pride-Cafe-All.zip" download>world</a>
+                            </p>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="page-box centered override-style">
+            <section class="paragraph">
+                <h2>Final thanks 🌈</h2>
+                <p>Thank <em>you</em> for stopping by and taking the time to look at this page. It really means the world.</p>
+                <p>I also want to thank <strong>Thorn</strong>, for being a wonderful co-host of the Cafe for all those years. Your support was invaluable.</p>
+                <p>Lastly, thank you to the supportive community that grew around this silly lego game build. Without your care, love and energy, this page wouldn't have a reason to exist.</p>
+                <br>
+                <p>Carry the pride into the world 💛</p>
+            </section>
+        </div>
+        
+
+        <div class="page-box centered override-style">
+        <footer class="override-style">
+          <p>Made by Alice - <em>@alliumchocolate</em> - <a href="/aquarium">Contact</a></p>
+        </footer>
+        </div>    
+
+        <script src="commissions.js"></script>  
+        <script src="/utility/modal.js"></script>  
+      
+    </body>
 </html>

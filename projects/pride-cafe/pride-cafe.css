@@ -1,0 +1,134 @@
+:root {
+    --accent-light: #ffc036;
+    --accent-dark: #9b5e1a;
+    --accent-special: #cd8320;
+
+    --color-icon-static: invert(74%) sepia(67%) saturate(2573%) hue-rotate(344deg) brightness(83%) contrast(92%);
+    --color-icon-hover: invert(86%) sepia(51%) saturate(3567%) hue-rotate(328deg) brightness(101%) contrast(101%);
+}
+
+a:link { color: #5e9cee; }
+a:visited { color: #bd68de; }
+
+#clouds {
+    background: black url("/content/projects/pride-cafe/background.jpg") no-repeat top;
+}
+#back-panel {
+    height: 100%; width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);/* #151616 */
+    backdrop-filter: blur(10px);
+    
+    position: fixed;
+    top: 0;
+    left: 50%; transform: translateX(-50%);
+}
+@media (max-width: 980px) { 
+    #back-panel { flex-basis: 100%; }
+    #widget-full { display: none; }
+    #widget-small { display: block; }
+    #widget-box { left: 20px; bottom: 40px; } 
+    .arrow-left { height: 60px; }
+}
+@media (980px < width < 1100px) { 
+    #back-panel { flex-basis: auto; max-width: 90%; }
+    #widget-full { display: none; }
+    #widget-small { display: block; }
+    #widget-box { left: 20px; bottom: 40px; }
+    .arrow-left { height: 60px; }
+}
+@media (1100px < width) { 
+    #back-panel { flex-basis: 80%; max-width: 60%; } 
+    #widget-full { display: none; }
+    #widget-small { display: bloxk; }
+    #widget-box { left: 10%; bottom: 40px; }
+    .arrow-left { height: 4vh; }
+}
+@media (1500px < width) {
+    #widget-full { display: block; }
+    #widget-small { display: none; }
+    .arrow-left { height: 2.6vh; }
+}
+
+header span { display: block; margin-top: 20px !important; font-size: 3vh; }
+
+#widget-box {
+    background-color: rgba(0, 0, 0, 0.8); /* #151616 */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #222222;
+    padding: 20px;
+
+    position: fixed;
+    z-index: 10;
+}
+#widget-box a { text-decoration: none; color: var(--accent-special); }
+#widget-box:hover a { color: var(--accent-light); }
+#widget-small { font-size: 3vh; padding: 0; aspect-ratio: 1/1;  }
+.arrow-left { position: relative; filter: var(--color-icon-static); }
+#widget-box:hover .arrow-left { filter: var(--color-icon-hover); }
+
+.override-style { /* removes borders & backgrounds from elements that shouldnt have them */
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.story {padding-top: 0 !important; }
+
+.paragraph { padding: 20px; margin: 15px; }
+.paragraph h2 { margin: 10px; margin-bottom: 15px; }
+.paragraph p { margin: 10px; }
+.paragraph strong { color: var(--accent-special); }
+
+/* INTRO & FLAG */
+@media(width < 1550px) {
+    .intro-box { display: block; }
+    .ascii-flag { position: relative; left: 50%; transform: translateX(-50%); }
+    .intro-text { margin-top: 40px; }
+}
+@media(width > 1550px) {
+    .intro-box { display: flex; }
+    .intro-text { margin-left: auto; padding-left: 20px; }
+}
+
+.intro-text p { padding: 0; margin: 0; }
+.ascii-flag {
+    background-color: #100110; border: 2px #24015B solid; color: #ffffff; border-radius: 15px;
+    font-family: "Minecraft-bold", arial, sans-serif; font-size: 2vh;
+    padding: 40px 20px 40px 20px; width: fit-content; margin: 0;
+}
+.ascii-caption { text-align: center; font-style: italic; color: var(--accent-dark); }
+/* ascii colors */
+.c0 { color: #000000; }
+.c7 { color: #AAAAAA; }
+.cc { color: #FF5555; }
+.c6 { color: #FFAA00; }
+.ce { color: #FFFF55; }
+.ca { color: #55FF55; }
+.c9 { color: #5555FF; }
+.c5 { color: #AA00AA; }
+
+/* LETTERS */
+.letters { display: grid; gap: 10px; grid-template-columns: auto auto; }
+.letter-box { padding: 10px; background-color: rgba(155, 94, 26, 0.1); }
+
+/* DOWNLOADS */
+.downloads { box-sizing: border-box; position: relative; margin: 10px; }
+.downloads-box {
+    display: flex; position: relative; width: auto;
+    margin: 10px 0 10px 0; padding: 15px;
+    background: linear-gradient(90deg, rgba(155, 94, 26, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.downloads-box img { position: relative; width: 50%; object-fit: contain; }
+.downloads-text { 
+    width: 50%; margin-left: auto; padding-left: 20px;
+    display: flex; flex-direction: column; 
+}
+.downloads-text .title { 
+    margin: 0; color: var(--accent-light); 
+    font-family: "Poppins", arial, sans-serif; font-size: 3vh; }
+.downloads-text .date { margin: 5px 0 0 0; color: var(--accent-dark); }
+.downloads-text .lore { margin: 20px 0 10px 0; }
+.downloads-text .link { margin: auto 0 0 0; }
+
+
+
+
+
